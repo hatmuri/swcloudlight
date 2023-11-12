@@ -51,10 +51,10 @@ const App = () => {
               <img src={goods1} alt="상품 이미지3" />
             </div>
             <div className="inner">
-              <img src={goods1} alt="상품 이미지3" />
+              <img src={goods1} alt="상품 이미지4" />
             </div>
             <div className="inner">
-              <img src={goods1} alt="상품 이미지3" />
+              <img src={goods1} alt="상품 이미지5" />
             </div>
           </div>
         </div>  
