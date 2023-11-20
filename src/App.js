@@ -36,6 +36,7 @@ const App = () => {
           <MainPage/>
         </div>
         <div className='Page'>
+          <br/>
           <GoodsPage/>
         </div>
       </MobileView>

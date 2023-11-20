@@ -7,7 +7,7 @@ const GoodsPage = ({ currentIndex }) => {
 
   
   return (
-    <div className='container'>
+    <div className='all'>
       <div className='header'>
         <h className='text1'>굿즈</h>
         <img src={vector} className='vecter'/> <br/>

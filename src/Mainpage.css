@@ -2,13 +2,22 @@
   font-family: KoPubWorldBatang_Pro;
   font-size: 20px;
   font-weight: 500;
-  line-height: 50px;
   letter-spacing: 0em;
-  margin-left: 30px;
 }
 
-.blind .menu{
-  
+
+.menu {
+  margin:20px;
+  display: flex;
+  align-items: center;
+  margin-left: 135px;
+  justify-content: space-between;
+}
+
+.menu p{
+  text-align: center;
+  font-family: KoPubWorldBatang_Pro;
+  font-size: 14px;
 }
 
 .menu img {
@@ -16,19 +25,19 @@
 }
 
 .main img{
-  margin-top: 0px;
-  width: 350px;
+  width:350px;
 }
 
-
-.blind p{
-  text-align: center;
-  font-family: KoPubWorldBatang_Pro;
-  font-size: 15px;
-
-
-}
 
 .blind h1{
+  line-height: 50px;
+  margin-left: 20px;
   text-align: left;
+}
+
+.blind2 p{
+  text-align: right;
+  margin-right: 30px;
+  font-family: KoPubWorldBatang_Pro;
+  font-size: 10px;
 }
