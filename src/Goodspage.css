@@ -1,0 +1,91 @@
+.Goodspage {
+  text-align: center;
+  overflow-y: scroll; 
+  height: 100vh; 
+  scroll-snap-type: y mandatory;
+}
+
+
+.header{
+  align-items: center;
+  width: 100%;
+  padding: 10px; 
+  z-index: 1; 
+}
+
+.header .text1{
+  font-family: KoPubWorldBatang_Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.header .text2{
+  color: #808080;
+  font-family: KoPubWorldBatang_Pro;
+  font-size: 11px;
+  font-weight: 100;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 5px; 
+
+}
+
+.vector {
+  margin-left: 100px; 
+  width: 4px;
+  height: 4px;
+
+}
+
+.vector2 {
+  margin-left: 10px;
+  width: 7px;
+  height: 7px;
+  background-color: white; 
+  transition: background-color 0.3s; 
+}
+
+.vector2.active {
+  filter: hue-rotate(90deg);
+}
+
+
+.list{
+  margin-top: 30px;
+}
+
+.App .container {
+  display: flex;
+  overflow-x: scroll; 
+  scroll-snap-type: x mandatory; 
+  white-space: nowrap; 
+  margin:20px;
+}
+
+.App .inner {
+  margin-top: 20px;
+  width: 100vw;
+  scroll-snap-align:initial; 
+}
+
+.form{
+  font-family: KoPubWorldBatang_Pro;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: right;
+  margin-right: 30px;
+  margin-top: 30px; 
+
+}
+
+.form button{
+  margin-top:10px;
+  font-family: KoPubWorldBatang_Pro;
+  background-color: white;
+}

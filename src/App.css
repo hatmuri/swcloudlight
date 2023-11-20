@@ -1,95 +1,13 @@
 .App {
   text-align: center;
-  margin: 0;
-  overflow-y: scroll; /* 세로 스크롤을 허용 */
-  height: 100vh; /* 화면 높이만큼 표시 */
+  overflow-y: scroll; 
+  height: 100vh; 
   scroll-snap-type: y mandatory;
 }
 
-.header{
-  position: fixed;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 100%;
 
-  background-color: white; /* 배경색을 추가하여 글씨가 화면 내에서 잘 보이도록 설정 */
-  padding: 10px; /* 여백을 추가하여 텍스트를 가운데 정렬 */
-  z-index: 1; /* 다른 요소 위에 표시하기 위해 z-index 추가 */
+.Page{
+  height: 100vh; /* 각 페이지의 높이를 화면 크기만큼 설정 */
+  scroll-snap-align: start; /* 페이지 정렬 위치 설정 */
 }
 
-.header .text1{
-  font-family: KoPubWorldBatang_Pro;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-
-.header .text2{
-  color: #808080;
-  font-family: KoPubWorldBatang_Pro;
-  font-size: 11px;
-  font-weight: 100;
-  line-height: 15px;
-  letter-spacing: 0em;
-  text-align: center;
-  margin-top: 5px; 
-
-}
-
-.vector {
-  margin-left: 100px; 
-  width: 4px;
-  height: 4px;
-
-}
-
-.vector2 {
-  margin-left: 10px;
-  width: 7px;
-  height: 7px;
-  background-color: white; /* 초기 벡터 색상 */
-  transition: background-color 0.3s; /* 색상 변경에 트랜지션 적용 */
-}
-
-.vector2.active {
-  filter: hue-rotate(90deg); /* 가운데 위치한 이미지에 대한 벡터의 색상 변경 */
-}
-
-
-.list{
-  margin-top: 100px;
-}
-
-.App .container {
-  display: flex;
-  overflow-x: scroll; /* 가로 스크롤을 사용하도록 설정 */
-  scroll-snap-type: x mandatory; /* 스크롤을 가로 방향으로 한 번에 한 아이템씩 스크롤하도록 설정 */
-  white-space: nowrap; /* 아이템들이 한 줄로 나타나도록 설정 */
-  margin:20px;
-}
-
-.App .inner {
-  margin-top: 20px;
-  width: 100vw;
-  scroll-snap-align:initial; /* 스크롤 시 정렬 위치 설정 */
-}
-
-.form{
-  font-family: KoPubWorldBatang_Pro;
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 15px;
-  letter-spacing: 0em;
-  text-align: right;
-  margin-top: 30px; 
-
-}
-
-.form button{
-  margin-top:10px;
-  font-family: KoPubWorldBatang_Pro;
-  background-color: white;
-}

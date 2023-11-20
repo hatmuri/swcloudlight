@@ -1,0 +1,34 @@
+.blind{
+  font-family: KoPubWorldBatang_Pro;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 0em;
+  margin-left: 30px;
+}
+
+.blind .menu{
+  
+}
+
+.menu img {
+  width: 30px; /* 너비 조절 */
+}
+
+.main img{
+  margin-top: 0px;
+  width: 350px;
+}
+
+
+.blind p{
+  text-align: center;
+  font-family: KoPubWorldBatang_Pro;
+  font-size: 15px;
+
+
+}
+
+.blind h1{
+  text-align: left;
+}
