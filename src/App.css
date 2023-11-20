@@ -1,5 +1,14 @@
+@font-face {
+  font-family: 'KoPubWorld Batang_Pro Medium';
+  src: local('KoPubWorld Batang_Pro Medium'), url('../public/fonts/KoPubWorld\ Batang_Pro\ Medium.otf') format('truetype');
+  /* font-weight: 300; 원하는 폰트의 두께 설정 */
+  /*font-style: normal;  원하는 폰트의 스타일 설정 */
+}
+
+
 .App {
   text-align: center;
+  font-family: 'KoPubWorld Batang_Pro Medium';
 }
 
 .App-logo {
