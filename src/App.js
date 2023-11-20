@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserView, MobileView } from 'react-device-detect'
+import ReactDOM from 'react-dom';
+import Info from './pages/Info';
+import Place from './pages/Place';
+import Crew from './pages/Crew';
 import GoodsPage from './Goodspage';
 import MainPage from './Mainpage';
+import Guestbook from './Guestbook';
+import Recommend from './recommend';
 
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,10 +43,25 @@ const App = () => {
         </div>
         <div className='Page'>
           <br/>
+          <Info/>
+        </div>
+        <div className='Page'>
+          <br/>
+          <Place/>
+        </div>
+        <div className='Page'>
+          <br/>
+          <Crew/>
+        </div>
+        <div className='Page'>
+          <br/>
+          <Guestbook/>
+        </div>
+        <div className='Page'>
+          <br/>
           <GoodsPage/>
         </div>
       </MobileView>
-      
     </div>
   );
 }

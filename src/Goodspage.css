@@ -5,8 +5,6 @@
   scroll-snap-type: y mandatory;
 }
 
-
-
 .header{
   align-items: center;
   width: 100%;
@@ -90,3 +88,4 @@
   font-family: KoPubWorldBatang_Pro;
   background-color: white;
 }
+
