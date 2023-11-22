@@ -1,3 +1,8 @@
+.recommendLayout{
+    width: 100vw;
+    font-size: 14px;
+    display: flex;
+}
 @font-face{
     font-family: "Kopub-bold";
     src: url("C:\2023_swengineering\swcloudlight\public\assets\KoPubWorld Batang Bold.ttf")

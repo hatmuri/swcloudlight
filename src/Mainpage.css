@@ -1,0 +1,44 @@
+.blind{
+  font-family: KoPubWorldBatang_Pro;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+
+
+.menu {
+  margin:20px;
+  display: flex;
+  align-items: center;
+  margin-left: 135px;
+  justify-content: space-between;
+}
+
+.menu p{
+  text-align: center;
+  font-family: KoPubWorldBatang_Pro;
+  font-size: 14px;
+  margin: 0px;
+}
+
+.menu img {
+  width: 30px; /* 너비 조절 */
+}
+
+.main img{
+  width:350px;
+}
+
+
+.blind h1{
+  line-height: 50px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.blind2 p{
+  text-align: right;
+  margin-right: 30px;
+  font-family: KoPubWorldBatang_Pro;
+  font-size: 10px;
+}
