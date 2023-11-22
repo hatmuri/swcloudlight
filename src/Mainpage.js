@@ -1,8 +1,7 @@
-
 import React, { useState } from 'react';
 import './Mainpage.css';
-import menu from './menu.png';
 import main from './main.png';
+import brand from './brand.png';
 
 const Mainpage = () => {
 
@@ -19,7 +18,10 @@ const Mainpage = () => {
       setBurgerClass("burger-bar unclicked")
       setMenuClass("menu hidden")
     }
+    setIsMenuClicked(!isMenuClicked)
   }
+
+
 
   return (
     <div className='blind'>
@@ -28,13 +30,35 @@ const Mainpage = () => {
         {/* <img src={menu} alt="menu" /> */}
         <div>
           <nav>
-            <div className='burger-menu'>
-              <div className={burger_class} onClick={updateMenu}></div>
-              <div className={burger_class} onClick={updateMenu}></div>
-              <div className={burger_class} onClick={updateMenu}></div>
+            <div className='brand'>
+              <img src={brand} alt="brand" />
+            </div>
+            <div className='burger-menu' onClick={updateMenu}>
+              <div className={burger_class}></div>
+              <div className={burger_class}></div>
+              <div className={burger_class}></div>
+            </div>
+            <div className={`menu ${menu_class}`}>
+              <ul className="nav-links">
+                <li className='info_exhibition'>
+                  <a href="#">전시 안내</a>
+                </li>
+                <li className='info_club'>
+                  <a href="#">동아리 안내</a>
+                </li>
+                <li className='goods'>
+                  <a href="#">굿즈 소개</a>
+                </li>
+                <li className='recommend'>
+                  <a href="#">작품 추천</a>
+                </li>
+                <li className='guest'>
+                  <a href="#">방명록</a>
+                </li>
+              </ul>
             </div>
           </nav>
-          <div className={menu_class}></div>
+          
         </div>    
       
       <div className='blind2'>
@@ -44,6 +68,7 @@ const Mainpage = () => {
         <h1>일으키다.</h1> 
         <div className='main'>
           <img src={main} alt="main" />
+
         </div>
       </div>
       
