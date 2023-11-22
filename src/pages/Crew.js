@@ -9,16 +9,19 @@ const Crew =() => {
     };
 
     return (
-        <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
-        <div className="flip-card-inner">
-        <div className="flip-card-front">
-            <img src={process.env.PUBLIC_URL + '/assets/CrewInfo2.png'} alt="Front" />
+        <div className="flip-card-container">
+            <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
+                <div className="flip-card-inner">
+                    <div className="flip-card-front">
+                        <img src={process.env.PUBLIC_URL + '/assets/CrewInfo2.png'} alt="Front" />
+                    </div>
+                    <div className="flip-card-back">
+                    <img src={process.env.PUBLIC_URL + '/assets/crewCard.png'} alt="Back" />
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="flip-card-back">
-            <img src={process.env.PUBLIC_URL + '/assets/crewCard.png'} alt="Back" />
-        </div>
-        </div>
-    </div>
+        
         );
 
 };

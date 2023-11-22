@@ -1,0 +1,18 @@
+.InfoMap {
+    font-family: KoPubWorldBatang_Pro;
+}
+
+.info-container {
+    display: flex;
+}
+
+.map-img {
+    /* 필요한 스타일 추가 */
+    margin-left: 5%;
+    margin-right: 10px; /* 간격 조절을 위한 예시 값 */
+}
+
+.address-txt {
+    margin-right: 5%;
+    /* 필요한 스타일 추가 */
+}

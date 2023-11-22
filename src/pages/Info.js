@@ -4,8 +4,8 @@ const Info = () => {
     return (
         <div className='InfoExhi'>
             <div className='InfoTitle'>
-                <div>전시 안내</div>
-                <img src={process.env.PUBLIC_URL + '/assets/InfoCircle.png'}/>
+                <p>전시 안내</p>
+                <img className='info-title-circle' src={process.env.PUBLIC_URL + '/assets/InfoCircle.png'}/>
             </div>
             
             <br/>

@@ -1,3 +1,15 @@
+.flip-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 컨테이너 높이를 뷰포트 높이의 100%로 설정합니다. */
+}
+
+.crew-info-header {
+    font-family: KoPubWorldBatang_Pro;
+}
+
+
 .flip-card {
     perspective: 1000px;
     width: 200px;
