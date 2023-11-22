@@ -45,12 +45,26 @@
     width: 100%;
     height: 25px;
     flex-shrink: 0;
+    font-family: "Kokoro";
+    margin: 30px;
+    color: #B6E8D7;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+
+.startLogo div:nth-child(2){
+    margin-top: 40px;
+    width: 100%;
+    height: 25px;
+    flex-shrink: 0;
     font-weight: 700;
     font-family: "Kopub-bold";
     font-size: 20px;
 }
 
-.startLogo div:nth-child(2){
+.startLogo div:nth-child(3){
     width: 100%;
     height: 36px;
     margin-top: 30px;
@@ -217,4 +231,28 @@ flex-direction: column;
 .resultTitle div:nth-child(2){
     display: flex;
     flex:1;
+}
+
+.poetLayout{
+    display: flex;
+    margin:30px;
+    flex-direction: column;
+}
+
+.poetTitle{
+    display: flex;
+    font-family: 'Kopub-bold';
+    font-size: 25px;
+}
+
+.poetAuthor{
+    margin-top: 10px;
+    font-size: 16px;
+    display: flex; /* 추가: poetAuthor를 flex container로 만듦 */
+}
+
+.poetContents{
+    margin-top: 20px;
+    font-size: 13px;
+    display: flex; /* 추가: poetAuthor를 flex container로 만듦 */
 }
