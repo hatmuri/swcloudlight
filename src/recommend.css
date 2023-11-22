@@ -254,5 +254,6 @@ flex-direction: column;
 .poetContents{
     margin-top: 20px;
     font-size: 13px;
+    font-family: 'Kopub-light';
     display: flex; /* 추가: poetAuthor를 flex container로 만듦 */
 }
