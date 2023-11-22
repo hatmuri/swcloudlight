@@ -229,8 +229,17 @@ flex-direction: column;
     flex:5;
 }
 .resultTitle div:nth-child(2){
+    padding: 10px;
     display: flex;
-    flex:1;
+    justify-content: center;
+    width: 80px;
+    height: 20px;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Kopub-light";
+    color:#fff;
+    background-color: #000000;
 }
 
 .poetLayout{
@@ -255,5 +264,5 @@ flex-direction: column;
     margin-top: 20px;
     font-size: 13px;
     font-family: 'Kopub-light';
-    display: flex; /* 추가: poetAuthor를 flex container로 만듦 */
+    display: flex;
 }
