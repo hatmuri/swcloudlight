@@ -2,12 +2,11 @@
   font-family: KoPubWorldBatang_Pro;
   font-size: 20px;
   font-weight: 500;
-  letter-spacing: 0em;
 }
 
 
 .menu {
-  margin:20px;
+  margin:5px;
   display: flex;
   align-items: center;
   margin-left: 135px;
@@ -42,3 +41,12 @@
   font-family: KoPubWorldBatang_Pro;
   font-size: 10px;
 }
+
+nav{
+  position: fixed;
+  top: 0;
+  width:100%;
+  height:2em;
+  background-color: rgba(230, 144, 193, 0.508);
+}
+
