@@ -4,7 +4,10 @@ const Place=() => {
 
     return (
         <div className='InfoMap'>
-            <p>오시는 길</p>
+            <div className='map-header'>
+                <p>오시는 길</p>
+            </div>
+            
             <div className='info-container'>
                 <img className='map-img' src={process.env.PUBLIC_URL + '/assets/map.png'} alt="Map" />
                 <div className='address-txt'>

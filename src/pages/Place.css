@@ -6,6 +6,10 @@
     display: flex;
 }
 
+.map-header {
+    
+}
+
 .map-img {
     /* 필요한 스타일 추가 */
     margin-left: 5%;
@@ -14,5 +18,7 @@
 
 .address-txt {
     margin-right: 5%;
+    font-size: 8px;
+    margin-top: 30%;
     /* 필요한 스타일 추가 */
 }
