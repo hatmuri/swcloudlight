@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+build : npm run build 명령어 이후 생성되는 폴더, 배포에 필요
+
+node_modules: 라이브러리 모은 폴더
+
+public : static 파일 보관함 폴더 build해도 압축 안된 상태로 남아 있음
+
+src : 소스코드 보관 폴더
+
+public/index.html : 화면에 나타나는 파일
+
+src/App.js : 화면에 무엇이 보일지 입력한 파일
+
+src/index.js : 어떤 컴포넌트를 어떤 view에 렌더링해줄지 입력한 파일
+
+package.json 설치한 라이브러리 목록이 입력된 파일- > 버전 변경 가능

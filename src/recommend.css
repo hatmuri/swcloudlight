@@ -1,0 +1,215 @@
+@font-face{
+    font-family: "Kopub-bold";
+    src: url("C:\2023_swengineering\swcloudlight\public\assets\KoPubWorld Batang Bold.ttf")
+}
+@font-face{
+    font-family: "Kopub-mid";
+    src: url("C:\2023_swengineering\swcloudlight\public\assets\KoPubWorld Batang Medium.ttf")
+}
+@font-face{
+    font-family: "Kopub-light";
+    src: url("C:\2023_swengineering\swcloudlight\public\assets\KoPubWorld Batang Light.ttf")
+}
+
+.recommendLayout{
+    width: 390px;
+    height: 800px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+}
+
+.startPageLayout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    height:100%;
+}
+
+.startLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.startLogo div:nth-child(1){
+    width: 100%;
+    height: 25px;
+    flex-shrink: 0;
+    font-weight: 700;
+    font-family: "Kopub-bold";
+    font-size: 20px;
+}
+
+.startLogo div:nth-child(2){
+    width: 100%;
+    height: 36px;
+    margin-top: 30px;
+    flex-shrink: 0;
+    font-family: "Kopub-mid";
+}
+
+.startButton{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 92px;
+    height: 25px;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 15px;
+    margin-top:40px;
+    font-family: "Kopub-light";
+    color:#fff;
+    background-color: #000000;
+}
+
+.questionLayout{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 100%;
+    max-width: 900px;
+    height: 50%;
+    overflow:hidden;   
+}
+
+.questTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    font-family: "Kopub-light";
+    padding:15px;
+}
+
+.questTitle div:nth-child(1){
+    display: flex;
+    flex:5;
+}
+.questTitle div:nth-child(2){
+    display: flex;
+    flex:1;
+}
+
+.questionList{ 
+    font-family: "Kopub-bold";
+    flex-direction: column;
+    height:100%;
+    overflow: scroll;
+    scrollbar-width: none;
+    align-items: center;
+}
+
+.questionList::-webkit-scrollbar{
+    display: none;
+}
+
+.questionItemLayout{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 15px 5px 15px;
+}
+
+.answerItemLayout{
+    width: 100%;
+    background-color: #fff;
+    padding-bottom:10px;
+    display:flex;
+    flex-direction: column;
+}
+
+.chatListLayout{
+display: flex;
+flex-direction: column;
+}
+
+.chatBox{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width:60vw;
+    margin: 3px 0px 17px 0px;
+}
+
+.chatBox div:nth-child(1){
+    color: #fff;
+    font-size:12px;
+    margin-top:8px;
+}
+
+.chatBox div:nth-child(2){
+    padding:70x 10px 7px 10px;
+    background-color: #fff;
+    margin-left: -4px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.aChatBox{
+    display: flex;
+    width:100%;
+    color:#969696;
+    font-size:22px;
+    border-bottom:1px solild #eee;
+    margin-bottom:25xp;
+}
+
+.aChatBox div:nth-child(1){
+    display: flex;
+    flex:1;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.aChatBox div:nth-child(2){
+    padding:10px;
+}
+
+.answerBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 10px;
+    height: 25px;
+    text-align: center;
+    box-shadow: 2px 2px 0px #ededed;
+    border: 1px solid #ededed;
+    margin: 0px 2p 15px 20px;
+}
+
+.resultLayout{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 390px;
+    height: 800px;
+}
+
+.resultTitle{
+    color: #000;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: "Kopub-light";
+    flex-direction: row;
+    margin: 10px;
+}
+
+.resultTitle div:nth-child(1){
+    display: flex;
+    flex:5;
+}
+.resultTitle div:nth-child(2){
+    display: flex;
+    flex:1;
+}
