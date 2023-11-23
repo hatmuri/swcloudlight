@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Mainpage.css';
 import main from './main.png';
 import brand from './brand.png';
+import {CSSTransition} from 'react-transition-group';
+
 
 const Mainpage = () => {
 
@@ -21,13 +23,9 @@ const Mainpage = () => {
     setIsMenuClicked(!isMenuClicked)
   }
 
-
-
   return (
     <div className='blind'>
       
-        {/* <p>색체, 빛을 일으키다.</p> */}
-        {/* <img src={menu} alt="menu" /> */}
         <div>
           <nav>
             <div className='brand'>
@@ -38,25 +36,33 @@ const Mainpage = () => {
               <div className={burger_class}></div>
               <div className={burger_class}></div>
             </div>
-            <div className={`menu ${menu_class}`}>
-              <ul className="nav-links">
-                <li className='info_exhibition'>
-                  <a href="#">전시 안내</a>
-                </li>
-                <li className='info_club'>
-                  <a href="#">동아리 안내</a>
-                </li>
-                <li className='goods'>
-                  <a href="#">굿즈 소개</a>
-                </li>
-                <li className='recommend'>
-                  <a href="#">작품 추천</a>
-                </li>
-                <li className='guest'>
-                  <a href="#">방명록</a>
-                </li>
-              </ul>
-            </div>
+              <CSSTransition
+                in={isMenuClicked}
+                timeout={300}
+                unmountOnExit
+                classNames="menu"
+              >
+                <div className={`menu ${menu_class}`}>
+                  <ul className="nav-links">
+                    <li className='info_exhibition'>
+                      <a href="#">전시 안내</a>
+                    </li>
+                    <li className='info_club'>
+                      <a href="#">동아리 안내</a>
+                    </li>
+                    <li className='goods'>
+                      <a href="#">굿즈 소개</a>
+                    </li>
+                    <li className='recommend'>
+                      <a href="#">작품 추천</a>
+                    </li>
+                    <li className='guest'>
+                      <a href="#">방명록</a>
+                    </li>
+                  </ul>
+                </div>
+              </CSSTransition>
+            
           </nav>
           
         </div>    
