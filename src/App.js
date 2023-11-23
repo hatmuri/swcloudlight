@@ -3,14 +3,9 @@ import './App.css';
 import { Route, Routes, Navigate, Router } from 'react-router-dom';
 import { BrowserView, MobileView } from 'react-device-detect'
 import ReactDOM from 'react-dom';
-import Info from './pages/Info';
-import Place from './pages/Place';
-import Crew from './pages/Crew';
-import GoodsPage from './Goodspage';
-import MainPage from './Mainpage';
-import Guestbook from './Guestbook';
 import Recommend from './recommend';
 import GuestbookRead from './GuestbookRead';
+import GuestbookWrite from './GuestbookWrite';
 import * as Components from './components';
 
 
@@ -52,6 +47,7 @@ const App = () => {
             <Components.GoodsPage />
           </>} />
           <Route path="/guestbook-read" element={<GuestbookRead />} />
+          <Route path="/guestbook-write" element={<GuestbookWrite />} />
         </Routes>
       </MobileView>
   </div>
