@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import { Route, Routes, Navigate, Router } from 'react-router-dom';
 import { BrowserView, MobileView } from 'react-device-detect'
 import ReactDOM from 'react-dom';
 import Info from './pages/Info';
@@ -9,6 +10,9 @@ import GoodsPage from './Goodspage';
 import MainPage from './Mainpage';
 import Guestbook from './Guestbook';
 import Recommend from './recommend';
+import GuestbookRead from './GuestbookRead';
+import * as Components from './components';
+
 
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,33 +40,22 @@ const App = () => {
   
 
   return (
-    <div className="App">
-      <MobileView>
-        <div className='Page'>
-          <MainPage/>
-        </div>
-        <div className='Page'>
-          <br/>
-          <Info/>
-        </div>
-        <div className='Page'>
-          <br/>
-          <Place/>
-        </div>
-        <div className='Page'>
-          <br/>
-          <Crew/>
-        </div>
-        <div className='Page'>
-          <br/>
-          <Guestbook/>
-        </div>
-        <div className='Page'>
-          <br/>
-          <GoodsPage/>
-        </div>
+  <div className="App">
+    <MobileView>
+        <Routes>
+          <Route path="/" element={<>
+            <Components.MainPage />
+            <Components.Info />
+            <Components.Place />
+            <Components.Crew />
+            <Components.Guestbook />
+            <Components.GoodsPage />
+          </>} />
+          <Route path="/guestbook-read" element={<GuestbookRead />} />
+        </Routes>
       </MobileView>
-    </div>
+  </div>
+    
   );
 }
 
