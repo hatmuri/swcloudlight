@@ -86,10 +86,10 @@ nav{
 }
 
 .menu{
-  width: 80%;
+  width: 100%;
   height:88vh;
   /*background-color: rgb(243, 246, 162); */
-  background: rgba(0, 0, 0, 0.45);
+  background: white;
   backdrop-filter: blur(20px);
   z-index: 2; /* blind2 위에 나타나도록 z-index 설정 */
   position: absolute;
@@ -107,7 +107,7 @@ nav{
 }
 
 a{
-  color: #fff;
+  color: black;
   font-size: 1.4rem;
   font-weight: 900;
   letter-spacing: 3px;
