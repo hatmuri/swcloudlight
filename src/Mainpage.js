@@ -3,8 +3,17 @@ import React from 'react';
 import './Mainpage.css';
 import menu from './menu.png';
 import main from './main.png';
+import { useNavigate, Routes, Route, Link } from 'react-router-dom';
+import Guestbook from './Guestbook';
+import GuestbookRead from './GuestbookRead';
 
 const Mainpage = () => {
+  const navigate = useNavigate();
+
+  const handleguestClick = () => {
+    navigate('/guestbook-read');
+  };
+
   return (
     <div className='blind'>
       <div className='menu'>
@@ -20,8 +29,11 @@ const Mainpage = () => {
           <img src={main} alt="main" />
         </div>
       </div>
-      
-      
+      <div className='button'>
+          <button className='guest' onClick={handleguestClick}>
+            방명록
+          </button>
+        </div>
     </div>
 
   );

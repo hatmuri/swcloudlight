@@ -43,3 +43,7 @@
   font-size: 10px;
 }
 
+.button .guest{
+  float: right;
+  font-family: KoPubWorldBatang_Pro;
+}
