@@ -7,7 +7,7 @@
 
 
 .Page{
-  height: 100vh; /* 각 페이지의 높이를 화면 크기만큼 설정 */
+  height: 120vh; /* 각 페이지의 높이를 화면 크기만큼 설정 */
   scroll-snap-align: start; /* 페이지 정렬 위치 설정 */
 }
 

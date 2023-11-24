@@ -4,8 +4,6 @@ import './Mainpage.css';
 import menu from './menu.png';
 import main from './main.png';
 import { useNavigate, Routes, Route, Link } from 'react-router-dom';
-import Guestbook from './Guestbook';
-import GuestbookRead from './GuestbookRead';
 
 const Mainpage = () => {
   const navigate = useNavigate();
