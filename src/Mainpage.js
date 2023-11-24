@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Mainpage.css';
 import main from './main.png';
 import brand from './brand.png';
 import {CSSTransition} from 'react-transition-group';
+import './ani.scss'
 
 
 const Mainpage = () => {
@@ -22,6 +23,7 @@ const Mainpage = () => {
     }
     setIsMenuClicked(!isMenuClicked)
   }
+  
 
   return (
     <div className='blind'>
@@ -69,13 +71,14 @@ const Mainpage = () => {
       
       <div className='blind2'>
         <p>제 2회 운빛 전시</p>
-        <h1>색체,</h1> 
+        <h1>색채,</h1> 
         <h1>빛을</h1>
-        <h1>일으키다.</h1> 
+        <h1>일으키다.</h1>
         <div className='main'>
-          <img src={main} alt="main" />
+          <div className="one"></div>
+        </div> 
 
-        </div>
+        
       </div>
       
       
