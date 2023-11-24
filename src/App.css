@@ -19,6 +19,19 @@
   scroll-snap-align: start; /* 페이지 정렬 위치 설정 */
 }
 
+.PagePlace{
+  scroll-snap-align: start;
+}
+
+.PageLastExhi{
+  scroll-snap-align: start;
+}
+
+.PageFooter{
+  scroll-snap-align: start;
+  margin-top: 5%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

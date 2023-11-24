@@ -9,6 +9,8 @@ import GoodsPage from './Goodspage';
 import MainPage from './Mainpage';
 import Guestbook from './Guestbook';
 import Recommend from './recommend';
+import LastExhi from './pages/LastExhi';
+import Footer from './Footer';
 
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,7 +47,7 @@ const App = () => {
           <br/>
           <Info/>
         </div>
-        <div className='Page'>
+        <div className='PagePlace'>
           <br/>
           <Place/>
         </div>
@@ -60,6 +62,13 @@ const App = () => {
         <div className='Page'>
           <br/>
           <GoodsPage/>
+        </div>
+        <div className='PageLastExhi'>
+          <br/>
+          <LastExhi/>
+        </div>
+        <div className='PageFooter'>
+          <Footer/>
         </div>
       </MobileView>
     </div>

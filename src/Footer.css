@@ -1,0 +1,35 @@
+.Footer {
+    background-color: rgba(254, 175, 168, 1); /* Set the background color */
+    color: #fff; /* Set the text color */
+    text-align: left;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 12px;
+
+    @media (max-width: 768px) {
+        position: relative;
+        padding: 10px;
+    }
+}
+
+.instaLogo{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.Insta1{
+    display: flex;
+}
+.Insta2{
+    display: flex;
+    margin-left: 20px;
+}
+
+.insta{
+    margin-bottom: 5px;
+}
