@@ -1,6 +1,6 @@
+import React, { useEffect, useState } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import { MobileView } from 'react-device-detect';
-import { useState } from 'react';
 import './recommend.css';
 
 const questionList = [
@@ -143,7 +143,6 @@ export default function Recommend() {
         {result:'C1C2C3C4', contents:['시 제목27', '시 저자11', '시 내용']},
       ]
 
-
       
       //if 절로 변경? 부등호로 연결하면 안되는데
       let AorB1 =
@@ -176,7 +175,8 @@ export default function Recommend() {
       console.log(foundResult); // Log foundResult for debugging
       setResultContents(foundResult || {result: result, contents: []})
     }
-  }
+}
+
       return (
       <div className='recommendLayout'>
         {page===0?

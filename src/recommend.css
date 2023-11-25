@@ -16,6 +16,9 @@
     src: url("C:\2023_swengineering\swcloudlight\public\assets\KoPubWorld Batang Light.ttf")
 }
 
+body {
+    overflow: hidden !important;}
+
 .recommendLayout{
     width: 390px;
     height: 800px;
