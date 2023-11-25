@@ -51,7 +51,7 @@ const App = () => {
           <br/>
           <Place/>
         </div>
-        <div className='Page'>
+        <div className='PagePlace'>
           <br/>
           <Crew/>
         </div>

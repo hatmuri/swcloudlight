@@ -22,13 +22,14 @@
     margin-left: 10px;
 }
 
-.Insta1{
+.Insta{
     display: flex;
 }
-.Insta2{
-    display: flex;
+
+.hanbit{
     margin-left: 20px;
 }
+
 
 .insta{
     margin-bottom: 5px;
