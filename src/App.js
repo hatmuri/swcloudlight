@@ -40,12 +40,6 @@ const App = () => {
     <div className="App">
       <MobileView>
         <div className='Page'>
-        <div>
-          <Link to="recommend">Recommend</Link>
-          <Routes>
-          <Route path='recommend' element={<Recommend />} />
-          </Routes>
-        </div>
           <MainPage/>
         </div>
         <div className='Page'>
