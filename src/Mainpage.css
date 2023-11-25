@@ -42,3 +42,33 @@
   font-family: KoPubWorldBatang_Pro;
   font-size: 10px;
 }
+
+.main div:nth-child(2){
+  padding: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  width: 120px;
+  height: 20px;
+  flex-shrink: 0;
+  text-align: flex-end;
+  font-size: 15px;
+  font-family: "Kopub-light";
+  color:#fff;
+  background-color: #000000;
+}
+
+.main div:nth-child(3){
+  margin-right: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  width: 120px;
+  height: 20px;
+  flex-shrink: 0;
+  text-align: flex-end;
+  font-size: 15px;
+  font-family: "Kopub-light";
+  color:#fff;
+  background-color: #000000;
+}

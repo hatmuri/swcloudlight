@@ -144,41 +144,6 @@
     padding-bottom:10px;
     display:flex;
     flex-direction: column;
-}
-
-.chatListLayout{
-display: flex;
-flex-direction: column;
-}
-
-.chatBox{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    max-width:60vw;
-    margin: 3px 0px 17px 0px;
-}
-
-.chatBox div:nth-child(1){
-    color: #fff;
-    font-size:12px;
-    margin-top:8px;
-}
-
-.chatBox div:nth-child(2){
-    padding:70x 10px 7px 10px;
-    background-color: #fff;
-    margin-left: -4px;
-    border-radius: 10px;
-    text-align: left;
-}
-
-.aChatBox{
-    display: flex;
-    width:100%;
-    color:#969696;
-    font-size:22px;
-    border-bottom:1px solild #eee;
     margin-bottom:25xp;
 }
 
