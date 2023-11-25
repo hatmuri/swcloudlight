@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserView, MobileView } from 'react-device-detect'
-import { Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import Info from './pages/Info';
 import Place from './pages/Place';
@@ -40,7 +40,13 @@ const App = () => {
     <div className="App">
       <MobileView>
         <div className='Page'>
+        <div>
+            <Routes>
+              <Route path='recommend' element={<Recommend />} />
+            </Routes>
+          </div>
           <MainPage/>
+
         </div>
         <div className='Page'>
           <br/>
