@@ -61,17 +61,6 @@
     margin-top: 100px;
 }
 
-.FinalPoster,
-.LastExhiPoster {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-/* Fade In 효과를 적용할 클래스에 fadeIn 스타일 추가 */
-.FadeIn {
-    opacity: 1 !important;
-}
-
 .LastExhiPosterDetail {
     font-size: 12px;
     font-family: KoPubWorldBatang_Pro;

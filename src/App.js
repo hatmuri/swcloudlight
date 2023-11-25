@@ -67,6 +67,7 @@ const App = () => {
           <br/>
           <LastExhi/>
         </div>
+        
         <div className='PageFooter'>
           <Footer/>
         </div>

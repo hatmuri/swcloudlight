@@ -3,35 +3,6 @@ import './LastExhi.css';
 
 const LastExhi =() => {
 
-    const [finalPosterVisible, setFinalPosterVisible] = useState(false);
-    const [lastExhiPosterVisible, setLastExhiPosterVisible] = useState(false);
-
-    const handleScroll = () => {
-        const finalPoster = document.querySelector('.FinalPoster');
-        const lastExhiPoster = document.querySelector('.LastExhiPoster');
-
-        const finalPosterTop = finalPoster.getBoundingClientRect().top;
-        const lastExhiPosterTop = lastExhiPoster.getBoundingClientRect().top;
-
-        const windowHeight = window.innerHeight;
-
-        if (finalPosterTop < windowHeight) {
-            setFinalPosterVisible(true);
-        }
-
-        if (lastExhiPosterTop < windowHeight) {
-            setLastExhiPosterVisible(true);
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-
-        // 컴포넌트가 언마운트되면 이벤트 리스너 제거
-        return () => {
-        window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     return (
         <div className='LastExhiBody'>
@@ -55,18 +26,12 @@ const LastExhi =() => {
                 <p>덕성여자대학교 정동아리 '운지문학회'와 '한빛'의 작가 총 40명이 모여 시와 사진으로 저마다의 '어둠이 걷힌' 후를 담았다.</p>
             </div>
             <div className='PosterContent'>
-                <div className={`FinalPoster ${finalPosterVisible ? 'fadeIn' : ''}`}>
-                    <img className='FinalPosterImg' src={process.env.PUBLIC_URL + '/assets/FinalPoster.png'}/>
-                </div>
-                <div className={`LastExhiPoster ${lastExhiPosterVisible ? 'fadeIn' : ''}`}>
-                    <img className='LastExhiPosterImg' src={process.env.PUBLIC_URL + '/assets/LastPoster.png'}/>
-                </div>
-                
-                
-                
+            
+                <img className="FinalPosterImg" src={process.env.PUBLIC_URL + '/assets/FinalPoster.png'}/>
 
-                
-                
+            </div>
+            <div className='LastExhiContent'>
+                <img className='LastExhiPosterImg' src={process.env.PUBLIC_URL + '/assets/LastPoster.png'}/>
             </div>
             <div className='LastExhiPosterDetail'>
                     <p>상세설명 상세설명 상세설명 상세설명 상세설명 상세설명</p>
