@@ -202,7 +202,7 @@ export default function Recommend() {
                   <div className='chatListLayout'>
                     {val.q.map((qval,qidx)=>
                       <div key={qidx} className='chatBox'>
-                        <div>←</div> <div>{qval}</div>
+                        <div> </div> <div>{qval}</div>
                       </div>
                     )}
                   </div>
