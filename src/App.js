@@ -37,38 +37,12 @@ const App = () => {
   
 
   return (
-    <div className="App">
-      <MobileView>
-        <div className='Page'>
-        <div>
-            <Routes>
-              <Route path='recommend' element={<Recommend />} />
-            </Routes>
-          </div>
-        <MainPage/>
-        </div>
-        <div className='Page'>
-          <br/>
-          <Info/>
-        </div>
-        <div className='Page'>
-          <br/>
-          <Place/>
-        </div>
-        <div className='Page'>
-          <br/>
-          <Crew/>
-        </div>
-        <div className='Page'>
-          <br/>
-          <Guestbook/>
-        </div>
-        <div className='Page'>
-          <br/>
-          <GoodsPage/>
-        </div>
-      </MobileView>
-    </div>
+    <div>
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path='recommend' element={<Recommend />} />
+    </Routes>
+  </div>
   );
 }
 

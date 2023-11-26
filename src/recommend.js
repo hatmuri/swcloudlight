@@ -175,7 +175,10 @@ export default function Recommend() {
       console.log(foundResult); // Log foundResult for debugging
       setResultContents(foundResult || {result: result, contents: []})
     }
+
 }
+
+
 
       return (
       <div className='recommendLayout'>
@@ -229,14 +232,6 @@ export default function Recommend() {
                   <div className='poetTitle'>{resultContents.contents[0]}</div>
                   <div className='poetAuthor'>{resultContents.contents[1]}</div>
                   <div className='poetContents'>{resultContents.contents[2]}</div>
-                </div>
-                <div className='resultItemLayout'>
-                  {resultContents.contents.map((val, idx)=> (
-                    <div className='chatBox' key={idx}>
-                      <div>{val}</div>  
-                    </div>
-                    )
-                  )}    
                 </div>
               </div>
             </div>
