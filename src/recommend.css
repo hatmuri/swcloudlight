@@ -18,17 +18,15 @@
     font-size: 14px;
     display: flex;
     justify-content: center;
-    background-color: #eee;
 }
 
 .startPageLayout{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: #FFFFFF;
     width: 100%;
     height:100%;
+    padding-top:200px;
 }
 
 .startLogo{
@@ -66,30 +64,35 @@
 }
 
 .startLogo div:nth-child(3){
+    display: flex;
     width: 100%;
     height: 36px;
     margin-top: 30px;
     flex-shrink: 0;
     font-family: "Kopub-mid";
+    justify-content: center;
 }
 
-.startButton{
-    padding: 10px;
+.startButton {
     display: flex;
+    padding: 10px;
     justify-content: center;
     width: 92px;
     height: 25px;
     flex-shrink: 0;
     text-align: center;
     font-size: 15px;
-    margin-top:40px;
+    margin-top: 40px;
     font-family: "Kopub-light";
-    color:#fff;
+    color: #fff;
     background-color: #000000;
+    align-items: center;
+    margin: 0 auto; /* 가로 중앙 정렬을 위해 추가된 부분 */
 }
 
 .questionLayout{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background-color: #FFF;
     width: 100%;
@@ -170,6 +173,7 @@
     box-shadow: 2px 2px 0px #ededed;
     border: 1px solid #ededed;
     margin: 0px 2p 15px 20px;
+    font-family: "Kopub-light"; /*bold가 낫나 light가 낫나*/
 }
 
 .resultLayout{
