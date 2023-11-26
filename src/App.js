@@ -10,6 +10,7 @@ import GoodsPage from './Goodspage';
 import MainPage from './Mainpage';
 import Guestbook from './Guestbook';
 import Recommend from './recommend';
+import brand from './brand.png';
 
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,6 +23,22 @@ const App = () => {
     const index = Math.floor(scrollPosition / itemWidth);
     setCurrentIndex(index);
   };
+
+  const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
+  const [menu_class, setMenuClass] = useState("menu hidden")
+  const [isMenuClicked, setIsMenuClicked] = useState(false)
+
+  const updateMenu=()=>{
+    if(!isMenuClicked){
+      setBurgerClass("burger-bar clicked")
+      setMenuClass("menu visible")
+    }
+    else{
+      setBurgerClass("burger-bar unclicked")
+      setMenuClass("menu hidden")
+    }
+    setIsMenuClicked(!isMenuClicked)
+  }
   
 
   useEffect(() => {
@@ -37,6 +54,7 @@ const App = () => {
   
 
   return (
+    
     <div>
       <Router>
         <Routes>
