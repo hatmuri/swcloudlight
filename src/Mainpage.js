@@ -21,10 +21,6 @@ const Mainpage = () => {
         <div className='Mainpage'>
           <div className='Page'>
           <div className='blind'>
-      <div className='menu'>
-        <p>색채, 빛을 일으키다.</p>
-        <img src={menu} alt="menu" />
-      </div>
       <div className='blind2'>
         <p>제 2회 운빛 전시</p>
         <h1>색채,</h1> 

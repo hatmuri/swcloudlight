@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserView, MobileView } from 'react-device-detect'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ReactDOM from 'react-dom';
+import Header from './pages/Header';
 import Info from './pages/Info';
 import Place from './pages/Place';
 import Crew from './pages/Crew';
@@ -38,6 +39,9 @@ const App = () => {
 
   return (
     <div>
+      <div>
+        <Header />
+      </div>
       <Router>
         <Routes>
           <Route path="/" element={<MainPage />} />
