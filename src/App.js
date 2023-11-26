@@ -42,12 +42,10 @@ const App = () => {
       <div>
         <Header />
       </div>
-      <Router>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path='recommend' element={<Recommend />} />
         </Routes>
-      </Router>
 
     </div>
   );
