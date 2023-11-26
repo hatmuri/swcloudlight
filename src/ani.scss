@@ -87,8 +87,8 @@ $end-shadow: ();
 .one {
   // Div styling
   background: transparent;
-  width: s(size);
-  height: s(size);
+  width: 6px; /*s(size)*/
+  height: 6px; /*s(size)*/
   border-radius: 50%;
   
   // Center div
