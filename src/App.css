@@ -1,5 +1,18 @@
 @font-face{
   font-family: "Kopub-bold";
+  src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Bold.ttf")
+}
+@font-face{
+  font-family: "Kopub-mid";
+  src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Medium.ttf")
+}
+@font-face{
+  font-family: "Kopub-light";
+  src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Light.ttf")
+}
+
+@font-face{
+  font-family: "Kopub-bold";
   src: url("C:\2023_swengineering\swcloudlight\public\assets\KoPubWorld Batang Bold.ttf")
 }
 @font-face{
