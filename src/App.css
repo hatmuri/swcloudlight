@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'KoPubWorld Batang_Pro Medium';
-  src: local('KoPubWorld Batang_Pro Medium'), url('../public/fonts/KoPubWorld\ Batang_Pro\ Medium.otf') format('truetype');
-  /* font-weight: 300; 원하는 폰트의 두께 설정 */
-  /*font-style: normal;  원하는 폰트의 스타일 설정 */
-}
+
 
 
 .App {
@@ -11,45 +6,12 @@
   overflow-y: scroll; 
   height: 100vh; 
   scroll-snap-type: y mandatory;
+  font-family: 'Kopub-mid';
 }
 
 
 .Page{
-  height: 100vh; /* 각 페이지의 높이를 화면 크기만큼 설정 */
+  padding-top: 2em;
+  height: 90vh; /* 각 페이지의 높이를 화면 크기만큼 설정 */
   scroll-snap-align: start; /* 페이지 정렬 위치 설정 */
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

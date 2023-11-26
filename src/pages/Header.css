@@ -1,0 +1,44 @@
+@font-face{
+    font-family: "Kopub-bold";
+    src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Bold.ttf")
+  }
+  @font-face{
+    font-family: "Kopub-mid";
+    src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Medium.ttf")
+  }
+  @font-face{
+    font-family: "Kopub-light";
+    src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Light.ttf")
+  }
+
+.blind{
+    font-family: "Kopub-bold";
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0em;
+  }
+  
+  
+  .menu {
+    margin:20px;
+    display: flex;
+    align-items: center;
+    margin-left: 135px;
+    justify-content: space-between;
+    font-family: "Kopub-bold"
+  }
+  
+  .menu p{
+    text-align: center;
+    font-family: "Kopub-bold";
+    font-size: 14px;
+    margin: 0px;
+  }
+  
+  .menu img {
+    width: 30px; /* 너비 조절 */
+  }
+  
+  .main img{
+    width:350px;
+  }

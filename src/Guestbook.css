@@ -1,40 +1,39 @@
 .Guestbook {
-    text-align: center;
-    overflow-y: scroll; 
-    height: 100vh; 
-    scroll-snap-type: y mandatory;
-  }
+  text-align: center;
+  overflow-y: scroll; 
+  height: 100vh; 
+  scroll-snap-type: y mandatory;
+}
+
+
+.header{
+  align-items: center;
+  width: 100%;
+  padding: 10px; 
+  z-index: 1; 
+}
+
+.header .text1{
+  font-family: KoPubWorldBatang_Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.header .text2{
+  color: #808080;
+  font-family: KoPubWorldBatang_Pro;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
   
-  
-  .header{
-    align-items: center;
-    width: 100%;
-    padding: 10px; 
-    z-index: 1; 
-  }
-  
-  .header .text1{
-    font-family: KoPubWorldBatang_Pro;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 25px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-  
-  .header .text2{
-    color: #808080;
-    font-family: KoPubWorldBatang_Pro;
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 15px;
-    letter-spacing: 0em;
-    text-align: center;
-    
-  
-  }
-  
-  .guestbook-entries{
-    margin-top: 30px;
-  }
-  
+
+}
+
+.guestbook-entries{
+  margin-top: 30px;
+}
