@@ -1,19 +1,15 @@
-.recommendLayout{
-    width: 100vw;
-    font-size: 14px;
-    display: flex;
-}
+
 @font-face{
     font-family: "Kopub-bold";
-    src: url("C:\2023_swengineering\swcloudlight\public\assets\KoPubWorld Batang Bold.ttf")
+    src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Bold.ttf")
 }
 @font-face{
     font-family: "Kopub-mid";
-    src: url("C:\2023_swengineering\swcloudlight\public\assets\KoPubWorld Batang Medium.ttf")
+    src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Medium.ttf")
 }
 @font-face{
     font-family: "Kopub-light";
-    src: url("C:\2023_swengineering\swcloudlight\public\assets\KoPubWorld Batang Light.ttf")
+    src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Light.ttf")
 }
 
 .recommendLayout{
@@ -21,7 +17,6 @@
     height: 800px;
     font-size: 14px;
     display: flex;
-    align-items: center;
     justify-content: center;
     background-color: #eee;
 }
