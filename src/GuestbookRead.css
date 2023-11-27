@@ -1,0 +1,73 @@
+.GuestbookRead {
+    font-family: KoPubWorldBatang_Pro;
+    text-align: center;
+    overflow-y: scroll; 
+    height: 100vh; 
+    scroll-snap-type: y mandatory;
+    height: 100vh; /* 각 페이지의 높이를 화면 크기만큼 설정 */
+    scroll-snap-align: start; /* 페이지 정렬 위치 설정 */
+  }
+
+  .header-text {
+    font-family: KoPubWorldBatang_Pro;
+    font-size: 16px;
+    writing-mode: vertical-lr;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap
+  }
+
+  .title-text {
+    font-family: KoPubWorldBatang_Regular;
+    font-size: 18px;
+  }
+
+  .question {
+    font-family: KoPubWorldBatang_Regular;
+    font-size: 40px;
+    color: #B6E8D7;
+  }
+
+  .event {
+    background-image: url(event.png);
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    font-weight: 600; /* weight 변경 */
+    height: 26px; /* height 변경 */
+  }
+
+  .event-text {
+    position: absolute;
+    font-family: 'KoPubWorldBatang_Regular'; /* 글씨체 변경 */
+    font-size: 12px; /* 글씨 크기 변경 */
+    font-weight: normal;
+  }
+
+  .text1 {
+    display: inline-block;
+    margin-left: 8px; 
+    font-family: 'KoPubWorldBatang_Regular'; /* 글씨체 변경 */
+    font-size: 12px; /* 글씨 크기 변경 */
+    color: #606060;
+  }
+
+  .text1 {
+    font-family: 'KoPubWorldBatang_Regular'; /* 글씨체 변경 */
+    font-size: 12px; /* 글씨 크기 변경 */
+  }
+
+  .shape-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px; /* 각 정사각형 사이의 간격을 조절 */
+  }
+  
+  .shape {
+    width: 100px; /* 정사각형의 너비 */
+    height: 100px; /* 정사각형의 높이 */
+    background-color: #ccc; /* 배경 색상 설정 */
+  }

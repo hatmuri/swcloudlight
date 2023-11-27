@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
   overflow-y: scroll; 
@@ -16,3 +17,15 @@
   z-index: 2;
 }
 
+.PagePlace{
+  scroll-snap-align: start;
+}
+
+.PageLastExhi{
+  scroll-snap-align: start;
+}
+
+.PageFooter{
+  scroll-snap-align: start;
+  margin-top: 5%;
+}
