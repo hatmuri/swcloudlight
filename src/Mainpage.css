@@ -92,6 +92,40 @@ canvas {
 }
 
 .button {
+  flex-direction: column;
   margin-top: 300px;
   margin-left: 140px;
+}
+
+.button div:nth-child(1){
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 20px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 15px;
+  color:#fff;
+  background-color: #000000;
+  margin-left: auto;
+  margin-top: 70%;
+}
+
+.button div:nth-child(2){
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 20px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 15px;
+  color:#fff;
+  background-color: #000000;
+  margin-left: auto;
+  margin-top: 10px;
+
 }

@@ -4,7 +4,7 @@
   overflow-y: scroll; 
   height: 100vh; 
   scroll-snap-type: y mandatory;
-  font-family: 'Kopub-mid';
+  font-family: KoPubWorldBatang_Pro;
 }
 
 .Page{

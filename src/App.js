@@ -13,6 +13,7 @@ import Recommend from './recommend';
 import GuestbookRead from './GuestbookRead';
 import GuestbookWrite from './GuestbookWrite';
 
+import recommend from './recommend';
 
 import Header from './pages/Header';
 import LastExhi from './pages/LastExhi';
@@ -66,10 +67,17 @@ const App = () => {
       <div>
         <Header/>
       </div>
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path='recommend' element={<Recommend />} />
+      <div className='route'>
+        <Routes >
+          <Route path="/" element={<MainPage />} />W
+          <Route path='/Info' element={<Info />} />
+          <Route path='/GoodsPage' element={<GoodsPage />} />
+          <Route path='/Crew' element={<Crew />} />
+          <Route path='/recommend' element={<recommend />} />
+          <Route path='/Guestbook' element={<Guestbook />}/>
         </Routes>
+      </div>
+        
       
 
     </div>
