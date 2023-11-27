@@ -10,6 +10,8 @@ import GoodsPage from './Goodspage';
 import MainPage from './Mainpage';
 import Guestbook from './Guestbook';
 import Recommend from './recommend';
+import LastExhi from './pages/LastExhi';
+import Footer from './Footer';
 import brand from './brand.png';
 
 const App = () => {

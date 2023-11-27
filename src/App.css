@@ -1,6 +1,4 @@
 
-
-
 .App {
   text-align: center;
   overflow-y: scroll; 
@@ -14,4 +12,17 @@
   padding-top: 2em;
   height: 90vh; /* 각 페이지의 높이를 화면 크기만큼 설정 */
   scroll-snap-align: start; /* 페이지 정렬 위치 설정 */
+}
+
+.PagePlace{
+  scroll-snap-align: start;
+}
+
+.PageLastExhi{
+  scroll-snap-align: start;
+}
+
+.PageFooter{
+  scroll-snap-align: start;
+  margin-top: 5%;
 }
