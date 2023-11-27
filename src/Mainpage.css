@@ -7,6 +7,14 @@
   z-index: 1;
 }
 
+.Page blind2{
+  display: flex;
+}
+
+.blind2-content{
+  margin-left: 10;
+}
+
 
 /* .main img{
   width:350px;

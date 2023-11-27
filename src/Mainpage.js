@@ -64,8 +64,17 @@ const Mainpage = () => {
         <br/>
         <GoodsPage/>
       </div>
+      <div className='PageLastExhi'>
+        <br/>
+        <LastExhi/>
+      </div>
+      <div className='PageFooter'>
+        <br/>
+        <Footer/>
+      </div>
     </div>
   );
 }
 
 export default Mainpage;
+
