@@ -11,6 +11,7 @@ import Crew from './Crew';
 import recommend from '../recommend'
 import GoodsPage from '../Goodspage';
 import Guestbook from '../Guestbook';
+import Mainpage from '../Mainpage';
 
 
 const Header= () => {
@@ -36,7 +37,7 @@ const Header= () => {
     <div className='blind'>
         <nav>
             <div className='brand'>
-                <img src={brand} alt="brand" />
+                <img src={brand} alt="brand" onClick={() => { navigate("/Mainpage");}}/>
             </div>
             <div className='burger-menu' onClick={updateMenu}>
                 <div className={burger_class}></div>
