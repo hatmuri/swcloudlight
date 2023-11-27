@@ -11,6 +11,7 @@ import Crew from './Crew';
 import recommend from '../recommend'
 import GoodsPage from '../Goodspage';
 import Guestbook from '../Guestbook';
+import Mainpage from '../Mainpage';
 
 
 const Header= () => {
@@ -36,7 +37,7 @@ const Header= () => {
     <div className='blind'>
         <nav>
             <div className='brand'>
-                <img src={brand} alt="brand" />
+                <img src={brand} alt="brand" onClick={() => { navigate("/Mainpage");}}/>
             </div>
             <div className='burger-menu' onClick={updateMenu}>
                 <div className={burger_class}></div>
@@ -63,7 +64,7 @@ const Header= () => {
                     <li className='recommend'>
                         <a onClick={() => { navigate("/recommend"); updateMenu(); }}>시 추천</a>
                     </li>
-                    <li className='Guestbook'>
+                    <li className='guestbook'>
                         <a onClick={() => { navigate("/Guestbook"); updateMenu(); }}>방명록</a>
                     </li>
                     </ul>
