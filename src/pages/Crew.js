@@ -9,7 +9,8 @@ const Crew =() => {
     };
 
     return (
-        <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
+        <div className='first'>
+            <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
         <div className="flip-card-inner">
         <div className="flip-card-front">
             <img src={process.env.PUBLIC_URL + '/assets/CrewInfo2.png'} alt="Front" />
@@ -19,6 +20,8 @@ const Crew =() => {
         </div>
         </div>
     </div>
+        </div>
+        
         );
 
 };
