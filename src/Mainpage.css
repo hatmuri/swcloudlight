@@ -7,6 +7,14 @@
   z-index: 1;
 }
 
+.Page blind2{
+  display: flex;
+}
+
+.blind2-content{
+  margin-left: 10;
+}
+
 
 /* .main img{
   width:350px;
@@ -14,8 +22,31 @@
 
 .blind2 h1{
   line-height: 50px;
+}
+
+.blind h1{
+  line-height: 20px;
   margin-left: 20px;
   text-align: left;
+}
+
+.H1{
+  display: flex;
+  height: 55px;
+}
+
+.h1comma{
+  width: 6px;
+  height: 11px;
+  margin-top: 50px;
+  margin-left: 5px;
+}
+
+.h1circle{
+  width: 5px;
+  height: 5px;
+  margin-top: 47px;
+  margin-left: 5px;
 }
 
 .blind2 p{
@@ -59,8 +90,11 @@ canvas {
     top: 0;
     left: 0;
 }
-.button{
+
+.button {
   flex-direction: column;
+  margin-top: 300px;
+  margin-left: 140px;
 }
 
 .button div:nth-child(1){
