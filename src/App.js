@@ -10,7 +10,8 @@ import GoodsPage from './Goodspage';
 import MainPage from './Mainpage';
 import Guestbook from './Guestbook';
 import Recommend from './recommend';
-import brand from './brand.png';
+
+import Header from './pages/Header';
 
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,7 +57,9 @@ const App = () => {
   return (
     
     <div>
-      
+      <div>
+        <Header/>
+      </div>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path='recommend' element={<Recommend />} />

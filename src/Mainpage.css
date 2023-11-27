@@ -1,5 +1,5 @@
 
-.blind{
+.blind2{
   font-family: KoPubWorldBatang_Pro;
   font-size: 20px;
   font-weight: 500;
@@ -7,19 +7,12 @@
   z-index: 1;
 }
 
-.menu p{
-  text-align: center;
-  font-family: KoPubWorldBatang_Pro;
-  font-size: 14px;
-  margin: 0px;
-}
-
 
 /* .main img{
   width:350px;
 } */
 
-.blind h1{
+.blind2 h1{
   line-height: 50px;
   margin-left: 20px;
   text-align: left;
@@ -31,140 +24,6 @@
   font-family: KoPubWorldBatang_Pro;
   font-size: 10px;
 }
-
-.nav-links {
-  margin-top: 120px;
-  --link-height: 60px;
-  position: relative;
-  width: 100%;
-}
-
-li {
-  position: relative;
-  width: 100%;
-  height: var(--link-height);
-  list-style: none;
-  transform: translateX(-6%);
-  cursor: pointer;
-  z-index: 2;
-  color: rgba(255, 255, 255, 0.85);
-  margin-top: 10px;
-}
-
-
-nav{
-  position: fixed;
-  top: 0;
-  width:100%;
-  height:2em;
-  background-color: white;
-  display:flex;
-  justify-content: space-between;
-  align-items: center; /* 세로 중앙 정렬을 위해 추가 */
-}
-
-.brand{
-  margin-left:187px;
-}
-
-.burger-menu{
-  height:80%;
-  width:2em;
-  display:flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  cursor: pointer;
-  margin-right:10px;
-}
-
-.burger-bar{
-  margin-top: 4px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  width:1.3em;
-  height: 0.3em;
-  background-color: black; 
-  border-radius: 0.5em;
-}
-
-.menu{
-  width: 100%;
-  height:90vh;
-  background: rgb(255, 255, 255);
-  backdrop-filter: blur(20px);
-  z-index: 2; /* blind2 위에 나타나도록 z-index 설정 */
-  position: absolute;
-  top:37px;
-  right: 0;
-  /* opacity: 0;
-  transform: translateX(100%); */
-  /*transition: transform 0.5s ease-out, opacity 0.5s ease-out, visibility 0.5s ease-out;  transform와 opacity에 대한 트랜지션 추가 */
-}
-
-
-.menu-enter {
-  opacity: 0;
-  transform: translateY(-10px);
-}
-.menu-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s, transform 0.5s;
-}
-
-.menu-exit {
-  opacity: 1;
-  transform: translateY(0);
-}
-.menu-exit-active {
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.5s, transform 0.5s;
-}
-
-a{
-  color: black;
-  font-size: 1.4rem;
-  font-weight: 900;
-  letter-spacing: 3px;
-    text-decoration: none;
-    user-select: none;
-}
-
-
-/*------siding menu------*/
-.hidden{
-  display: none;
-}
-
-.visible{
-  display: inherit;
-}
-
-/*------animation------*/
-/*clicked*/
-.burger-bar.clicked:nth-child(1){
-  transform: rotate(45deg) translate(0.5em, 0.5em);
-  transition: ease-out 0.5s;
-}
-
-.burger-bar.clicked:nth-child(2){
-  transform: scale(0.1);
-  transition: ease-out 0.5s;
-}
-
-.burger-bar.clicked:nth-child(3){
-  transform: rotate(-45deg) translate(0.3em, -0.3em);
-  transition: ease-out 0.5s;
-}
-
-/*unclicked*/
-.burger-bar.unclicked{
-  transform: rotate(0) translate(0);
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
-}
-
 
 
 /*animation*/
