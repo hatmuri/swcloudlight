@@ -8,6 +8,7 @@ import {CSSTransition} from 'react-transition-group';
 import Info from './Info';
 import Place from './Place';
 import Crew from './Crew';
+import recommend from '../recommend'
 import GoodsPage from '../Goodspage';
 import Guestbook from '../Guestbook';
 
@@ -51,19 +52,19 @@ const Header= () => {
                 <div className={`menu ${menu_class}`}>
                     <ul className="nav-links">
                     <li className='info_exhibition'>
-                        <a href="#">전시 안내</a>
+                        <a onClick={() => { navigate("/Info"); updateMenu(); }}>전시 안내</a>
                     </li>
-                    <li className='info_club'>
-                        <a href="#">동아리 안내</a>
+                    <li className='info_crew'>
+                        <a onClick={() => { navigate("/Crew"); updateMenu(); }}>동아리 소개</a>
                     </li>
                     <li className='goods'>
-                        <a href="#">굿즈 소개</a>
+                        <a onClick={() => { navigate("/GoodsPage"); updateMenu(); }}>굿즈 소개</a>
                     </li>
                     <li className='recommend'>
-                        <a href="#">작품 추천</a>
+                        <a onClick={() => { navigate("/recommend"); updateMenu(); }}>시 추천</a>
                     </li>
-                    <li className='guest'>
-                        <a href="#">방명록</a>
+                    <li className='Guestbook'>
+                        <a onClick={() => { navigate("/Guestbook"); updateMenu(); }}>방명록</a>
                     </li>
                     </ul>
                 </div>
