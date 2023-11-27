@@ -10,7 +10,7 @@ const GuestbookRead = () => {
   const navigate = useNavigate();
 
   const handleWriteClick = () => {
-    navigate('/guestbook-write');
+    navigate('/Guestbook-write');
   };
 
   const [viewContent, setViewContent] = useState([]);

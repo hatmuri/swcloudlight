@@ -24,7 +24,7 @@ const Mainpage = () => {
           <h1>일으키다.</h1>
           <div className='buttonContainer'>
             <div className='button'>
-              <div onClick={()=>{navigate("/guest-read")}}>방명록</div>
+              <div onClick={()=>{navigate("/Guestbook-read")}}>방명록</div>
               <div onClick={()=>{navigate("/recommend")}}>작품추천 테스트</div>
             </div>
           </div>

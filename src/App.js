@@ -5,13 +5,12 @@ import Info from './pages/Info';
 import Place from './pages/Place';
 import Crew from './pages/Crew';
 import GoodsPage from './Goodspage';
-import MainPage from './Mainpage';
+import Mainpage from './Mainpage';
 import Guestbook from './Guestbook';
+import GuestbookRead from './GuestbookRead';
+import GuestbookWrite from './GuestbookWrite';
 import Recommend from './recommend';
 import Header from './pages/Header';
-import LastExhi from './pages/LastExhi';
-import Footer from './Footer';
-import brand from './brand.png';
 
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -62,13 +61,15 @@ const App = () => {
       </div>
       <div className='route'>
         <Routes >
-          <Route path="/" element={<MainPage />} />
+          <Route path="/" element={<Mainpage />} />W
           <Route path='/Info' element={<Info />} />
           <Route path='/GoodsPage' element={<GoodsPage />} />
           <Route path='/Crew' element={<Crew />} />
           <Route path='/recommend' element={<Recommend />} />
           <Route path='/Guestbook' element={<Guestbook />}/>
-          <Route path='/MainPage' element={<MainPage />}/>
+          <Route path='/Guestbook-read' element={<GuestbookRead />}/>
+          <Route path='/Guestbook-write' element={<GuestbookWrite />}/>
+          <Route path='/Mainpage' element={<Mainpage />}/>
         </Routes>
       </div>
         
