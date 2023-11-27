@@ -2,7 +2,14 @@
   text-align: center;
   overflow-y: scroll; 
   height: 100vh; 
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: x mandatory; 
+}
+
+.all{
+  margin-top: 25%;
+  text-align: center;
+  font-family: KoPubWorldBatang_Pro;
+
 }
 
 .header{
@@ -67,6 +74,7 @@
 
 .App .inner {
   margin-top: 20px;
+
   scroll-snap-align:initial; 
 }
 

@@ -1,3 +1,8 @@
+.first{
+    margin-top: 25%;
+    text-align: center;
+    font-family: KoPubWorldBatang_Pro;
+}
 .flip-card {
     perspective: 1000px;
     width: 200px;

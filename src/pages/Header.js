@@ -63,7 +63,7 @@ const Header= () => {
                     <li className='recommend'>
                         <a onClick={() => { navigate("/recommend"); updateMenu(); }}>시 추천</a>
                     </li>
-                    <li className='Guestbook'>
+                    <li className='guestbook'>
                         <a onClick={() => { navigate("/Guestbook"); updateMenu(); }}>방명록</a>
                     </li>
                     </ul>
