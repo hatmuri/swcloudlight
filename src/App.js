@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserView, MobileView } from 'react-device-detect'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import Header from './pages/Header';
 import Info from './pages/Info';
 import Place from './pages/Place';
 import Crew from './pages/Crew';
@@ -11,6 +10,8 @@ import GoodsPage from './Goodspage';
 import MainPage from './Mainpage';
 import Guestbook from './Guestbook';
 import Recommend from './recommend';
+
+import Header from './pages/Header';
 
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,6 +24,22 @@ const App = () => {
     const index = Math.floor(scrollPosition / itemWidth);
     setCurrentIndex(index);
   };
+
+  const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
+  const [menu_class, setMenuClass] = useState("menu hidden")
+  const [isMenuClicked, setIsMenuClicked] = useState(false)
+
+  const updateMenu=()=>{
+    if(!isMenuClicked){
+      setBurgerClass("burger-bar clicked")
+      setMenuClass("menu visible")
+    }
+    else{
+      setBurgerClass("burger-bar unclicked")
+      setMenuClass("menu hidden")
+    }
+    setIsMenuClicked(!isMenuClicked)
+  }
   
 
   useEffect(() => {
@@ -38,14 +55,16 @@ const App = () => {
   
 
   return (
+    
     <div>
       <div>
-        <Header />
+        <Header/>
       </div>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path='recommend' element={<Recommend />} />
         </Routes>
+      
 
     </div>
   );

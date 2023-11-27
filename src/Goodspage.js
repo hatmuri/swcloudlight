@@ -40,7 +40,7 @@ const GoodsPage = ({ currentIndex }) => {
       </div>   
       <div className='form'>
         <b>구매를 원하시면 form을 작성해주세요</b> <br/>
-        <a href='https://www.duksung.ac.kr/main.do?isMaster=N&isLogined=N&viewPrefix=%2FWEB-INF%2Fjsp%2Fcms&urlRootPath=&siteResourcePath=%2Fsite%2Fduksung'>
+        <a href='https://docs.google.com/forms/d/e/1FAIpQLSdfW38kPfVLdZ18dPbK55ArIW1jTPbqzjqgqhQqXLS0CKbS8w/viewform?usp=send_form'>
           <button>구매하기</button>
         </a>
       </div>

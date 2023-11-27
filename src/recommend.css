@@ -1,18 +1,5 @@
-
-@font-face{
-    font-family: "Kopub-bold";
-    src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Bold.ttf")
-}
-@font-face{
-    font-family: "Kopub-mid";
-    src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Medium.ttf")
-}
-@font-face{
-    font-family: "Kopub-light";
-    src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Light.ttf")
-}
-
 .recommendLayout{
+    margin-top: 50px;
     width: 390px;
     height: 800px;
     font-size: 14px;
@@ -26,7 +13,7 @@
     background-color: #FFFFFF;
     width: 100%;
     height:100%;
-    padding-top:200px;
+    padding-top:100px;
 }
 
 .startLogo{
@@ -58,7 +45,7 @@
     height: 25px;
     flex-shrink: 0;
     font-weight: 700;
-    font-family: "Kopub-bold";
+    font-family: KoPubWorldBatang_Pro;
     font-size: 20px;
     justify-content: center;
 }
@@ -69,7 +56,7 @@
     height: 36px;
     margin-top: 30px;
     flex-shrink: 0;
-    font-family: "Kopub-mid";
+    font-family: "KoPubWorldDotum_Pro";
     justify-content: center;
 }
 
@@ -83,7 +70,7 @@
     text-align: center;
     font-size: 15px;
     margin-top: 40px;
-    font-family: "Kopub-light";
+    font-family: "KoPubWorldDotum_Pro";
     color: #fff;
     background-color: #000000;
     align-items: center;
@@ -108,8 +95,8 @@
     flex-direction: row;
     width: 100%;
     align-items: center;
-    font-family: "Kopub-light";
     padding:15px;
+    font-family: KoPubWorldDotum_Pro;
 }
 
 .questTitle div:nth-child(1){
@@ -122,7 +109,7 @@
 }
 
 .questionList{ 
-    font-family: "Kopub-bold";
+    font-family: KoPubWorldBatang_Pro;
     flex-direction: column;
     height:100%;
     overflow: scroll;
@@ -173,7 +160,7 @@
     box-shadow: 2px 2px 0px #ededed;
     border: 1px solid #ededed;
     margin: 0px 2p 15px 20px;
-    font-family: "Kopub-light"; /*bold가 낫나 light가 낫나*/
+    font-family: "KoPubWorldDotum_Pro"; /*bold가 낫나 light가 낫나*/
 }
 
 .resultLayout{
@@ -189,9 +176,10 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    font-family: "Kopub-light";
+    font-family: 'KoPubWorldDotum_Pro';
     flex-direction: row;
     margin: 10px;
+    margin-left:20px;
 }
 
 .resultTitle div:nth-child(1){
@@ -207,7 +195,7 @@
     flex-shrink: 0;
     text-align: center;
     font-size: 15px;
-    font-family: "Kopub-light";
+    font-family: "KoPubWorldBatang_Pro";
     color:#fff;
     background-color: #000000;
 }
@@ -220,19 +208,20 @@
 
 .poetTitle{
     display: flex;
-    font-family: 'Kopub-bold';
+    font-family: 'KoPubWorldBatang_Pro';
     font-size: 25px;
 }
 
 .poetAuthor{
     margin-top: 10px;
     font-size: 16px;
+    font-family: 'KoPubWorldBatang_Pro';
     display: flex; /* 추가: poetAuthor를 flex container로 만듦 */
 }
 
 .poetContents{
     margin-top: 20px;
     font-size: 13px;
-    font-family: 'Kopub-light';
+    font-family: KoPubWorldDotum_Pro;
     display: flex;
 }

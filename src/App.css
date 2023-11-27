@@ -1,40 +1,17 @@
-@font-face{
-  font-family: "Kopub-bold";
-  src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Bold.ttf")
-}
-@font-face{
-  font-family: "Kopub-mid";
-  src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Medium.ttf")
-}
-@font-face{
-  font-family: "Kopub-light";
-  src: url("C:\2023_swengineering\swcloudlight\public\assets\fonts\KoPubWorld Batang Light.ttf")
-}
-
-@font-face{
-  font-family: "Kopub-bold";
-  src: url("C:\2023_swengineering\swcloudlight\public\assets\KoPubWorld Batang Bold.ttf")
-}
-@font-face{
-  font-family: "Kopub-mid";
-  src: url("C:\2023_swengineering\swcloudlight\public\assets\KoPubWorld Batang Medium.ttf")
-}
-@font-face{
-  font-family: "Kopub-light";
-  src: url("C:\2023_swengineering\swcloudlight\public\assets\KoPubWorld Batang Light.ttf")
-}
-
 .App {
   text-align: center;
   overflow-y: scroll; 
   height: 100vh; 
   scroll-snap-type: y mandatory;
   font-family: 'Kopub-mid';
-  font-family: 'Kopub-mid';
 }
 
-
 .Page{
-  height: 100vh; /* 각 페이지의 높이를 화면 크기만큼 설정 */
+  padding-top: 2em;
+  height: 90vh; /* 각 페이지의 높이를 화면 크기만큼 설정 */
   scroll-snap-align: start; /* 페이지 정렬 위치 설정 */
+}
+
+.header{
+  z-index: 2;
 }
