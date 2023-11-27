@@ -10,6 +10,8 @@ import GoodsPage from './Goodspage';
 import MainPage from './Mainpage';
 import Guestbook from './Guestbook';
 import Recommend from './recommend';
+
+import Header from './pages/Header';
 import LastExhi from './pages/LastExhi';
 import Footer from './Footer';
 import brand from './brand.png';
@@ -58,7 +60,9 @@ const App = () => {
   return (
     
     <div>
-      
+      <div>
+        <Header/>
+      </div>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path='recommend' element={<Recommend />} />
