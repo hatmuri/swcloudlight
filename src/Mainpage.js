@@ -22,10 +22,13 @@ const Mainpage = () => {
           <h1>색채,</h1> 
           <h1>빛을</h1>
           <h1>일으키다.</h1>
-          <div className='button'>
-            <div>방명록</div>
-            <div onClick={()=>{navigate("/recommend")}}>작품추천 테스트</div>
+          <div className='buttonContainer'>
+            <div className='button'>
+              <div>방명록</div>
+              <div onClick={()=>{navigate("/recommend")}}>작품추천 테스트</div>
+            </div>
           </div>
+          
           <div className='main'>
             <div className="one"></div>
           </div>   
