@@ -204,24 +204,26 @@
     display: flex;
     margin:30px;
     flex-direction: column;
+    margin-top:200px;
 }
 
 .poetTitle{
     display: flex;
     font-family: 'KoPubWorldBatang_Pro';
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .poetAuthor{
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 2px;
+    font-size: 14px;
     font-family: 'KoPubWorldBatang_Pro';
     display: flex; /* 추가: poetAuthor를 flex container로 만듦 */
 }
 
 .poetContents{
-    margin-top: 20px;
-    font-size: 13px;
-    font-family: KoPubWorldDotum_Pro;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: KoPubWorldBatang_Pro;
     display: flex;
+    white-space: pre-wrap;
 }
