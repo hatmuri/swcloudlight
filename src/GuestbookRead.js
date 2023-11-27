@@ -5,6 +5,7 @@ import vector from './Vector.png';
 import Axios from 'axios';
 import './GuestbookRead.css'
 
+
 const GuestbookRead = () => {
   const navigate = useNavigate();
 
@@ -12,7 +13,17 @@ const GuestbookRead = () => {
     navigate('/guestbook-write');
   };
 
-  const texts = ['최고', '전시회', '재밌다', '굿굿', '운빛', '덕성', '안녕'];
+  const [viewContent, setViewContent] = useState([]);
+  
+  useEffect(()=>{
+    Axios.get('http://localhost:8000/api/get/all').then((response)=>{
+      console.log(response);
+      setViewContent(response.data);  // 상태 업데이트
+    })
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
+  }, []);
 
   return (
     <div className='container'>
@@ -62,11 +73,12 @@ const GuestbookRead = () => {
         </div>
         <div className='guest-comment'>방문객의 색채들</div>
         <div className='shape-container'>
-          {texts.map((text, index) => (
-            <div key={index} className='shape'>
-              <div className='shape-content'>{text}</div>
+          {viewContent.map(element =>
+            <div className='guest-box'>
+              <p>{element.nickname}</p>
+              <p>{element.message}</p>
             </div>
-          ))}
+          )}
         </div>
       </div>
     </div>
