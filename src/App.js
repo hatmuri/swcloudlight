@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { BrowserView, MobileView } from 'react-device-detect'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ReactDOM from 'react-dom';
 import Info from './pages/Info';
 import Place from './pages/Place';
 import Crew from './pages/Crew';
 import GoodsPage from './Goodspage';
 import MainPage from './Mainpage';
 import Guestbook from './Guestbook';
-import Recommend from './recommend';
+import recommend from './recommend';
 
 import Header from './pages/Header';
 
@@ -60,10 +58,17 @@ const App = () => {
       <div>
         <Header/>
       </div>
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path='recommend' element={<Recommend />} />
+      <div className='route'>
+        <Routes >
+          <Route path="/" element={<MainPage />} />W
+          <Route path='/Info' element={<Info />} />
+          <Route path='/GoodsPage' element={<GoodsPage />} />
+          <Route path='/Crew' element={<Crew />} />
+          <Route path='/recommend' element={<recommend />} />
+          <Route path='/Guestbook' element={<Guestbook />}/>
         </Routes>
+      </div>
+        
       
 
     </div>
