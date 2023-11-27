@@ -1,11 +1,19 @@
 import './Header.css';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import React from 'react';
 import brand from './brand.png';
 import {CSSTransition} from 'react-transition-group';
+import Info from './Info';
+import Place from './Place';
+import Crew from './Crew';
+import GoodsPage from '../Goodspage';
+import Guestbook from '../Guestbook';
+
 
 const Header= () => {
+    const navigate = useNavigate();
 
     const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
     const [menu_class, setMenuClass] = useState("menu hidden")
