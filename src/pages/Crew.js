@@ -19,7 +19,7 @@ const Crew =() => {
                         <img src={process.env.PUBLIC_URL + '/assets/unjiImg.png'} alt="Front" />
                     </div>
                     <div className="flip-card-back">
-                        <img src={process.env.PUBLIC_URL + '/assets/hanbitImg.png'} alt="Back" />
+                        <img src={process.env.PUBLIC_URL + '/assets/hanbit1.png'} alt="Back" />
                     </div>
                 </div>
             </div>

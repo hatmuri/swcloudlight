@@ -48,11 +48,11 @@ const Mainpage = () => {
         <br/>
         <Info/>
       </div>
-      <div className='Page'>
+      <div className='PagePlace'>
         <br/>
         <Place/>
       </div>
-      <div className='Page'>
+      <div className='PagePlace'>
         <br/>
         <Crew/>
       </div>
