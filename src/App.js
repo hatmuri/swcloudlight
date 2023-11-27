@@ -8,6 +8,7 @@ import GoodsPage from './Goodspage';
 import MainPage from './Mainpage';
 import Guestbook from './Guestbook';
 import Recommend from './recommend';
+import Recommend from './recommend';
 
 import Header from './pages/Header';
 
@@ -60,7 +61,7 @@ const App = () => {
       </div>
       <div className='route'>
         <Routes >
-          <Route path="/" element={<MainPage />} />W
+          <Route path="/" element={<MainPage />} />
           <Route path='/Info' element={<Info />} />
           <Route path='/GoodsPage' element={<GoodsPage />} />
           <Route path='/Crew' element={<Crew />} />
