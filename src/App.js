@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
 import { BrowserView, MobileView } from 'react-device-detect'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import Info from './pages/Info';
 import Place from './pages/Place';
@@ -10,6 +10,9 @@ import GoodsPage from './Goodspage';
 import MainPage from './Mainpage';
 import Guestbook from './Guestbook';
 import Recommend from './recommend';
+import GuestbookRead from './GuestbookRead';
+import GuestbookWrite from './GuestbookWrite';
+
 
 import Header from './pages/Header';
 import LastExhi from './pages/LastExhi';

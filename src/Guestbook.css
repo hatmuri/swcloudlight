@@ -1,39 +1,87 @@
 .Guestbook {
-  text-align: center;
-  overflow-y: scroll; 
-  height: 100vh; 
-  scroll-snap-type: y mandatory;
-}
-
-
-.header{
-  align-items: center;
-  width: 100%;
-  padding: 10px; 
-  z-index: 1; 
-}
-
-.header .text1{
-  font-family: KoPubWorldBatang_Pro;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-
-.header .text2{
-  color: #808080;
-  font-family: KoPubWorldBatang_Pro;
-  font-size: 10px;
-  font-weight: 500;
-  line-height: 15px;
-  letter-spacing: 0em;
-  text-align: center;
+    text-align: center;
+    overflow-y: scroll; 
+    height: 100vh; 
+    scroll-snap-type: y mandatory;
+    height: 100vh; /* 각 페이지의 높이를 화면 크기만큼 설정 */
+    scroll-snap-align: start; /* 페이지 정렬 위치 설정 */
+  }
   
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Optional: Align items to the center */
+  }
 
-}
+  .header{
+    align-items: center;
+    width: 100%;
+    padding: 10px; 
+    z-index: 1; 
+  }
+  
+  .header .text1{
+    font-family: KoPubWorldBatang_Pro;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .header .text2{
+    color: #808080;
+    font-family: KoPubWorldBatang_Pro;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .entry-box {
+    width: 300px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    background-color: #f0f0f0; /* Set the background color as needed */
+    border: 1px solid #ccc;
+    font-family: KoPubWorldBatang_Pro;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
 
-.guestbook-entries{
-  margin-top: 30px;
-}
+  .entry1 {
+    background: linear-gradient(0deg, #C1E8DB, #C1E8DB),
+      linear-gradient(180deg, #E9E9E5 0%, rgba(233, 233, 229, 0) 100%);
+  }
+  
+  .entry2 {
+    background: linear-gradient(0deg, #CDE9DE, #CDE9DE),
+      linear-gradient(180deg, #E9E9E5 0%, rgba(233, 233, 229, 0) 100%);
+  }
+  
+  .entry3 {
+    background: linear-gradient(0deg, #DCE9E1, #DCE9E1),
+      linear-gradient(180deg, #E9E9E5 0%, rgba(233, 233, 229, 0) 100%);
+  }
+  
+  .entry4 {
+    background: linear-gradient(0deg, #E8E9E5, #E8E9E5),
+      linear-gradient(180deg, #E9E9E5 0%, rgba(233, 233, 229, 0) 100%);
+  }
+  
+  .entry5 {
+    background: linear-gradient(180deg, #E9E9E5 0%, rgba(233, 233, 229, 0) 100%),
+      linear-gradient(0deg, #F6E9E8, #F6E9E8);
+  }
+
+  .more{
+    color: #808080;
+    font-family: KoPubWorldBatang_Pro;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
