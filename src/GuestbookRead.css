@@ -102,10 +102,10 @@
   .shape-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2px; /* 각 정사각형 사이의 간격을 조절 */
+    grid-gap: 25px; /* 각 정사각형 사이의 간격을 조절 */
     justify-content: center;
     align-items: center;
-    margin-left: 10%;
+    margin-left: 5%;
   }
   
   .guest-box {
