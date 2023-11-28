@@ -51,11 +51,9 @@ const Mainpage = () => {
       <div className='PagePlace'>
         <br/>
         <Place/>
-      </div>
-      <div className='PagePlace'>
-        <br/>
         <Crew/>
       </div>
+      
       <div className='Page'>
         <br/>
         <Guestbook/>
