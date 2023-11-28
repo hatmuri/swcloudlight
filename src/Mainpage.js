@@ -21,17 +21,18 @@ const Mainpage = () => {
     <div className='App'>
       <div className='Page blind2'>
         <div className='blind2-content'>
-          <p>제 2회 운빛 전시</p>
+          <p className='smallTitle'>제 2회 운빛 전시</p>
           <div className='H1'>
             <h1>색채</h1> 
-            <img className='h1comma' src={process.env.PUBLIC_URL + '/assets/infomapCircle.png'}/>
+            <h2 className='Comma1'>,</h2>
+            
           </div>
           <div className='H1'>
             <h1>빛을</h1>
           </div>
           <div className='H1'>
             <h1>일으키다</h1>
-            <img className='h1circle' src={process.env.PUBLIC_URL + '/assets/InfoCircle.png'}/>
+            <h2 className='Comma2'>.</h2>
           </div>
           
           
@@ -46,7 +47,6 @@ const Mainpage = () => {
         </div>
       </div>
       <div className='Page'>
-        <br/>
         <Info/>
       </div>
       <div className='PagePlace'>
