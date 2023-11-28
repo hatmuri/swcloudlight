@@ -7,18 +7,16 @@ import Info from './pages/Info';
 import Place from './pages/Place';
 import Crew from './pages/Crew';
 import GoodsPage from './Goodspage';
-import MainPage from './Mainpage';
+import Mainpage from './Mainpage';
 import Guestbook from './Guestbook';
-import Recommend from './recommend';
 import GuestbookRead from './GuestbookRead';
 import GuestbookWrite from './GuestbookWrite';
-
-import recommend from './recommend';
-
 import Header from './pages/Header';
 import LastExhi from './pages/LastExhi';
 import Footer from './Footer';
 import brand from './brand.png';
+import Recommend from './recommend';
+import Startloading from './startloading';
 
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,6 +33,7 @@ const App = () => {
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
   const [menu_class, setMenuClass] = useState("menu hidden")
   const [isMenuClicked, setIsMenuClicked] = useState(false)
+  const [isLoading, setIsLoading] = useState(true);
 
   const updateMenu=()=>{
     if(!isMenuClicked){
@@ -50,37 +49,49 @@ const App = () => {
   
 
   useEffect(() => {
-    const container = document.querySelector('.container');
-    if (container) {
-      container.addEventListener('scroll', handleScroll);
-  
-      return () => {
-        container.removeEventListener('scroll', handleScroll);
-      };
-    }
-  }, [currentIndex]); 
+    // 5초 후에 로딩 상태를 false로 변경하여 Mainpage로 이동
+    const timeoutId = setTimeout(() => {
+      
+      setIsLoading(false);
+    }, 5000);
+
+    return () => {
+      // 타임아웃 클리어
+      clearTimeout(timeoutId);
+    };
+  }, []);
   
 
   return (
-    
     <div>
-      <div>
-        <Header/>
-      </div>
-      <div className='route'>
-        <Routes >
-          <Route path="/" element={<MainPage />} />
-          <Route path='/Info' element={<Info />} />
-          <Route path='/GoodsPage' element={<GoodsPage />} />
-          <Route path='/Crew' element={<Crew />} />
-          <Route path='/recommend' element={<Recommend />} />
-          <Route path='/Guestbook' element={<Guestbook />}/>
-          <Route path='/MainPage' element={<MainPage />}/>
-        </Routes>
-      </div>
-        
-      
+      {isLoading ? (
+        // 로딩 중에는 startloading.html을 렌더링
+        <div className='start2'>
 
+        <Startloading/>
+
+        </div>
+      ) : (
+        // 로딩이 끝나면 앱 내용 렌더링
+        <div>
+          <div>
+            <Header />
+          </div>
+          <div className='route'>
+            <Routes >
+              <Route path="/" element={<Mainpage />} />
+              <Route path='/Info' element={<Info />} />
+              <Route path='/GoodsPage' element={<GoodsPage />} />
+              <Route path='/Crew' element={<Crew />} />
+              <Route path='/recommend' element={<Recommend />} />
+              <Route path='/Guestbook' element={<Guestbook />} />
+              <Route path='/Guestbook-read' element={<GuestbookRead />} />
+              <Route path='/Guestbook-write' element={<GuestbookWrite />} />
+              <Route path='/Mainpage' element={<Mainpage />} />
+            </Routes>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
