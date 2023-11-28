@@ -24,7 +24,7 @@ app.get("/api/get/all", (req, res)=>{
 })
 
 app.get("/api/get", (req, res)=>{
-    const sqlQuery = "SELECT * FROM guestbook ORDER BY created_at DESC LIMIT 5;";
+    const sqlQuery = "SELECT * FROM guestbook ORDER BY created_at DESC LIMIT 7;";
     db.query(sqlQuery, (err, result)=>{
         res.send(result);
     })

@@ -34,31 +34,26 @@ const GuestbookRead = () => {
       <div>
         <div className='event-container'>
           <div className='title'>
-
-          </div>
-          <div className="title-text">
-          나의 색채는
-          </div>
-          <div className="question">
-            ?
-          </div>
-          <div className="title-text">
-            이다.
+            <div className="title-text">
+            나의 색채는
+            </div>
+            <div className="question">
+              ?
+            </div>
+            <div className="title-text">
+              이다.
+            </div>
           </div>
           <br/>
           <div className='event'>
-            <div className='event-txt'>
-              <b>참여 기간</b>
-            </div>
+            <b className='event-txt'>참여 기간</b>
+            <b className='text1'>2023.01.08~2023.01.15</b>
           </div>
-          <b className='text1'>2023.01.08~2023.01.15</b><br/>
           <br/>
           <div className='event'>
-            <div className='event-txt'>
-              <b>참여 대상</b>
-            </div>
+            <b className='event-txt'>참여 대상</b>
+            <b className='text1'>방명록 작성자</b>
           </div>
-          <b className='text1'>방명록 작성자</b>
           <br/>
           <b className='text2'>방명록을 작성하면 이벤트 참여 완료되며, 개인 정보는 전시회 종료 후 삭제합니다.</b>
           <br/>
