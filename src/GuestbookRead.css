@@ -1,0 +1,142 @@
+.GuestbookRead {
+    font-family: KoPubWorldBatang_Pro;
+    text-align: center;
+    overflow-y: scroll; 
+    height: 100vh; 
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start; /* 페이지 정렬 위치 설정 */
+  }
+
+  .header{ 
+    text-align: left;
+    margin-top: 50px;
+    letter-spacing:10px
+  }
+
+  .header-text {
+    font-family: KoPubWorldBatang_Pro;
+    font-size: 16px;
+    writing-mode: vertical-lr;
+  }
+
+  .event-container{
+    font-family: KoPubWorldBatang_Pro;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 15%;
+  }
+
+  .title-text {
+    font-family: KoPubWorldBatang_Pro;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 25px;
+  }
+
+  .question {
+    font-family: KoPubWorldBatang_Pro;
+    font-size: 40px;
+    color: #B6E8D7;
+    margin-top: 10px;
+  }
+
+  .event{
+    font-family: KoPubWorldBatang_Pro;
+    flex-direction: row;
+  }
+
+  .event-text {
+    padding: 5px;
+    margin: 10px;
+    width: 60px;
+    height: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-family: KoPubWorldBatang_Pro;
+    color: #000000;
+    background-color: #B6E8D7;
+    margin-left: 3%;
+  }
+
+  .text1 {
+    display: inline-block;
+    margin-left: 8px;font-size: 12px; /* 글씨 크기 변경 */
+    color: #606060;
+  }
+
+  .text2{
+    font-size: 12px; /* 글씨 크기 변경 */
+    white-space: pre-wrap;
+  }
+
+  .guest{
+    font-family: KoPubWorldBatang_Pro;
+  }
+  .guest-comment{
+    display: flex; 
+    flex-basis: 100%; 
+    align-items: flex-end; 
+    color: rgba(0, 0, 0, 0.35); 
+    font-size: 12px; 
+    font-family: KoPubWorldBatang_Pro;
+    margin: 8px 0px;
+
+  }
+
+  .guest-comment::after{
+    content: "";
+    flex-grow: 1;
+    margin: 0px 8px;
+    background: rgba(0,0,0,0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+  }
+
+  .guest-container{
+    flex-direction: row;
+  }
+  .shape-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px; /* 각 정사각형 사이의 간격을 조절 */
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+  }
+  
+  .guest-box {
+    width: 70px; /* 정사각형의 너비 */
+    height: 70px; /* 정사각형의 높이 */
+    background-color: #ccc; /* 배경 색상 설정 */
+  }
+
+  .pre-button {
+    margin-right: auto;
+  }
+
+  .next-button {
+    margin-left: auto;
+  }
+
+  .nickname{
+    font-family: KoPubWorldBatang_Pro;
+    font-size: 10px;
+  }
+
+  .message{
+    font-family: KoPubWorldBatang_Pro;
+    font-size: 12px;
+  }
+
+  .submit{
+    font-family: KoPubWorldBatang_Pro;
+    font-size: 12px;
+  }

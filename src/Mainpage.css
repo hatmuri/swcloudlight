@@ -1,39 +1,71 @@
-.blind{
+
+.blind2{
   font-family: KoPubWorldBatang_Pro;
   font-size: 20px;
   font-weight: 500;
-  letter-spacing: 0em;
+  position: relative; /* relative 포지션 추가 */
+  z-index: 1;
 }
 
-
-.menu {
-  margin:20px;
+.Page blind2{
   display: flex;
-  align-items: center;
-  margin-left: 135px;
-  justify-content: space-between;
 }
 
-.menu p{
-  text-align: center;
-  font-family: KoPubWorldBatang_Pro;
-  font-size: 14px;
-  margin: 0px;
+.blind2-content{
+  margin-left: 10;
+  
 }
 
-.menu img {
-  width: 30px; /* 너비 조절 */
+.smallTitle{
+  color: rgba(79, 79, 79, 1);
 }
 
-.main img{
+
+/* .main img{
   width:350px;
-}
+} */
 
+.blind2 h1{
+  line-height: 50px;
+}
 
 .blind h1{
-  line-height: 50px;
+  line-height: 20px;
   margin-left: 20px;
   text-align: left;
+}
+
+.H1{
+  display: flex;
+  height: 55px;
+  margin-left: 5%;
+  text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 1;
+}
+
+.Comma1{
+  color: rgba(254, 175, 168, 1);
+  margin-top: 35px;
+}
+
+.Comma2{
+  color: rgba(182, 232, 215, 1);
+  margin-top: 35px;
+}
+
+.h1comma{
+  width: 6px;
+  height: 13px;
+  margin-top: 60px;
+  margin-left: 5px;
+}
+
+.h1circle{
+  width: 6px;
+  height: 6px;
+  margin-top: 60px;
+  margin-left: 3px;
 }
 
 .blind2 p{
@@ -43,7 +75,51 @@
   font-size: 10px;
 }
 
-.main div:nth-child(2){
+
+/*animation*/
+@import 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i';
+
+.main {
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    float: left;
+    opacity: 0;
+}
+
+#c-container,
+#c2-container {
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.button {
+  flex-direction: column;
+  margin-top: 420px;
+  margin-left: 140px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.button div:nth-child(1){
   padding: 10px;
   margin: 10px;
   display: flex;
@@ -53,15 +129,15 @@
   flex-shrink: 0;
   text-align: center;
   font-size: 15px;
-  font-family: "Kopub-light";
   color:#fff;
   background-color: #000000;
   margin-left: auto;
+  margin-top: 70%;
 }
 
-.main div:nth-child(3){
-  margin: 10px;
+.button div:nth-child(2){
   padding: 10px;
+  margin: 10px;
   display: flex;
   justify-content: center;
   width: 120px;
@@ -69,8 +145,9 @@
   flex-shrink: 0;
   text-align: center;
   font-size: 15px;
-  font-family: "Kopub-light";
   color:#fff;
   background-color: #000000;
-  margin-left: auto; /* Add this line */
+  margin-left: auto;
+  margin-top: 10px;
+
 }

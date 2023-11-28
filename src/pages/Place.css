@@ -1,0 +1,41 @@
+.InfoMap {
+    font-family: KoPubWorldBatang_Pro;
+}
+
+.info-container {
+    display: flex;
+}
+
+.map-header {
+    display: flex;
+    margin-left: 5%;
+    font-size: 16px;
+    margin-top: 10%;
+}
+
+.detailAddress {
+    color: #808080;
+    font-Size: 8px;
+
+}
+
+.info-map-circle {
+    object-fit: cover;
+    width: 4px; /* Set your desired width */
+    height: 9px; /* Set your desired height */
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.map-img {
+    /* 필요한 스타일 추가 */
+    margin-left: 5%;
+    margin-right: 5%; /* 간격 조절을 위한 예시 값 */
+}
+
+.address-txt {
+    margin-right: 5%;
+    font-size: 13px;
+    margin-top: 38%;
+    /* 필요한 스타일 추가 */
+}

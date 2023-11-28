@@ -2,17 +2,24 @@
   text-align: center;
   overflow-y: scroll; 
   height: 100vh; 
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: x mandatory; 
 }
 
-.header{
+.all{
+  margin-top: 10%;
+  text-align: center;
+  font-family: KoPubWorldBatang_Pro;
+
+}
+
+.header2{
   align-items: center;
   width: 100%;
   padding: 10px; 
   z-index: 1; 
 }
 
-.header .text1{
+.header2 .text1{
   font-family: KoPubWorldBatang_Pro;
   font-size: 16px;
   font-weight: 700;
@@ -21,7 +28,7 @@
   text-align: center;
 }
 
-.header .text2{
+.header2 .text2{
   color: #808080;
   font-family: KoPubWorldBatang_Pro;
   font-size: 11px;
@@ -34,7 +41,8 @@
 }
 
 .vector {
-  margin-left: 100px; 
+  margin-left: 5px; 
+  margin-top: 15px;
   width: 4px;
   height: 4px;
 
@@ -67,7 +75,7 @@
 
 .App .inner {
   margin-top: 20px;
-  width: 100vw;
+
   scroll-snap-align:initial; 
 }
 
@@ -88,4 +96,3 @@
   font-family: KoPubWorldBatang_Pro;
   background-color: white;
 }
-
