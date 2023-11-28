@@ -37,9 +37,10 @@ const Mainpage = () => {
           
           
           <div className='button'>
-            <div>방명록</div>
+            <div onClick={()=>{navigate("/Guestbook-read")}}>방명록</div>
             <div onClick={()=>{navigate("/recommend")}}>작품추천 테스트</div>
           </div>
+          
           <div className='main'>
             <div className="one"></div>
           </div>   

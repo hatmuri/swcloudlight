@@ -23,7 +23,7 @@ const GuestbookWrite = () => {
       message: writeContent.message
     }).then(()=>{
       alert('등록 완료!');
-      navigate('/guestbook-read');
+      navigate('/Guestbook-read');
     })
   }
 
