@@ -8,23 +8,9 @@
   
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Optional: Align items to the center */
-}
-
 .container{
   text-align: center;
   overflow-y: scroll; 
-  height: 100vh; 
-}
-
-.header{
-  align-items: center;
-  width: 100%;
-  padding: 10px; 
-  z-index: 1; 
 }
 
 .header .text1{
@@ -35,8 +21,14 @@
   letter-spacing: 0em;
   text-align: center;
 }
+.header-guest{
+  align-items: center;
+  width: 100%;
+  padding: 10px; 
+  z-index: 1; 
+}
 
-.header .text2{
+.header-guest .text2{
   color: #808080;
   font-family: KoPubWorldBatang_Pro;
   font-size: 10px;
@@ -86,7 +78,7 @@
 .color-box{
   padding: 10px;
   margin: 10px;
-  width: 300px;
+  width: 290px;
   height: 20px;
 }
 
