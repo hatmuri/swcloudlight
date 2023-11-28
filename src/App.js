@@ -11,11 +11,11 @@ import Mainpage from './Mainpage';
 import Guestbook from './Guestbook';
 import GuestbookRead from './GuestbookRead';
 import GuestbookWrite from './GuestbookWrite';
-import recommend from './recommend';
 import Header from './pages/Header';
 import LastExhi from './pages/LastExhi';
 import Footer from './Footer';
 import brand from './brand.png';
+import Recommend from './recommend';
 
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -66,11 +66,11 @@ const App = () => {
       </div>
       <div className='route'>
         <Routes >
-          <Route path="/" element={<Mainpage />} />W
+          <Route path="/" element={<Mainpage />} />
           <Route path='/Info' element={<Info />} />
           <Route path='/GoodsPage' element={<GoodsPage />} />
           <Route path='/Crew' element={<Crew />} />
-          <Route path='/recommend' element={<recommend />} />
+          <Route path='/recommend' element={<Recommend />} />
           <Route path='/Guestbook' element={<Guestbook />}/>
           <Route path='/Guestbook-read' element={<GuestbookRead />}/>
           <Route path='/Guestbook-write' element={<GuestbookWrite />}/>
