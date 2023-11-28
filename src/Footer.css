@@ -1,0 +1,87 @@
+.Footer {
+    background-color: white; /* Set the background color */
+    color: rgba(96, 96, 96, 1); /* Set the text color */
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: KoPubWorldBatang_Pro;
+
+    @media (max-width: 768px) {
+        position: relative;
+        padding: 10px;
+    }
+}
+
+.contactBorder{
+}
+
+.contactContainer{
+    display: flex;
+    align-items: center;
+}
+
+.contactIcon{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contactText{
+    width:55%;
+}
+
+.contact1{
+    line-height: 5px;
+}
+
+.hr1{
+    margin-right: 20%;
+    margin-bottom: 20px;
+    border: 0;
+    height: 2px;
+    background: rgba(96, 96, 96, 1);
+}
+
+.contactCrew{
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.instaLogo{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+
+.unji{
+    margin-left: 20px;
+}
+
+.hanbit{
+    
+}
+
+.contactUnji{
+    display: flex;
+    line-height: 5px;
+}
+
+.hanbit{
+    
+}
+
+
+.footerblank{
+    height: 60px;
+}
+
+.footertext{
+    padding-right: 30px;
+    text-align: right;
+}
