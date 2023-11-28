@@ -12,14 +12,14 @@
 
 }
 
-.header{
+.header2{
   align-items: center;
   width: 100%;
   padding: 10px; 
   z-index: 1; 
 }
 
-.header .text1{
+.header2 .text1{
   font-family: KoPubWorldBatang_Pro;
   font-size: 16px;
   font-weight: 700;
@@ -28,7 +28,7 @@
   text-align: center;
 }
 
-.header .text2{
+.header2 .text2{
   color: #808080;
   font-family: KoPubWorldBatang_Pro;
   font-size: 11px;

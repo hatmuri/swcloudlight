@@ -46,7 +46,14 @@ const GuestbookWrite = () => {
         <p>닉네임 : <input type="text" name="nickname" 
           value={writeContent.nickname} 
           onChange={getValue}></input></p>
-        <p><textarea style={{width:'450px',height:'150px'}}
+        <p><textarea style={{
+          width: '300px',
+          height: '100px',
+          fontFamily: 'KoPubWorldBatang_Pro',
+          backgroundColor: 'rgba(182, 232, 215, 0.3)',
+          border: 'none',
+          fontSize: '12px'
+          }}
           name="message" placeholder="당신의 색채에 대해 입력 (30자 이내)"
           value={writeContent.message} 
           onChange={getValue}></textarea></p>
@@ -60,12 +67,8 @@ const GuestbookWrite = () => {
         value={writeContent.phone} 
         onChange={getValue}></input></p>
       </form>
-      <p>개인정보는 전시회 종료 후 삭제합니다.</p>
-      <div className='button'>
-        <button className='submit' onClick={submitForm}>
-          제출하기
-        </button>
-      </div>
+      <p className='delete-text'>개인정보는 전시회 종료 후 삭제합니다.</p>
+      <div className='submit-button' onClick={submitForm}>제출하기</div>
     </div>
   );
 }

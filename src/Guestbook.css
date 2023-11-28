@@ -9,11 +9,12 @@
 }
 
 .container{
+  margin-top: 10%;
   text-align: center;
   overflow-y: scroll; 
 }
 
-.header .text1{
+.header-guest .text1{
   font-family: KoPubWorldBatang_Pro;
   font-size: 16px;
   font-weight: 700;
@@ -47,6 +48,7 @@
   flex-shrink: 0;
   text-align: center;
   font-size: 12px;
+  font-family: KoPubWorldBatang_Pro;
   color:#fff;
   background-color: #000000;
   margin-left: 40%;

@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 
 app.get("/api/get/all", (req, res)=>{
-    const sqlQuery = "SELECT * FROM guestbook;";
+    const sqlQuery = "SELECT * FROM guestbook ORDER BY created_at DESC;";
     db.query(sqlQuery, (err, result)=>{
         res.send(result);
     })
