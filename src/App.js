@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import { BrowserView, MobileView } from 'react-device-detect'
+import ReactDOM from 'react-dom';
 import Info from './pages/Info';
 import Place from './pages/Place';
 import Crew from './pages/Crew';
@@ -9,8 +11,11 @@ import Mainpage from './Mainpage';
 import Guestbook from './Guestbook';
 import GuestbookRead from './GuestbookRead';
 import GuestbookWrite from './GuestbookWrite';
-import Recommend from './recommend';
+import recommend from './recommend';
 import Header from './pages/Header';
+import LastExhi from './pages/LastExhi';
+import Footer from './Footer';
+import brand from './brand.png';
 
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

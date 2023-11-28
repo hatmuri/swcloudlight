@@ -1,3 +1,21 @@
+.flip-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /*컨테이너 높이를 뷰포트 높이의 100%로 설정합니다. */
+    flex-wrap: wrap;
+}
+
+.crewtext{
+    width: 100%;
+    font-family: KoPubWorldBatang_Pro;
+}
+
+.crew-info-header {
+    font-family: KoPubWorldBatang_Pro;
+}
+
+
 .first{
     margin-top: 25%;
     text-align: center;
@@ -10,6 +28,7 @@
 }
 
 .flip-card-inner {
+    display: flex;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
@@ -22,6 +41,7 @@
 
 .flip-card-front,
 .flip-card-back {
+    
     width: 100%;
     height: 100%;
     position: absolute;
@@ -36,5 +56,8 @@
 }
 
 .flip-card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: rotateY(180deg);
 }

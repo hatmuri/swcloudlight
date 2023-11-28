@@ -31,7 +31,7 @@
     flex-shrink: 0;
     font-family: "Kokoro";
     margin: 30px;
-    color: #B6E8D7;
+    color: #FEAFA8;
     text-align: center;
     font-size: 40px;
     font-style: normal;
@@ -204,24 +204,71 @@
     display: flex;
     margin:30px;
     flex-direction: column;
+    margin-top:200px;
 }
 
 .poetTitle{
     display: flex;
     font-family: 'KoPubWorldBatang_Pro';
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .poetAuthor{
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 2px;
+    font-size: 14px;
     font-family: 'KoPubWorldBatang_Pro';
     display: flex; /* 추가: poetAuthor를 flex container로 만듦 */
 }
 
 .poetContents{
-    margin-top: 20px;
-    font-size: 13px;
-    font-family: KoPubWorldDotum_Pro;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: KoPubWorldBatang_Pro;
     display: flex;
+    white-space: pre-wrap;
+}
+
+.loadContent{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loadingLayout{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 100%;
+    height:100%;
+    padding-top:100px;
+}
+
+.loadingLayout div:nth-child(1){
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 25px;
+    flex-shrink: 0;
+    font-family: "Kokoro";
+    color: #FEAFA8;
+    text-align: center;
+    margin-top:50px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.loadingLayout div:nth-child(2){
+    display: flex;
+    margin-top: 40px;
+    padding:10px;
+    width: 100%;
+    height: 25px;
+    flex-shrink: 0;
+    font-weight: 700;
+    font-family: KoPubWorldBatang_Pro;
+    font-size: 15px;
+    color: #000000;
+    justify-content: center;
 }
