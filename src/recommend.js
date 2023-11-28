@@ -61,6 +61,8 @@ export default function Recommend() {
 
   const [resultContents, setResultContents] = useState({})
 
+  const navigate = useNavigate();
+
   const handleCkAnswer = (type, idx) => {
     let ls = poetList
     for (let i = 0; i<ls.length; i++){
@@ -263,7 +265,10 @@ export default function Recommend() {
                   <div className='poetContents'>{resultContents.contents[2]}</div>
                 </div>
               </div>
-              <div className='retryBtn' onClick={()=>window.location.reload()}>다시 하기</div>
+              <div>
+                <div className='goToInfo' onClick={()=>{navigate("/Info")}}>전체 시가 궁금하시다면 클릭</div>
+                <div className='retryBtn' onClick={()=>window.location.reload()}>다시 하기</div>
+              </div>
             </div>
           </div>
         }
