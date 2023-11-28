@@ -4,16 +4,16 @@ import { useNavigate, Link } from 'react-router-dom';
 import vector from './Vector.png';
 import Axios from 'axios';
 import './GuestbookRead.css'
+import next from './Polygon 1.png'
+import previous from './Polygon 2.png'
 
 
 const GuestbookRead = () => {
   const navigate = useNavigate();
-
-  const handleWriteClick = () => {
-    navigate('/Guestbook-write');
-  };
-
+  
   const [viewContent, setViewContent] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 9;
   
   useEffect(()=>{
     Axios.get('http://localhost:8000/api/get/all').then((response)=>{
@@ -24,6 +24,10 @@ const GuestbookRead = () => {
       console.error('Error fetching data:', error);
     });
   }, []);
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = viewContent.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
     <div className='container'>
@@ -61,13 +65,21 @@ const GuestbookRead = () => {
         <div className='write-button' onClick={()=>{navigate("/Guestbook-write")}}>작성하기</div>
         <br/>
         <div className='guest-comment'>방문객의 색채들</div><br/>
-        <div className='shape-container'>
-          {viewContent.map(element =>
-            <div className='guest-box'>
-              <p className='nickname'>작성자 : {element.nickname}</p>
-              <p className='message'>{element.message}</p>
-            </div>
-          )}
+        <div className='guest-container'>
+          <div className='pre-button' onClick={() => setCurrentPage(currentPage - 1)}>
+            <img src={previous}/>
+          </div>
+          <div className='shape-container'>
+            {currentItems.map((element, index) => (
+              <div className='guest-box'>
+                <p className='nickname'>작성자 : {element.nickname}</p>
+                <p className='message'>{element.message}</p>
+              </div>
+            ))}
+          </div>
+          <div className='next-button' onClick={() => setCurrentPage(currentPage + 1)}>
+            <img src={next}/>
+          </div>
         </div>
       </div>
     </div>

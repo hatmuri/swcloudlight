@@ -87,6 +87,7 @@
     font-size: 12px; 
     font-family: KoPubWorldBatang_Pro;
     margin: 8px 0px;
+
   }
 
   .guest-comment::after{
@@ -99,19 +100,30 @@
     line-height: 0px;
   }
 
+  .guest-container{
+    flex-direction: row;
+  }
   .shape-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 25px; /* 각 정사각형 사이의 간격을 조절 */
+    grid-gap: 15px; /* 각 정사각형 사이의 간격을 조절 */
     justify-content: center;
     align-items: center;
-    margin-left: 5%;
+    margin-left: 10%;
   }
   
   .guest-box {
-    width: 85px; /* 정사각형의 너비 */
-    height: 85px; /* 정사각형의 높이 */
+    width: 70px; /* 정사각형의 너비 */
+    height: 70px; /* 정사각형의 높이 */
     background-color: #ccc; /* 배경 색상 설정 */
+  }
+
+  .pre-button {
+    margin-right: auto;
+  }
+
+  .next-button {
+    margin-left: auto;
   }
 
   .nickname{
@@ -121,7 +133,7 @@
 
   .message{
     font-family: KoPubWorldBatang_Pro;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .submit{
