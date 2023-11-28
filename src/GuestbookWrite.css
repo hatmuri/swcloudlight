@@ -8,7 +8,7 @@
     scroll-snap-align: start; /* 페이지 정렬 위치 설정 */
   }
 
-  .header{ 
+  .header-write{ 
     text-align: left;
     margin-top: 50px;
     letter-spacing:10px

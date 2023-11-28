@@ -14,7 +14,7 @@
   overflow-y: scroll; 
 }
 
-.header_guest{
+.header-guest{
   margin-top: 30px;
   align-items: center;
   width: 100%;
@@ -22,7 +22,7 @@
   z-index: 1; 
 }
 
-.header_guest .text1{
+.header-guest .text1{
   font-family: KoPubWorldBatang_Pro;
   font-size: 16px;
   font-weight: 700;
@@ -30,8 +30,14 @@
   letter-spacing: 0em;
   text-align: center;
 }
+.header-guest{
+  align-items: center;
+  width: 100%;
+  padding: 10px; 
+  z-index: 1; 
+}
 
-.header_guest .text2{
+.header-guest .text2{
   color: #808080;
   font-family: KoPubWorldBatang_Pro;
   font-size: 10px;
