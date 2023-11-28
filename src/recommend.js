@@ -59,7 +59,6 @@ export default function Recommend() {
     }
   }, [page, history]);
 
-
   const [resultContents, setResultContents] = useState({})
 
   const handleCkAnswer = (type, idx) => {
