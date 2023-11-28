@@ -4,8 +4,13 @@
     overflow-y: scroll; 
     height: 100vh; 
     scroll-snap-type: y mandatory;
-    height: 100vh; /* 각 페이지의 높이를 화면 크기만큼 설정 */
     scroll-snap-align: start; /* 페이지 정렬 위치 설정 */
+  }
+
+  .header{ 
+    text-align: left;
+    margin-top: 50px;
+    letter-spacing:10px
   }
 
   .header-text {
@@ -17,7 +22,9 @@
   .title {
     display: flex;
     flex-direction: row;
-    white-space: nowrap
+    white-space: nowrap;
+    margin-top: 140px;
+    margin-left: 25%;
   }
 
   .title-text {
@@ -31,20 +38,21 @@
     color: #B6E8D7;
   }
 
-  .event {
-    background-image: url(event.png);
-    background-size: cover;
-    position: relative;
-    align-items: center;
-    font-weight: 600; /* weight 변경 */
-    height: 26px; /* height 변경 */
+  .event{
+    flex-direction: row;
   }
 
   .event-text {
-    position: absolute;
-    font-family: 'KoPubWorldBatang_Regular'; /* 글씨체 변경 */
-    font-size: 12px; /* 글씨 크기 변경 */
-    font-weight: normal;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    width: 60px;
+    height: 15px;
+    text-align: center;
+    font-size: 12px;
+    color:#000000;
+    background-color: #B6E8D7;
+    margin-left: auto;
   }
 
   .text1 {
@@ -55,19 +63,51 @@
     color: #606060;
   }
 
-  .text1 {
+  .text2{
     font-family: 'KoPubWorldBatang_Regular'; /* 글씨체 변경 */
     font-size: 12px; /* 글씨 크기 변경 */
+    white-space: pre-wrap;
+  }
+
+  .guest-comment{
+    display: flex; 
+    flex-basis: 100%; 
+    align-items: flex-end; 
+    color: rgba(0, 0, 0, 0.35); 
+    font-size: 12px; 
+    margin: 8px 0px;
+  }
+
+  .guest-comment::after{
+    content: "";
+    flex-grow: 1;
+    margin: 0px 8px;
+    background: rgba(0,0,0,0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
   }
 
   .shape-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3px; /* 각 정사각형 사이의 간격을 조절 */
+    grid-gap: 2px; /* 각 정사각형 사이의 간격을 조절 */
+    justify-content: center;
+    align-items: center;
   }
   
-  .shape {
-    width: 100px; /* 정사각형의 너비 */
-    height: 100px; /* 정사각형의 높이 */
+  .guest-box {
+    width: 85px; /* 정사각형의 너비 */
+    height: 85px; /* 정사각형의 높이 */
     background-color: #ccc; /* 배경 색상 설정 */
+  }
+
+  .nickname{
+    font-family: KoPubWorldBatang_Regular;
+    font-size: 10px;
+  }
+
+  .message{
+    font-family: KoPubWorldBatang_Regular;
+    font-size: 15px;
   }

@@ -23,7 +23,7 @@ const GuestbookWrite = () => {
       message: writeContent.message
     }).then(()=>{
       alert('등록 완료!');
-      navigate('/guestbook-read');
+      navigate('/Guestbook-read');
     })
   }
 
@@ -37,7 +37,7 @@ const GuestbookWrite = () => {
 
   return (
     <div className='container'>
-      <div className='header'>
+      <div className='header-write'>
         <h className='header-text'>방명록</h>
         <img src={vector} className='vecter' />
       </div>

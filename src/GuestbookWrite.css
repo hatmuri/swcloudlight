@@ -1,0 +1,30 @@
+.GuestbookWrite {
+    font-family: KoPubWorldBatang_Pro;
+    text-align: center;
+    overflow-y: scroll; 
+    height: 100vh; 
+    scroll-snap-type: y mandatory;
+    height: 100vh; /* 각 페이지의 높이를 화면 크기만큼 설정 */
+    scroll-snap-align: start; /* 페이지 정렬 위치 설정 */
+  }
+
+  .header-write{ 
+    text-align: left;
+    margin-top: 50px;
+    letter-spacing:10px
+  }
+
+  .header-text {
+    font-family: KoPubWorldBatang_Pro;
+    font-size: 16px;
+    writing-mode: vertical-lr;
+  }
+
+  .guest-comment{
+    display: flex; 
+    flex-basis: 100%; 
+    align-items: flex-end; 
+    color: rgba(0, 0, 0, 0.35); 
+    font-size: 12px; 
+    margin: 8px 0px;
+  }

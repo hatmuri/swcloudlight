@@ -21,31 +21,32 @@ const Mainpage = () => {
     <div className='App'>
       <div className='Page blind2'>
         <div className='blind2-content'>
-          <p>제 2회 운빛 전시</p>
+          <p className='smallTitle'>제 2회 운빛 전시</p>
           <div className='H1'>
             <h1>색채</h1> 
-            <img className='h1comma' src={process.env.PUBLIC_URL + '/assets/infomapCircle.png'}/>
+            <h2 className='Comma1'>,</h2>
+            
           </div>
           <div className='H1'>
             <h1>빛을</h1>
           </div>
           <div className='H1'>
             <h1>일으키다</h1>
-            <img className='h1circle' src={process.env.PUBLIC_URL + '/assets/InfoCircle.png'}/>
+            <h2 className='Comma2'>.</h2>
           </div>
           
           
           <div className='button'>
-            <div>방명록</div>
+            <div onClick={()=>{navigate("/Guestbook-read")}}>방명록</div>
             <div onClick={()=>{navigate("/recommend")}}>작품추천 테스트</div>
           </div>
+          
           <div className='main'>
             <div className="one"></div>
           </div>   
         </div>
       </div>
       <div className='Page'>
-        <br/>
         <Info/>
       </div>
       <div className='PagePlace'>

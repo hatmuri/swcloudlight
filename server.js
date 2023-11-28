@@ -16,6 +16,20 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 
+app.get("/api/get/all", (req, res)=>{
+    const sqlQuery = "SELECT * FROM guestbook;";
+    db.query(sqlQuery, (err, result)=>{
+        res.send(result);
+    })
+})
+
+app.get("/api/get", (req, res)=>{
+    const sqlQuery = "SELECT * FROM guestbook ORDER BY created_at DESC LIMIT 7;";
+    db.query(sqlQuery, (err, result)=>{
+        res.send(result);
+    })
+})
+
 app.post("/api/insert", (req, res)=>{
     const nickname = req.body.nickname;
     const message = req.body.message;

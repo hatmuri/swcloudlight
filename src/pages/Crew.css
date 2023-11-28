@@ -7,8 +7,28 @@
 }
 
 .crewtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     font-family: KoPubWorldBatang_Pro;
+    height: 0px;
+
+}
+
+.crewtextU{
+    margin-top:70%;
+}
+
+.crewtextC{
+    margin-top: 70%;
+    margin-left: 10px;
+    color: rgba(254, 175, 168, 1);
+}
+
+.crewtextH{
+    margin-top: 70%;
+    margin-left: 10px;
 }
 
 .crew-info-header {
@@ -24,7 +44,7 @@
 .flip-card {
     perspective: 1000px;
     width: 200px;
-    height: 300px;
+    height: 90%;
 }
 
 .flip-card-inner {
@@ -52,7 +72,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ddd;
 }
 
 .flip-card-back {

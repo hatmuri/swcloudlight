@@ -5,14 +5,25 @@ import vector from './Vector.png';
 import Axios from 'axios';
 import './GuestbookRead.css'
 
+
 const GuestbookRead = () => {
   const navigate = useNavigate();
 
   const handleWriteClick = () => {
-    navigate('/guestbook-write');
+    navigate('/Guestbook-write');
   };
 
-  const texts = ['최고', '전시회', '재밌다', '굿굿', '운빛', '덕성', '안녕'];
+  const [viewContent, setViewContent] = useState([]);
+  
+  useEffect(()=>{
+    Axios.get('http://localhost:8000/api/get/all').then((response)=>{
+      console.log(response);
+      setViewContent(response.data);  // 상태 업데이트
+    })
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
+  }, []);
 
   return (
     <div className='container'>
@@ -23,33 +34,28 @@ const GuestbookRead = () => {
       <div>
         <div className='event-container'>
           <div className='title'>
-
-          </div>
-          <div className="title-text">
-          나의 색채는
-          </div>
-          <div className="question">
-            ?
-          </div>
-          <div className="title-text">
-            이다.
+            <div className="title-text">
+            나의 색채는
+            </div>
+            <div className="question">
+              ?
+            </div>
+            <div className="title-text">
+              이다.
+            </div>
           </div>
           <br/>
           <div className='event'>
-            <div className='event-txt'>
-              <b>참여 기간</b>
-            </div>
+            <b className='event-txt'>참여 기간</b>
+            <b className='text1'>2023.01.08~2023.01.15</b>
           </div>
-          <b className='text1'>2023.01.08~2023.01.15</b><br/>
           <br/>
           <div className='event'>
-            <div className='event-txt'>
-              <b>참여 대상</b>
-            </div>
+            <b className='event-txt'>참여 대상</b>
+            <b className='text1'>방명록 작성자</b>
           </div>
-          <b className='text1'>방명록 작성자</b>
           <br/>
-          <b className='text2'>방명록을 작성하면 이벤트 참여 완료되며, 개인 정보는 전시회 종료 후 삭제합니다.</b>
+          <b className='text2'>방명록을 작성하면 이벤트 참여 완료되며,<br/> 개인 정보는 전시회 종료 후 삭제합니다.</b>
           <br/>
         </div>
         
@@ -62,11 +68,12 @@ const GuestbookRead = () => {
         </div>
         <div className='guest-comment'>방문객의 색채들</div>
         <div className='shape-container'>
-          {texts.map((text, index) => (
-            <div key={index} className='shape'>
-              <div className='shape-content'>{text}</div>
+          {viewContent.map(element =>
+            <div className='guest-box'>
+              <p className='nickname'>작성자 : {element.nickname}</p>
+              <p className='message'>{element.message}</p>
             </div>
-          ))}
+          )}
         </div>
       </div>
     </div>
