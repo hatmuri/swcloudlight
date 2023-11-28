@@ -21,6 +21,7 @@
   scroll-snap-align: start;
 }
 
+
 .PageLastExhi{
   scroll-snap-align: start;
 }
@@ -28,4 +29,10 @@
 .PageFooter{
   scroll-snap-align: start;
   margin-top: 5%;
+}
+
+.start2{
+  margin-top: 90%;
+  display: flex;
+  justify-content: center;
 }
