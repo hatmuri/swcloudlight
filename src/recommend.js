@@ -46,8 +46,8 @@ export default function Recommend() {
     if (page === questionList.length + 1) {
       // 5초 후에 다음 페이지로 이동
       const timerId = setTimeout(() => {
-        setPage(questionList.length + 2); // 실제 페이지 경로로 변경
-      }, 5000);
+        setPage(questionList.length + 2);
+      }, 1500);// 1.5초
   
       // 컴포넌트가 언마운트되면 타이머 제거 (선택적으로)
       return () => {
@@ -214,7 +214,9 @@ export default function Recommend() {
               <div>시 추천 테스트</div>
               <div>{`${page} / ${questionList.length}`}</div>
             </div>
-
+            <div style={{width: "90%", textAlign: "center", borderBottom: "1px solid #aaa",
+                  lineHeight: "0.1em", margin:"20px"}}>    </div>
+            
             {questionList.map((val,idx) =>
               <div class='questionList' style={{display:page===(idx*1+1)?'flex':'none'}} key={idx}>
                 {console.log()}
@@ -251,6 +253,9 @@ export default function Recommend() {
                 <div>시 추천 테스트</div>
                 <div onClick={()=>window.location.reload()}>다시 하기</div>
               </div>
+              <div style={{width: "90%", textAlign: "center", borderBottom: "1px solid #aaa",
+                  lineHeight: "0.1em", margin:"20px"}}>    </div>
+            
               <div className='resultList' style={{display: 'flex'}}>
                 <div className='poetLayout'>
                   <div className='poetTitle'>{resultContents.contents[0]}</div>

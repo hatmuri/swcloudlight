@@ -33,6 +33,7 @@
     margin: 30px;
     color: #FEAFA8;
     text-align: center;
+    font-family: KoPub Batang;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -58,6 +59,8 @@
     flex-shrink: 0;
     font-family: "KoPubWorldDotum_Pro";
     justify-content: center;
+    color:grey;
+    margin-bottom: 60px;
 }
 
 .startButton {
@@ -69,7 +72,6 @@
     flex-shrink: 0;
     text-align: center;
     font-size: 15px;
-    margin-top: 40px;
     font-family: "KoPubWorldDotum_Pro";
     color: #fff;
     background-color: #000000;
