@@ -55,7 +55,7 @@ const GuestbookRead = () => {
             <b className='text1'>방명록 작성자</b>
           </div>
           <br/>
-          <b className='text2'>방명록을 작성하면 이벤트 참여 완료되며, 개인 정보는 전시회 종료 후 삭제합니다.</b>
+          <b className='text2'>방명록을 작성하면 이벤트 참여 완료되며,<br/> 개인 정보는 전시회 종료 후 삭제합니다.</b>
           <br/>
         </div>
         
@@ -70,8 +70,8 @@ const GuestbookRead = () => {
         <div className='shape-container'>
           {viewContent.map(element =>
             <div className='guest-box'>
-              <p>{element.nickname}</p>
-              <p>{element.message}</p>
+              <p className='nickname'>작성자 : {element.nickname}</p>
+              <p className='message'>{element.message}</p>
             </div>
           )}
         </div>

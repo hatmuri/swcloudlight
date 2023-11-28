@@ -26,7 +26,6 @@
     white-space: nowrap;
     margin-top: 140px;
     margin-left: 25%;
-    padding-left: 5px;
   }
 
   .title-text {
@@ -68,6 +67,7 @@
   .text2{
     font-family: 'KoPubWorldBatang_Regular'; /* 글씨체 변경 */
     font-size: 12px; /* 글씨 크기 변경 */
+    white-space: pre-wrap;
   }
 
   .guest-comment{
@@ -92,11 +92,23 @@
   .shape-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3px; /* 각 정사각형 사이의 간격을 조절 */
+    grid-gap: 2px; /* 각 정사각형 사이의 간격을 조절 */
+    justify-content: center;
+    align-items: center;
   }
   
-  .shape {
-    width: 100px; /* 정사각형의 너비 */
-    height: 100px; /* 정사각형의 높이 */
+  .guest-box {
+    width: 85px; /* 정사각형의 너비 */
+    height: 85px; /* 정사각형의 높이 */
     background-color: #ccc; /* 배경 색상 설정 */
+  }
+
+  .nickname{
+    font-family: KoPubWorldBatang_Regular;
+    font-size: 10px;
+  }
+
+  .message{
+    font-family: KoPubWorldBatang_Regular;
+    font-size: 15px;
   }
