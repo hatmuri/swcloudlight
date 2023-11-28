@@ -21,7 +21,7 @@ const Mainpage = () => {
     <div className='App'>
       <div className='Page blind2'>
         <div className='blind2-content'>
-          <p className='smallTitle'>제 2회 운빛 전시</p>
+          <p className='smallTitle'>제2회 운빛 전시</p>
           <div className='H1'>
             <h1>색채</h1> 
             <h2 className='Comma1'>,</h2>
