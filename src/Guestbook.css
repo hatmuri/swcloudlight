@@ -32,7 +32,7 @@
 .header-guest .text2{
   color: #808080;
   font-family: KoPubWorldBatang_Pro;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0em;
@@ -75,6 +75,7 @@
 
 .color-box-container{
   font-size: 12px;
+  margin-left: 3%;
 }
 
 .color-box{

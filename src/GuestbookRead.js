@@ -63,7 +63,6 @@ const GuestbookRead = () => {
         </div>
         <br/>
         <div className='write-button' onClick={()=>{navigate("/Guestbook-write")}}>작성하기</div>
-        <br/>
         <div className='guest-comment'>방문객의 색채들</div><br/>
         <div className='guest-container'>
           <div className='pre-button' onClick={() => setCurrentPage(currentPage - 1)}>
@@ -72,7 +71,7 @@ const GuestbookRead = () => {
           <div className='shape-container'>
             {currentItems.map((element, index) => (
               <div className='guest-box'>
-                <p className='nickname'>작성자 : {element.nickname}</p>
+                {/*<p className='nickname'>작성자 : {element.nickname}</p>*/}
                 <p className='message'>{element.message}</p>
               </div>
             ))}
@@ -81,6 +80,8 @@ const GuestbookRead = () => {
             <img src={next}/>
           </div>
         </div>
+        <br/>
+        <br/>
       </div>
     </div>
   );
