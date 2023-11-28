@@ -49,8 +49,6 @@ export default function Recommend() {
       const timerId = setTimeout(() => {
         setPage(questionList.length + 2);
       }, 1500);// 1.5초
-        setPage(questionList.length + 2);
-      }, 1500);// 1.5초
   
       // 컴포넌트가 언마운트되면 타이머 제거 (선택적으로)
       return () => {
@@ -60,6 +58,7 @@ export default function Recommend() {
       };
     }
   }, [page, history]);
+
 
   const [resultContents, setResultContents] = useState({})
 
