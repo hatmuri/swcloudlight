@@ -49,11 +49,11 @@ const App = () => {
   
 
   useEffect(() => {
-    // 5초 후에 로딩 상태를 false로 변경하여 Mainpage로 이동
+    // 3초 후에 로딩 상태를 false로 변경하여 Mainpage로 이동
     const timeoutId = setTimeout(() => {
       
       setIsLoading(false);
-    }, 5000);
+    }, 3000);
 
     return () => {
       // 타임아웃 클리어
