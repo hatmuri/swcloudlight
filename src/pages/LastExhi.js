@@ -24,6 +24,7 @@ const LastExhi =() => {
                 <br/>
                 <p>저마다의 어둠에서 헤매고 있지만 빛을 향하는 마음만은 같다. 그렇다면 우리는 어둠 속에서 무엇을 바라며, 어디로 나아가고 있는 걸까?</p>
                 <p>덕성여자대학교 정동아리 '운지문학회'와 '한빛'의 작가 총 40명이 모여 시와 사진으로 저마다의 '어둠이 걷힌' 후를 담았다.</p>
+                <br/>
             </div>
             <div className='PosterContent'>
             
@@ -34,7 +35,7 @@ const LastExhi =() => {
                 <img className='LastExhiPosterImg' src={process.env.PUBLIC_URL + '/assets/LastPoster.png'}/>
             </div>
             <div className='LastExhiPosterDetail'>
-                    <p>상세설명 상세설명 상세설명 상세설명 상세설명 상세설명</p>
+                    
                     
             </div>
             <div>

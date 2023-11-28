@@ -1,5 +1,5 @@
 .InfoExhi {
-    margin-top: 25%;
+    margin-top: 10%;
     text-align: center;
     font-family: KoPubWorldBatang_Pro;
 }
@@ -19,8 +19,13 @@
 } 
 
 .InfoDetail {
-    margin-left: 15%;
+    margin-left: 12%;
     font-family: KoPubWorldBatang_Pro;
     font-size: 12px;
     text-align: left;
+    margin-right: 10%;
+}
+
+.InfoBlank{
+    line-height: 50px;
 }
