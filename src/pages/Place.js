@@ -11,12 +11,12 @@ const Place=() => {
             </div>    
 
             <div className='info-container'>
-                <img className='map-img' src={process.env.PUBLIC_URL + '/assets/map.png'} alt="Map" />
+                <img className='map-img' src={process.env.PUBLIC_URL + '/assets/map2.png'} alt="Map" />
                 <div className='address-txt'>
                     <br/>
                     <br/>
-                    <p>오스카 라운지</p>
-                    <p className='detailAddress'>서울특별시 도봉구 삼양로 144길</p>
+                    <p>갤러리 강호</p>
+                    <p className='detailAddress'>서울 종로구 삼일대로 32길 22-1 2층</p>
                 </div>
             </div>
         </div>

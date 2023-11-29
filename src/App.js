@@ -51,6 +51,7 @@ const App = () => {
   useEffect(() => {
     // 3초 후에 로딩 상태를 false로 변경하여 Mainpage로 이동
     const timeoutId = setTimeout(() => {
+      
       setIsLoading(false);
     }, 3000);
 

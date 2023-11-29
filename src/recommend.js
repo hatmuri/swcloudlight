@@ -1,30 +1,31 @@
+//recommend.js
 import React, { useEffect, useState } from 'react';
 import { useNavigate, Routes, Route, Link, useLocation } from 'react-router-dom'
 import { MobileView } from 'react-device-detect';
 import './recommend.css';
 
 const questionList = [
-  {q:['오늘 드디어 열심히 준비하던 프로젝트가 끝나는 날입니다. 이번 프로젝트가 끝나면 당신에게 어떤 것이 기다리고 있을까요?'],
-  a:[{type:'A1', text:'프로젝트가 끝나면 수고한 나만을 위한 선물을 사고 말 거에요.'},
-    {type:'B1', text:'고생한 나를 위해 훌쩍 어디론가 떠나는 여행이 계획되어 있겠죠.'},
-    {type:'C1', text:'함께 한 사람들과 함께 즐거운 먹부림 party가 기다리고 있을 것 같아요.'}
+  {q:[`오늘 드디어 열심히 준비하던 프로젝트가 끝나는 날입니다. 이번 프로젝트가 끝나면 당신에게 어떤 것이 기다리고 \n있을까요?`],
+  a:[{type:'A1', text:`프로젝트가 끝나면 수고한 나만을 위한 선물을 사고 말 거에요.`},
+    {type:'B1', text:`고생한 나를 위해 훌쩍 어디론가 떠나는 여행이 계획되어 있겠죠.`},
+    {type:'C1', text:`함께 한 사람들과 함께 즐거운 먹부림 party가 \n기다리고 있을 것 같아요.`}
   ]},
-  {q:['당신의 가장 소중한 존재가 연락 하나 남기지 않고 사라졌습니다. 어떻게 할 건가요?'],
+  {q:[`당신의 가장 소중한 존재가\n 연락 하나 남기지 않고 사라졌습니다. \n어떻게 할 건가요?`],
   a:[{type:'A2', text:'가장 소중한 존재가 사라진 소식에 절망하며 울 거 같아요.'},
     {type:'B2', text:'내 인생에서 소중한 존재를 되찾기 위한 여정을  떠날 것 같아요.'},
     {type:'C2', text:'그 사람의 선택이겠죠? 저만의 새로운 시작을 할 것 같아요.'}
   ]},
-  {q:['산책 중에 길을 잃었습니다. 당신의 앞에는 두 갈래 길이 있습니다. 어디로 갈까요?'],
-  a:[{type:'A3', text:'그래도 화살표 표지판이 있는 오른쪽 길로 가는 게 맞는 거 같아요.'},
+  {q:[`산책 중에 길을 잃었습니다. \n당신의 앞에는 두 갈래 길이 있습니다. \n어디로 갈까요?`],
+  a:[{type:'A3', text:`그래도 화살표 표지판이 있는 \n오른쪽 길로 가는 게 맞는 거 같아요.`},
     {type:'B3', text:'인생은 도박! 화살표 표지판이 없는 왼쪽 길로 갑니다!'},
     {type:'C3', text:'뒤를 돌아서 왔던 길로 가며 다른 길을 찾아볼게요.'}
   ]},
-  {q:['오랜만에 오는 한가한 주말입니다. 특별한 약속도 없이 아침에 번쩍 눈이 떠집니다. 당신은 무엇을 하나요?'],
+  {q:[`오랜만에 오는 한가한 주말입니다. \n특별한 약속도 없이 아침에 번쩍 눈이 떠집니다. \n당신은 무엇을 하나요?`],
   a:[{type:'A4', text:'어째서, 지금 이 시간에 눈을? 다시 자려고 이불을 뒤집어씁니다.'},
-    {type:'B4', text:'이왕 일찍 일어난 거, 하루를 길게 살아볼까요? 오늘 하루 계획을 세웁니다.'},
+    {type:'B4', text:`이왕 일찍 일어난 거, 하루를 길게 살아볼까요? \n오늘 하루 계획을 세웁니다.`},
     {type:'C4', text:'문득 가고 싶었던 곳이 생각나요. 바로 옷을 챙겨 입어 나가요!'}
   ]},
-  {q:['테스트가 끝났습니다. 나에게 어울리는 시가 궁금하신가요?'],
+  {q:[`테스트가 끝났습니다. \n나에게 어울리는 시가 궁금하신가요?`],
   a:[{type:'', text:'결과 보러 가기'}]
 }
 ]
@@ -46,8 +47,8 @@ export default function Recommend() {
     if (page === questionList.length + 1) {
       // 5초 후에 다음 페이지로 이동
       const timerId = setTimeout(() => {
-        setPage(questionList.length + 2); // 실제 페이지 경로로 변경
-      }, 5000);
+        setPage(questionList.length + 2);
+      }, 1500);// 1.5초
   
       // 컴포넌트가 언마운트되면 타이머 제거 (선택적으로)
       return () => {
@@ -59,6 +60,8 @@ export default function Recommend() {
   }, [page, history]);
 
   const [resultContents, setResultContents] = useState({})
+
+  const navigate = useNavigate();
 
   const handleCkAnswer = (type, idx) => {
     let ls = poetList
@@ -212,9 +215,11 @@ export default function Recommend() {
           <div className='questionLayout'>
             <div class='questTitle'>
               <div>시 추천 테스트</div>
-              <div>{`${page} / ${questionList.length}`}</div>
+              {page < questionList.length && <div>{`${page} / ${questionList.length - 1}`}</div>}
             </div>
-
+            <div style={{width: "90%", textAlign: "center", borderBottom: "1px solid #aaa",
+                  lineHeight: "0.1em", margin:"20px"}}>    </div>
+            
             {questionList.map((val,idx) =>
               <div class='questionList' style={{display:page===(idx*1+1)?'flex':'none'}} key={idx}>
                 {console.log()}
@@ -249,14 +254,20 @@ export default function Recommend() {
             <div className="resultLayout">
               <div className='resultTitle'>
                 <div>시 추천 테스트</div>
-                <div onClick={()=>window.location.reload()}>다시 하기</div>
               </div>
+              <div style={{width: "90%", textAlign: "center", borderBottom: "1px solid #aaa",
+                  lineHeight: "0.1em", margin:"20px"}}>    </div>
+          
               <div className='resultList' style={{display: 'flex'}}>
                 <div className='poetLayout'>
                   <div className='poetTitle'>{resultContents.contents[0]}</div>
                   <div className='poetAuthor'>{resultContents.contents[1]}</div>
                   <div className='poetContents'>{resultContents.contents[2]}</div>
                 </div>
+              </div>
+              <div>
+                <div className='goToInfo' onClick={()=>{navigate("/Info")}}>전체 시가 궁금하시다면 클릭</div>
+                <div className='retryBtn' onClick={()=>window.location.reload()}>다시 하기</div>
               </div>
             </div>
           </div>

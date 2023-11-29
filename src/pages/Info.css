@@ -1,9 +1,20 @@
 .InfoExhi {
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
     font-family: KoPubWorldBatang_Pro;
     position: relative; /* relative 포지션 추가 */
     z-index: 1;
+}
+
+.InfoDate{
+    height: 10px;
+    
+}
+
+.InfoDate2{
+    background-color: rgba(254, 175, 168, 1);
+    width: fit-content;
+    margin-left: 37%;
 }
 
 .InfoTitle {

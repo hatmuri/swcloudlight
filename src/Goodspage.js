@@ -10,7 +10,7 @@ const GoodsPage = ({ currentIndex }) => {
     <div className='all'>
       <div className='header2'>
         <h className='text1'>굿즈</h>
-        <img src={vector} className='vecter'/> <br/>
+        <img src={vector} className='vector'/> <br/>
         <b className='text2'>전시품을 다양한 굿즈로도 간직하실 수 있습니다.</b>
       </div>
       <div className='list'>

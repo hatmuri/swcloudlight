@@ -10,16 +10,9 @@
 
 
 .container{
+  margin-top: 10%;
   text-align: center;
   overflow-y: scroll; 
-}
-
-.header-guest{
-  margin-top: 30px;
-  align-items: center;
-  width: 100%;
-  padding: 10px; 
-  z-index: 1; 
 }
 
 .header-guest .text1{
@@ -40,7 +33,7 @@
 .header-guest .text2{
   color: #808080;
   font-family: KoPubWorldBatang_Pro;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0em;
@@ -52,10 +45,11 @@
   padding: 5px;
   margin: 10px;
   width: 60px;
-  height: 15px;
+  height: 20px;
   flex-shrink: 0;
   text-align: center;
   font-size: 12px;
+  font-family: KoPubWorldBatang_Pro;
   color:#fff;
   background-color: #000000;
   margin-left: 40%;
@@ -82,6 +76,7 @@
 
 .color-box-container{
   font-size: 12px;
+  margin-left: 3%;
 }
 
 .color-box{

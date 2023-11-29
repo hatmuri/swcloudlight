@@ -34,9 +34,15 @@ const Footer = () => {
                                 <img className='instaLogo' src={process.env.PUBLIC_URL + '/assets/github_logo.png'}/>
                             </a>
                         </div>
+                        <div className='contactUnji'>
+                            <p>정영준</p>
+                            <a href="https://instagram.com/youngdrawjoon98?igshid=MTk0NTkyODZkYg==" target="_blank" alt="링크">
+                                <img className='instaLogo' src={process.env.PUBLIC_URL + '/assets/insta_color.png'}/>
+                            </a>
+                        </div>
                         
                         
-                        <p>정영준</p>
+                        
                     </div>
                     
                 </div>
