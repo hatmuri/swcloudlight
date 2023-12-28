@@ -7,11 +7,11 @@ const Place=() => {
         <div className='InfoMap'>
             <div className='map-header'>
                 <p>오시는 길</p>
-                <img className='info-map-circle' src={process.env.PUBLIC_URL + '/assets/infomapCircle.png'}/>
+                <img alt="circle" className='info-map-circle' src={process.env.PUBLIC_URL + '/assets/infomapCircle.png'}/>
             </div>    
 
             <div className='info-container'>
-                <img className='map-img' src={process.env.PUBLIC_URL + '/assets/map2.png'} alt="Map" />
+                <img alt="map" className='map-img' src={process.env.PUBLIC_URL + '/assets/map2.png'} />
                 <div className='address-txt'>
                     <br/>
                     <br/>

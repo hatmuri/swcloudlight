@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './LastExhi.css';
 
 const LastExhi =() => {
@@ -8,7 +8,7 @@ const LastExhi =() => {
         <div className='LastExhiBody'>
             <div className='LastExhiTitle'>
                 <p>지난 전시</p>
-                <img className='ExhiTitleCircle' src={process.env.PUBLIC_URL + '/assets/infomapCircle.png'}/>
+                <img alt="circle" className='ExhiTitleCircle' src={process.env.PUBLIC_URL + '/assets/infomapCircle.png'}/>
             </div>
             <div className='LastExhiTitle2'>
                 <p>어둠이 걷히고 나면</p>
@@ -28,11 +28,11 @@ const LastExhi =() => {
             </div>
             <div className='PosterContent'>
             
-                <img className="FinalPosterImg" src={process.env.PUBLIC_URL + '/assets/FinalPoster.png'}/>
+                <img alt="poster" className="FinalPosterImg" src={process.env.PUBLIC_URL + '/assets/FinalPoster.png'}/>
 
             </div>
             <div className='LastExhiContent'>
-                <img className='LastExhiPosterImg' src={process.env.PUBLIC_URL + '/assets/LastPoster.png'}/>
+                <img alt="poster" className='LastExhiPosterImg' src={process.env.PUBLIC_URL + '/assets/LastPoster.png'}/>
             </div>
             <div className='LastExhiPosterDetail'>
                     
