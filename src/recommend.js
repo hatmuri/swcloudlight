@@ -1,7 +1,6 @@
 //recommend.js
 import React, { useEffect, useState } from 'react';
-import { useNavigate, Routes, Route, Link, useLocation } from 'react-router-dom'
-import { MobileView } from 'react-device-detect';
+import { useNavigate } from 'react-router-dom'
 import './recommend.css';
 
 const questionList = [
