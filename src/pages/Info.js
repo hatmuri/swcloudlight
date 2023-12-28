@@ -9,7 +9,7 @@ const Info = () => {
             </div>
             
             <br/>
-            <img src={process.env.PUBLIC_URL + '/assets/FinalPoster.png'} className='Poster'/>
+            <img src={process.env.PUBLIC_URL + '/assets/thisposter1.png'} className='Poster'/>
             <div className='InfoDate'>
                 <p className='InfoDate2'> 2024.1.12-14 </p>
             </div>
