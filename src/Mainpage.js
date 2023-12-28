@@ -66,6 +66,7 @@ const Mainpage = () => {
       <div className='PageLastExhi'>
         <br/>
         <LastExhi/>
+        
       </div>
       <div className='PageFooter'>
         <br/>
