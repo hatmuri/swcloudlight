@@ -67,10 +67,9 @@ const App = () => {
       {isLoading ? (
         // 로딩 중에는 startloading.html을 렌더링
         <div className='start2'>
-
-        <Startloading/>
-
+          <Startloading/>
         </div>
+        
       ) : (
         // 로딩이 끝나면 앱 내용 렌더링
         <div>
