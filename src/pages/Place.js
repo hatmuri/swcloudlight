@@ -11,7 +11,7 @@ const Place=() => {
             </div>    
 
             <div className='info-container'>
-                <img alt="map" className='map-img' src={process.env.PUBLIC_URL + '/assets/map2.png'} alt="Map" />
+                <img alt="map" className='map-img' src={process.env.PUBLIC_URL + '/assets/map2.png'} />
                 <div className='address-txt'>
                     <br/>
                     <br/>
