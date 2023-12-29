@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "KoPubWorldBatang_Pro";
+  src: url("/public/fonts/KoPubWorld\ Batang_Pro\ Medium.otf") ;
+  font-weight: normal;
+  font-style: normal;
+}
 
 .Guestbook {
   text-align: center;
@@ -16,7 +22,7 @@
 }
 
 .header-guest .text1{
-  font-family: KoPubWorldBatang_Pro;
+  font-family: "KoPubWorldBatang_Pro";
   font-size: 16px;
   font-weight: 700;
   line-height: 25px;
@@ -32,7 +38,7 @@
 
 .header-guest .text2{
   color: #808080;
-  font-family: KoPubWorldBatang_Pro;
+  font-family: "KoPubWorldBatang_Pro";
   font-size: 12px;
   font-weight: 500;
   line-height: 15px;
@@ -49,7 +55,7 @@
   flex-shrink: 0;
   text-align: center;
   font-size: 12px;
-  font-family: KoPubWorldBatang_Pro;
+  font-family: "KoPubWorldBatang_Pro";
   color:#fff;
   background-color: #000000;
   margin-left: 40%;

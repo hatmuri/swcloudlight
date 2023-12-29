@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "KoPubWorldBatang_Pro";
+  src: url("/public/fonts/KoPubWorld\ Batang_Pro\ Medium.otf") ;
+  font-weight: normal;
+  font-style: normal;
+}
+
 .Goodspage {
   text-align: center;
   overflow-y: scroll; 
@@ -8,7 +15,7 @@
 .all{
   margin-top: 10%;
   text-align: center;
-  font-family: KoPubWorldBatang_Pro;
+  font-family: "KoPubWorldBatang_Pro";
 
 }
 
@@ -20,7 +27,7 @@
 }
 
 .header2 .text1{
-  font-family: KoPubWorldBatang_Pro;
+  font-family: "KoPubWorldBatang_Pro";
   font-size: 16px;
   font-weight: 700;
   line-height: 25px;
@@ -30,7 +37,7 @@
 
 .header2 .text2{
   color: #808080;
-  font-family: KoPubWorldBatang_Pro;
+  font-family: "KoPubWorldBatang_Pro";
   font-size: 12px;
   font-weight: 100;
   line-height: 15px;
@@ -40,24 +47,13 @@
 
 }
 
-.vector {
-  margin-left: 5px; 
-  margin-top: 15px;
-  width: 4px;
-  height: 4px;
-
-}
 
 .vector2 {
-  margin-left: 10px;
-  width: 7px;
-  height: 7px;
+  margin-left: 20px;
+  width: 10px;
+  height: 10px;
   background-color: white; 
-  transition: background-color 0.3s; 
-}
-
-.vector2.active {
-  filter: hue-rotate(90deg);
+  transition: background-color 0.1s; 
 }
 
 
@@ -80,19 +76,19 @@
 }
 
 .form{
-  font-family: KoPubWorldBatang_Pro;
+  font-family: "KoPubWorldBatang_Pro";
   font-size: 13px;
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0em;
   text-align: right;
   margin-right: 30px;
-  margin-top: 30px; 
+  margin-top: 50px; 
 
 }
 
 .form button{
   margin-top:10px;
-  font-family: KoPubWorldBatang_Pro;
+  font-family: "KoPubWorldBatang_Pro";
   background-color: white;
 }
