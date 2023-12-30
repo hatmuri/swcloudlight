@@ -15,15 +15,22 @@ const Crew =() => {
                 <p className='crewtextC'>,</p>
                 <p className='crewtextH'>한빛 소개</p>
             </div>
-            <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
-                <div className="flip-card-inner">
-                    <div className="flip-card-front">
-                        <img src={process.env.PUBLIC_URL + '/assets/unji1.png'} alt="Front" />
-                    </div>
-                    <div className="flip-card-back">
-                        <img src={process.env.PUBLIC_URL + '/assets/hanbit1.png'} alt="Back" />
+            <div className='clickArea'>
+                <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img src={process.env.PUBLIC_URL + '/assets/unji1.png'} alt="Front" />
+                        </div>
+                        <div className="flip-card-back">
+                            <img src={process.env.PUBLIC_URL + '/assets/hanbit1.png'} alt="Back" />
+                        </div>
                     </div>
                 </div>
+            </div>
+            
+
+            <div className='click'>
+                <p>click!</p>
             </div>
         </div>
         );
