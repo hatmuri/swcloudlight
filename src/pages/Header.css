@@ -7,7 +7,7 @@
 
 .blind{
   text-align: center;
-  font-family: KoPubWorldBatang_Pro;
+  font-family: "KoPubWorldBatang_Pro";
   font-size: 20px;
   font-weight: 500;
   position: relative; /* relative 포지션 추가 */
@@ -15,7 +15,7 @@
 }
 
 .menu p{
-  font-family: KoPubWorldBatang_Pro;
+  font-family: "KoPubWorldBatang_Pro";
   font-size: 14px;
   margin: 0px;
 }
@@ -29,7 +29,7 @@
 .blind2 p{
   text-align: right;
   margin-right: 30px;
-  font-family: KoPubWorldBatang_Pro;
+  font-family: "KoPubWorldBatang_Pro";
   font-size: 10px;
 }
 
@@ -124,7 +124,7 @@ nav{
   transition: opacity 0.5s, transform 0.5s;
 }
 
-a{
+.nav-links a{
   color: black;
   font-size: 1.4rem;
   font-weight: 900;

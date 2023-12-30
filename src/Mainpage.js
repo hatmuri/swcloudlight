@@ -55,11 +55,11 @@ const Mainpage = () => {
         <Crew/>
       </div>
       
-      <div className='Page'>
+      <div className='PageGuestBook'>
         <br/>
         <Guestbook/>
       </div>
-      <div className='Page'>
+      <div className='PageGoodsPage'>
         <br/>
         <GoodsPage/>
       </div>
