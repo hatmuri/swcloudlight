@@ -8,6 +8,7 @@ import next from './Polygon 1.png'
 import previous from './Polygon 2.png'
 
 
+
 const GuestbookRead = () => {
   const navigate = useNavigate();
   
@@ -24,6 +25,9 @@ const GuestbookRead = () => {
       console.error('Error fetching data:', error);
     });
   }, []);
+
+  const backgroundImageList = Array.from({ length: 180 }, (_, i) => `./gbimages/${i + 1}.jpg`);
+
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -70,7 +74,7 @@ const GuestbookRead = () => {
           </div>
           <div className='shape-container'>
             {currentItems.map((element, index) => (
-              <div className='guest-box'>
+              <div className='guest-box' key={index} style={{ backgroundImage: `url(${backgroundImageList[index % 180]})` }}>
                 {/*<p className='nickname'>작성자 : {element.nickname}</p>*/}
                 <p className='message'>{element.message}</p>
               </div>

@@ -114,7 +114,6 @@
   .guest-box {
     width: 85px; /* 정사각형의 너비 */
     height: 85px; /* 정사각형의 높이 */
-    background-color: #ccc; /* 배경 색상 설정 */
     margin-top: 15px;
     margin-right: 3px;
     margin-left: 3px;
