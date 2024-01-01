@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import anime from 'animejs'; // animejs도 import 해야 합니다.
+import anime from 'animejs'; // animejs도 install 해야 합니다.
 
 const StartLoading = () => {
     useEffect(() => {
