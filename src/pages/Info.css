@@ -7,6 +7,7 @@
 }
 
 .InfoDate{
+    text-align: center;
     height: 10px;
     /*text-align: center;*/
     display: flex;
@@ -14,6 +15,7 @@
 }
 
 .InfoDate2{
+    text-align: center;
     /*background-color: rgba(254, 175, 168, 1);*/
     color: rgba(254, 175, 168, 1);
     width: fit-content;
@@ -27,9 +29,10 @@
 }
 
 .InfoTitle {
+    text-align: center;
     display: flex; /* 자식 요소를 가로로 배치하기 위해 flexbox 사용 */
     align-items: center; /* 수직 정렬을 위해 추가 */
-    margin-left: 40%;
+    margin-left: 43%;
     font-family: "KoPubWorldBatang_Pro";
     font-size: 16px;
 } 
@@ -50,7 +53,7 @@
     margin-left: 12%;
     font-family: "KoPubWorldBatang_Pro";
     font-size: 12px;
-    text-align: left;
+    text-align: center;
     margin-right: 10%;
 }
 
