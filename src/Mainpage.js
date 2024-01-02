@@ -13,13 +13,15 @@ import Guestbook from './Guestbook';
 import LastExhi from './pages/LastExhi';
 import Footer from './Footer';
 import slide from './slide.png';
+import Header from './pages/Header';
 
 
 const Mainpage = () => {
   const navigate = useNavigate();
-  
+
   return (
     <div className='App'>
+
       <div className='Page blind2'>
         <div className='blind2-content'>
           <p className='smallTitle'>제2회 운빛 전시</p>
@@ -37,8 +39,9 @@ const Mainpage = () => {
           </div>
           
           <div className='button'>
-            <div onClick={()=>{navigate("/Guestbook-read")}}>방명록</div>
-            <div onClick={()=>{navigate("/recommend")}}>작품추천 테스트</div>
+            <div className='mainGBbutton' onClick={()=>{navigate("/Guestbook-read")}}>방명록 쓰고 <br/>
+            이벤트 참여하기 !</div>
+            <div className='mainRCbutton' onClick={()=>{navigate("/recommend")}}>작품추천 테스트</div>
           </div>
 
           <div className='slide'>
@@ -50,6 +53,7 @@ const Mainpage = () => {
           </div>   
         </div>
       </div>
+      
       <div className='Page'>
         <Info/>
       </div>
@@ -76,6 +80,7 @@ const Mainpage = () => {
         <br/>
         <Footer/>
       </div>
+      
     </div>
   );
 }
