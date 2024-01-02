@@ -52,6 +52,9 @@ const GuestbookWrite = () => {
         <img src={vector} className='vecter' />
       </div>
       <div className='guest-comment'>방명록 작성</div>
+      <div className='GBDiv1'>
+
+      
       <form className='onSubmit' onSubmit={(e) => { e.preventDefault(); submitForm();}}>
         <p>닉네임 : <input type="text" name="nickname" 
           value={writeContent.nickname} 
@@ -68,16 +71,22 @@ const GuestbookWrite = () => {
           value={writeContent.message} 
           onChange={getValue}></textarea></p>
       </form>
+      </div>
       <div className='guest-comment'>개인정보 입력</div>
+      <div className='GBDiv2'>
+
+      
       <form className='onSubmit' onSubmit={(e) => { e.preventDefault(); submitForm(); }}>
-        <p>이름 : <input type="text" name="name" 
+        <p className='submitName'>이름 : <input type="text" name="name" 
         value={writeContent.name} 
         onChange={getValue}></input></p>
-        <p>연락처 : <input type="text" name="phone" 
+        <p className='submitPhonenumber'>연락처 : <input type="text" name="phone" 
         value={writeContent.phone} 
         onChange={getValue}></input></p>
       </form>
+      </div>
       <p className='delete-text'>개인정보는 전시회 종료 후 삭제합니다.</p>
+      
       <div className='submit-button' onClick={submitForm}>제출하기</div>
     </div>
   );

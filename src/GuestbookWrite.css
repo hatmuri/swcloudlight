@@ -15,6 +15,22 @@
     scroll-snap-align: start; /* 페이지 정렬 위치 설정 */
   }
 
+  .GBDiv1{
+    display: flex;
+    justify-content: center;
+  }
+
+  .GBDiv2{
+    display: flex;
+    justify-content: center;
+  }
+  .submitName{
+    margin-left: 4%;
+  }
+  .submitPhonenumber{
+    
+  }
+
   .vecter{
     width: 7px;
     height: 7px;
@@ -56,6 +72,7 @@
   .delete-text{
     font-family: KoPubWorldBatang_Pro; 
     font-size: 12px;
+    text-align: center;
   }
 
   .onSubmit{

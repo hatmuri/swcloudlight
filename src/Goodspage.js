@@ -1,6 +1,6 @@
 // GoodsPage.js
 import React, { useState, useEffect, useRef } from 'react';
-import item1 from './item1.png';
+import item1 from './resize_item1.png';
 import item2 from './resize_item2.png';
 import image_loading from './image_loading.jpg'
 import vector from './Vector.png';
@@ -95,7 +95,7 @@ const GoodsPage = () => {
       <div className='list'>
         <div className="container" ref={containerRef}>
           <div className="inner">
-            <img src={item2} alt="상품 이미지1" />
+            <img src={item1} alt="상품 이미지1" />
           </div>
           <div className="inner">
             <img src={item2} alt="상품 이미지2" />

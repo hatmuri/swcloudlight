@@ -16,7 +16,7 @@
 
   .header{ 
     text-align: left;
-    margin-top: 20px;
+    margin-top: 50px;
     letter-spacing:10px;
     margin-left:5%;
   }
@@ -58,8 +58,26 @@
   .event{
     font-family: KoPubWorldBatang_Pro;
     flex-direction: row;
-    
-    justify-content: center;
+    /*display: flex;
+    justify-content: center;*/
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .event1{
+    font-family: KoPubWorldBatang_Pro;
+    flex-direction: row;
+    /*display: flex;
+    justify-content: center;*/
+
+  }
+
+  .event2{
+    font-family: KoPubWorldBatang_Pro;
+    flex-direction: row;
+    /*display: flex;
+    justify-content: center;*/
+
   }
 
   .event-text {
@@ -67,12 +85,18 @@
     margin: 10px;
     width: 60px;
     height: 15px;
-    text-align: center;
+    /*text-align: center;*/
+    
     font-size: 12px;
     font-family: KoPubWorldBatang_Pro;
     color: #000000;
     background-color: #B6E8D7;
     /*margin-left: 3%;*/
+  }
+
+  .textDiv{
+    display: flex;
+    justify-content: center;
   }
 
   .text1 {
@@ -85,6 +109,8 @@
   .text2{
     font-size: 12px; /* 글씨 크기 변경 */
     white-space: pre-wrap;
+    text-align: center;
+    /*margin-top: 5%;*/
   }
 
   .readpage-write-button{
