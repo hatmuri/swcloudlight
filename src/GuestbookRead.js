@@ -8,11 +8,13 @@ import next from './Polygon 1.png'
 import previous from './Polygon 2.png'
 
 
+
 const GuestbookRead = () => {
   const navigate = useNavigate();
   
   const [viewContent, setViewContent] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [backgroundImageList, setBackgroundImageList] = useState([]);
   const itemsPerPage = 9;
   
   useEffect(()=>{
@@ -23,7 +25,15 @@ const GuestbookRead = () => {
     .catch(error => {
       console.error('Error fetching data:', error);
     });
-  }, []);
+  },[]);
+
+  useEffect(() => {
+    const dynamicBackgroundImageList = [];
+    for (let i = viewContent.length; i >= 1; i--) {
+      dynamicBackgroundImageList.push(`http://localhost:8000/api/images/${i}`);
+    }
+     setBackgroundImageList(dynamicBackgroundImageList);
+  }, [viewContent]);
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -51,7 +61,7 @@ const GuestbookRead = () => {
           <br/>
           <div className='event'>
             <b className='event-text'>참여 기간</b>
-            <b className='text1'>2023.01.08~2023.01.15</b>
+            <b className='text1'>2023.01.03~2023.01.13</b>
           </div>
           <br/>
           <div className='event'>
@@ -59,7 +69,7 @@ const GuestbookRead = () => {
             <b className='text1'>방명록 작성자</b>
           </div>
           <br/>
-          <b className='text2'>방명록을 작성하면 이벤트 참여 완료되며,<br/> 개인 정보는 전시회 종료 후 삭제합니다.</b>
+          <b className='text2'>방명록을 작성하시는 분들 중 <br/> 추첨을 통해 소정의 상품을 보내드립니다! <br/> 개인 정보는 전시회 종료 후 삭제합니다.</b>
         </div>
         <br/>
         <div className='readpage-write-button' onClick={()=>{navigate("/Guestbook-write")}}>작성하기</div>
@@ -70,11 +80,17 @@ const GuestbookRead = () => {
           </div>
           <div className='shape-container'>
             {currentItems.map((element, index) => (
-              <div className='guest-box'>
-                {/*<p className='nickname'>작성자 : {element.nickname}</p>*/}
+              <div
+              className='guest-box'
+              key={index}
+              style={{ backgroundImage: `url(${backgroundImageList[indexOfFirstItem + index % itemsPerPage]})` }}
+            >
+              <div className='g-content'>
                 <p className='message'>{element.message}</p>
+                <p className='nickname'> - {element.nickname} -</p>
               </div>
-            ))}
+            </div>
+          ))}
           </div>
           <div className='next-button' onClick={() => setCurrentPage(currentPage + 1)}>
             <img src={next}/>
