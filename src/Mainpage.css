@@ -118,11 +118,12 @@ canvas {
 
 .button {
   flex-direction: column;
-  margin-top: 420px;
   margin-left: 140px;
   margin-right: 20px;
   position: relative;
   z-index: 1;
+  top: 0;
+  left: 0;
 }
 
 .button div:nth-child(1){
