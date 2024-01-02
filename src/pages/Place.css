@@ -1,41 +1,43 @@
 .InfoMap {
     font-family: KoPubWorldBatang_Pro;
-}
+    position: 'relative';
+    top: '20px'}
 
 .info-container {
     display: flex;
+    flex-direction: column;
 }
 
 .map-header {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column; /* Change to column layout */
     margin-left: 5%;
     font-size: 16px;
     margin-top: 10%;
 }
 
+.map-api {
+    display: flex;
+    flex-direction: column; /* Set flex-direction to column */
+}
+
 .detailAddress {
     color: #808080;
-    font-Size: 8px;
-
+    font-size: 8px;
 }
 
 .info-map-circle {
     object-fit: cover;
-    width: 4px; /* Set your desired width */
-    height: 9px; /* Set your desired height */
+    width: 4px;
+    height: 9px;
     margin-top: 30px;
     margin-left: 5px;
-}
-
-.map-img {
-    /* 필요한 스타일 추가 */
-    margin-left: 5%;
-    margin-right: 5%; /* 간격 조절을 위한 예시 값 */
 }
 
 .address-txt {
     margin-right: 5%;
     font-size: 13px;
-    margin-top: 38%;
-    /* 필요한 스타일 추가 */
 }

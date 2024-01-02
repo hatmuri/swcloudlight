@@ -1,7 +1,9 @@
 .flip-card-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
     height: 100vh;  /*컨테이너 높이를 뷰포트 높이의 100%로 설정합니다. */
     flex-wrap: wrap;
 }
@@ -17,24 +19,20 @@
 }
 
 .crewtextU{
-    margin-top:70%;
 }
 
 .crewtextC{
-    margin-top: 70%;
     margin-left: 10px;
     color: rgba(254, 175, 168, 1);
 }
 
 .crewtextH{
-    margin-top: 70%;
     margin-left: 10px;
 }
 
 .crew-info-header {
     font-family: KoPubWorldBatang_Pro;
 }
-
 
 .first{
     margin-top: 25%;
