@@ -6,6 +6,7 @@
 }
 
 .blind{
+  z-index: 10000; /* 예시 값, 네이버 지도 위로 올려놓을 값 */
   text-align: center;
   font-family: "KoPubWorldBatang_Pro";
   font-size: 20px;
