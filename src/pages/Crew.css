@@ -7,10 +7,8 @@
 
 .flip-card-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
     height: 100vh;  /*컨테이너 높이를 뷰포트 높이의 100%로 설정합니다. */
     flex-wrap: wrap;
 }
