@@ -14,13 +14,13 @@
     align-items: center; /* 수직 정렬을 위해 추가 */
     margin-left: 70%;
     margin-right: 5%;
-    font-family: KoPubWorldBatang_Pro;
+    font-family: "KoPubWorldBatang_Pro";
     font-size: 16px;
 }
 
 .LastExhiTitle2 {
     margin-right: 5%;
-    font-family: KoPubWorldBatang_Pro;
+    font-family: "KoPubWorldBatang_Pro";
     font-size: 20px;
     text-align: right;
     word-wrap: break-word;
@@ -31,7 +31,7 @@
     margin-right: 5%;
     text-align: right;
     font-size: 12px;
-    font-family: KoPubWorldBatang_Pro;
+    font-family: "KoPubWorldBatang_Pro";
     margin-left: 5%
 }
 
@@ -58,7 +58,7 @@
     margin-left: 5%;
     
     margin-right: 5%;
-    font-family: KoPubWorldBatang_Pro;
+    font-family: "KoPubWorldBatang_Pro";
     font-size: 16px;
     color: #606060;
 }
@@ -70,7 +70,7 @@
 
 .LastExhiPosterDetail {
     font-size: 12px;
-    font-family: KoPubWorldBatang_ProMedium;
+    font-family: "KoPubWorldBatang_Pro";
     text-align: left;
     margin-left: 20px;
     width: 208px;

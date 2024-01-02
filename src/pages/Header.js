@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import brand from './brand.png';
 import {CSSTransition} from 'react-transition-group';
+//import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
 
 
 

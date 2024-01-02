@@ -17,7 +17,8 @@
   .header{ 
     text-align: left;
     margin-top: 20px;
-    letter-spacing:10px
+    letter-spacing:10px;
+    margin-left:5%;
   }
 
   .header-text {
@@ -32,10 +33,11 @@
 
   .title {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     white-space: nowrap;
     text-align: center;
-    margin-left: 15%;
+    /*margin-left: 15%;*/
   }
 
   .title-text {
@@ -56,6 +58,8 @@
   .event{
     font-family: KoPubWorldBatang_Pro;
     flex-direction: row;
+    
+    justify-content: center;
   }
 
   .event-text {
@@ -68,12 +72,12 @@
     font-family: KoPubWorldBatang_Pro;
     color: #000000;
     background-color: #B6E8D7;
-    margin-left: 3%;
+    /*margin-left: 3%;*/
   }
 
   .text1 {
     display: inline-block;
-    margin-left: 8px;
+    /*margin-left: 8px;*/
     font-size: 12px; /* 글씨 크기 변경 */
     color: #606060;
   }
@@ -81,6 +85,23 @@
   .text2{
     font-size: 12px; /* 글씨 크기 변경 */
     white-space: pre-wrap;
+  }
+
+  .readpage-write-button{
+    display : block;
+    padding: 5px;
+    margin: 10px;
+    width: 60px;
+    height: 20px;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 12px;
+    font-family: "KoPubWorldBatang_Pro";
+    color:#fff;
+    background-color: #000000;
+    /*margin-left: 45%;*/
+    margin: 0 auto;
+    
   }
 
   .guest-comment{

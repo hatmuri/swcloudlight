@@ -117,6 +117,7 @@ canvas {
 }
 
 .button {
+  margin-top: 80%;
   flex-direction: column;
   margin-left: 140px;
   margin-right: 20px;
@@ -206,11 +207,11 @@ canvas {
 
 .slide{
   margin-top:40px;
-  margin-left:47%;
 }
 
 .slide img{
   animation: blink 1s infinite alternate;
+
 }
 
 @keyframes blink {

@@ -53,8 +53,18 @@
     width: 100%;
     flex-wrap: wrap;
     text-align: center;
-    margin-top: 2%;
+    font-family: "KoPubWorldBatang_Pro";
+    animation: blink 1s infinite alternate;
 }
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
 
 .first{

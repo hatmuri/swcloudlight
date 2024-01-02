@@ -1,6 +1,7 @@
 // GoodsPage.js
 import React, { useState, useEffect, useRef } from 'react';
-import goods1 from './goods.png';
+import item1 from './item1.png';
+import image_loading from './image_loading.jpg'
 import vector from './Vector.png';
 import vector2 from './blackdot.png';
 import './Goodspage.css';
@@ -93,24 +94,18 @@ const GoodsPage = () => {
       <div className='list'>
         <div className="container" ref={containerRef}>
           <div className="inner">
-            <img src={goods1} alt="상품 이미지1" />
+            <img src={item1} alt="상품 이미지1" />
           </div>
           <div className="inner">
-            <img src={goods1} alt="상품 이미지2" />
+            <img src={image_loading} alt="상품 이미지2" />
           </div>
           <div className="inner">
-            <img src={goods1} alt="상품 이미지3" />
-          </div>
-          <div className="inner">
-            <img src={goods1} alt="상품 이미지4" />
-          </div>
-          <div className="inner">
-            <img src={goods1} alt="상품 이미지5" />
+            <img src={item1} alt="상품 이미지3" />
           </div>
         </div>
       </div>  
       <div className='current'>
-        {[0, 1, 2, 3, 4].map((index) => (
+        {[0, 1, 2 ].map((index) => (
           <img
             key={index}
             className='vector2'
