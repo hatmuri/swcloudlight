@@ -118,7 +118,7 @@ canvas {
 
 .button {
   flex-direction: column;
-  margin-top: 420px;
+  margin-top: 90%;
   margin-left: 140px;
   margin-right: 20px;
   position: relative;
@@ -201,4 +201,22 @@ canvas {
   font-size: 15px;
   color: #000000;
   justify-content: center;
+}
+
+.slide{
+  margin-top:40px;
+  margin-left:47%;
+}
+
+.slide img{
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
