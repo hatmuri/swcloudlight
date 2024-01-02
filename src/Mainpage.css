@@ -203,3 +203,21 @@ canvas {
   color: #000000;
   justify-content: center;
 }
+
+.slide{
+  margin-top:40px;
+  margin-left:47%;
+}
+
+.slide img{
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

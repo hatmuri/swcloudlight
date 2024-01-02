@@ -12,6 +12,7 @@ import GoodsPage from './Goodspage';
 import Guestbook from './Guestbook';
 import LastExhi from './pages/LastExhi';
 import Footer from './Footer';
+import slide from './slide.png';
 
 
 const Mainpage = () => {
@@ -36,9 +37,13 @@ const Mainpage = () => {
           </div>
           
           <div className='button'>
-              <div onClick={()=>{navigate("/Guestbook-read")}}>방명록</div>
-              <div onClick={()=>{navigate("/recommend")}}>작품추천 테스트</div>
-            </div>
+            <div onClick={()=>{navigate("/Guestbook-read")}}>방명록</div>
+            <div onClick={()=>{navigate("/recommend")}}>작품추천 테스트</div>
+          </div>
+
+          <div className='slide'>
+            <img src={slide} alt="slide"/>
+          </div>
           
           <div className='main'>
             <div className="one"></div>

@@ -12,8 +12,8 @@
 }
 
 .all{
-  margin-top: 30%;
-  margin-bottom: 30%;
+  margin-top: 20%;
+  margin-bottom: 20%;
   text-align: center;
   font-family: "KoPubWorldBatang_Pro";
 
@@ -86,4 +86,9 @@
   margin-top:10px;
   font-family: "KoPubWorldBatang_Pro";
   background-color: white;
+}
+
+.slide{
+  height: 30px;
+  width: 30px;
 }

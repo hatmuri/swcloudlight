@@ -21,25 +21,41 @@
     align-items: center;
     width: 100%;
     font-family: "KoPubWorldBatang_Pro";
-    height: 0px;
+    height: 10%
+    
 
+}
+
+.clickArea{
+    height:fit-content;
+    
 }
 
 .crewtextU{
+    /*margin-top:70%;*/
 }
 
 .crewtextC{
+    /*margin-top: 70%;*/
     margin-left: 10px;
     color: rgba(254, 175, 168, 1);
 }
 
 .crewtextH{
+    /*margin-top: 70%;*/
     margin-left: 10px;
 }
 
 .crew-info-header {
     font-family: "KoPubWorldBatang_Pro";
 }
+
+.click{
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
 
 .first{
     margin-top: 25%;
@@ -48,8 +64,11 @@
 }
 .flip-card {
     perspective: 1000px;
-    width: 200px;
-    height: 90%;
+    width: 190px;
+    /*height: 90%;*/
+    height: fit-content;
+    padding-top: 40%;
+    padding-bottom: 40%;
 }
 
 .flip-card-inner {

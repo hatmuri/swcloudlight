@@ -24,7 +24,7 @@ const GoodsPage = () => {
         index = 1;
       } else if (scrollPosition >= 380 && scrollPosition < 650) {
         index = 2;
-      } else if (scrollPosition >= 650 && scrollPosition < 845) {
+      } else if (scrollPosition >= 650 && scrollPosition < 800) {
         index = 3;
       } else {
         index=4;
@@ -121,7 +121,7 @@ const GoodsPage = () => {
       </div>   
       <div className='form'>
         <b>구매를 원하시면 form을 작성해주세요</b> <br/>
-        <a href='https://docs.google.com/forms/d/e/1FAIpQLSdfW38kPfVLdZ18dPbK55ArIW1jTPbqzjqgqhQqXLS0CKbS8w/viewform?usp=send_form'>
+        <a href='https://docs.google.com/forms/d/e/1FAIpQLSd9KUIlDzxVQVlHjHdf6tby5eKRpK_G4SqwSiEyPdq2Lvw5lQ/viewform'>
           <button>구매하기</button>
         </a>
       </div>

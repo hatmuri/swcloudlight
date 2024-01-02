@@ -7,17 +7,16 @@
 
 .App {
   text-align: center;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
-  width: 100%;
-  height: 100%; 
+  height: 100dvh;
   scroll-snap-type: y mandatory;
   font-family: KoPubWorldBatang_Pro;
   
 }
 
 .Page{
-  /*padding-top: 2em;*/
+  padding-top: 2em;
   
   /*height: 90vh;  각 페이지의 높이를 화면 크기만큼 설정 */
   /*scroll-snap-align: start;  페이지 정렬 위치 설정 */
@@ -36,8 +35,12 @@
   /*scroll-snap-align: start;*/
 }
 
+.PageGuestBook{
+  overflow-x: hidden;
+}
+
 .PageFooter{
-  scroll-snap-align: start;
+  /*scroll-snap-align: start;*/
   height: 45vh;
   margin-top: 5%;
 }
