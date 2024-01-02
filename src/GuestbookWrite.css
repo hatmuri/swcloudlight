@@ -71,3 +71,7 @@
     margin-top: 10%;
     margin-left: 70%;
   }
+
+  ::placeholder {
+    text-align: center;
+  }

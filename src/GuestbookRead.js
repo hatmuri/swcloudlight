@@ -8,11 +8,13 @@ import next from './Polygon 1.png'
 import previous from './Polygon 2.png'
 
 
+
 const GuestbookRead = () => {
   const navigate = useNavigate();
   
   const [viewContent, setViewContent] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [backgroundImageList, setBackgroundImageList] = useState([]);
   const itemsPerPage = 9;
   
   useEffect(()=>{
@@ -23,7 +25,15 @@ const GuestbookRead = () => {
     .catch(error => {
       console.error('Error fetching data:', error);
     });
-  }, []);
+  },[]);
+
+  useEffect(() => {
+    const dynamicBackgroundImageList = [];
+    for (let i = viewContent.length; i >= 1; i--) {
+      dynamicBackgroundImageList.push(`http://localhost:8000/api/images/${i}`);
+    }
+     setBackgroundImageList(dynamicBackgroundImageList);
+  }, [viewContent]);
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -70,11 +80,15 @@ const GuestbookRead = () => {
           </div>
           <div className='shape-container'>
             {currentItems.map((element, index) => (
-              <div className='guest-box'>
-                {/*<p className='nickname'>작성자 : {element.nickname}</p>*/}
-                <p className='message'>{element.message}</p>
-              </div>
-            ))}
+              <div
+              className='guest-box'
+              key={index}
+              style={{ backgroundImage: `url(${backgroundImageList[indexOfFirstItem + index % itemsPerPage]})` }}
+            >
+              {/*<p className='nickname'>작성자 : {element.nickname}</p>*/}
+              <p className='message'>{element.message}</p>
+            </div>
+          ))}
           </div>
           <div className='next-button' onClick={() => setCurrentPage(currentPage + 1)}>
             <img src={next}/>

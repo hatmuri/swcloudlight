@@ -54,7 +54,7 @@ const GuestbookWrite = () => {
           border: 'none',
           fontSize: '12px'
           }}
-          name="message" placeholder="당신의 색채에 대해 입력 (30자 이내)"
+          name="message" placeholder="나의 색채는 ? 이다&#13;&#10; ? 에 들어갈 말을 작성해주세요."
           value={writeContent.message} 
           onChange={getValue}></textarea></p>
       </form>
