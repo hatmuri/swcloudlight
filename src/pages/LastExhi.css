@@ -48,7 +48,10 @@
 }
 
 .PosterContent{
-    align-items: center;
+    /*align-items: center;
+    원래 있던 부분 */
+    width: fit-content;
+    height: fit-content;
     
 }
 

@@ -39,8 +39,8 @@ const Mainpage = () => {
           </div>
           
           <div className='button'>
-            <div className='mainGBbutton' onClick={()=>{navigate("/Guestbook-read")}}>방명록 쓰고 <br/>
-            이벤트 참여하기 !</div>
+            <div className='mainGBbutton' onClick={()=>{navigate("/Guestbook-read")}}>방명록<br/>
+            이벤트 참여</div>
             <div className='mainRCbutton' onClick={()=>{navigate("/recommend")}}>작품추천 테스트</div>
           </div>
 

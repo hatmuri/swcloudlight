@@ -32,7 +32,7 @@ const GuestbookRead = () => {
     for (let i = viewContent.length; i >= 1; i--) {
       dynamicBackgroundImageList.push(`http://localhost:8000/api/images/${i}`);
     }
-     setBackgroundImageList(dynamicBackgroundImageList);
+    setBackgroundImageList(dynamicBackgroundImageList);
   }, [viewContent]);
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -60,16 +60,24 @@ const GuestbookRead = () => {
           </div>
           <br/>
           <div className='event'>
+
+          
+          <div className='event1'>
             <b className='event-text'>참여 기간</b>
             <b className='text1'>2023.01.03~2023.01.13</b>
           </div>
           <br/>
-          <div className='event'>
+          <div className='event2'>
             <b className='event-text'>참여 대상</b>
             <b className='text1'>방명록 작성자</b>
           </div>
           <br/>
-          <b className='text2'>방명록을 작성하시는 분들 중 <br/> 추첨을 통해 소정의 상품을 보내드립니다! <br/> 개인 정보는 전시회 종료 후 삭제합니다.</b>
+          </div>
+          <div className='textDiv'>
+
+          
+          <b className='text2'>방명록을 작성하시는 분들 중 <br/>추첨을 통해 소정의 상품을 보내드립니다! <br/>개인 정보는 전시회 종료 후 삭제합니다.</b>
+          </div>
         </div>
         <br/>
         <div className='readpage-write-button' onClick={()=>{navigate("/Guestbook-write")}}>작성하기</div>
