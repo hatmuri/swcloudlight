@@ -27,7 +27,9 @@ const Guestbook = () => {
     <div className='container2'>
       <div className='flex-container'>
         <div className='header-guest'>
-          <h className='text1'>방명록</h>
+          
+            <p className='text1'>방명록</p>
+            
           <img src={vector} className='vecter' /> <br />
           <b className='text2'>당신의 색채는 무엇인가요?</b>
         </div>
