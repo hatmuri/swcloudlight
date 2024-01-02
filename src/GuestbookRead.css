@@ -135,13 +135,14 @@
 
   .nickname{
     font-family: KoPubWorldBatang_Pro;
-    font-size: 10px;
+    font-size: 8px;
+    text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;
   }
 
   .message{
     font-family: KoPubWorldBatang_Pro;
     font-size: 10px;
-    color: #AED581;
+    text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;
   }
 
   .submit{

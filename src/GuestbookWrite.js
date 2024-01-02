@@ -16,6 +16,16 @@ const GuestbookWrite = () => {
   })
 
   const submitForm = ()=>{
+    if (!writeContent.name || !writeContent.phone || !writeContent.nickname || !writeContent.message) {
+      alert('모든 항목을 작성해주세요!');
+      return;
+    }
+
+    const phoneRegex = /^\d{11}$/;
+    if (!phoneRegex.test(writeContent.phone)) {
+      alert('연락처는 숫자로만 작성해주세요!');
+      return;
+    }
     Axios.post('http://localhost:8000/api/insert', {
       name: writeContent.name,
       phone: writeContent.phone,
@@ -42,7 +52,7 @@ const GuestbookWrite = () => {
         <img src={vector} className='vecter' />
       </div>
       <div className='guest-comment'>방명록 작성</div>
-      <form className='onSubmit' onSubmit={(e) => { e.preventDefault(); submitForm(); }}>
+      <form className='onSubmit' onSubmit={(e) => { e.preventDefault(); submitForm();}}>
         <p>닉네임 : <input type="text" name="nickname" 
           value={writeContent.nickname} 
           onChange={getValue}></input></p>
