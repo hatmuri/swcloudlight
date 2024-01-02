@@ -54,17 +54,18 @@ const Mainpage = () => {
         <Crew/>
       </div>
       
-      <div className='Page'>
+      <div className='PageGuestBook'>
         <br/>
         <Guestbook/>
       </div>
-      <div className='Page'>
+      <div className='PageGoodsPage'>
         <br/>
         <GoodsPage/>
       </div>
       <div className='PageLastExhi'>
         <br/>
         <LastExhi/>
+        
       </div>
       <div className='PageFooter'>
         <br/>

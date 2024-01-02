@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "KoPubWorldBatang_Pro";
+    src: url("/public/fonts/KoPubWorld\ Batang_Pro\ Medium.otf") ;
+    font-weight: normal;
+    font-style: normal;
+}
+
 .Footer {
     background-color: white; /* Set the background color */
     color: rgba(96, 96, 96, 1); /* Set the text color */

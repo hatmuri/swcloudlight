@@ -1,17 +1,26 @@
+@font-face {
+  font-family: "KoPubWorldBatang_Pro";
+  src: url("/public/fonts/KoPubWorld\ Batang_Pro\ Medium.otf") ;
+  font-weight: normal;
+  font-style: normal;
+}
 
 .App {
   text-align: center;
   overflow-y: scroll;
+  overflow-x: hidden;
   width: 100%;
-  height: 100vh; 
+  height: 100%; 
   scroll-snap-type: y mandatory;
   font-family: KoPubWorldBatang_Pro;
+  
 }
 
 .Page{
-  padding-top: 2em;
-  height: 90vh; /* 각 페이지의 높이를 화면 크기만큼 설정 */
-  scroll-snap-align: start; /* 페이지 정렬 위치 설정 */
+  /*padding-top: 2em;*/
+  
+  /*height: 90vh;  각 페이지의 높이를 화면 크기만큼 설정 */
+  /*scroll-snap-align: start;  페이지 정렬 위치 설정 */
 }
 
 .header{
@@ -19,16 +28,17 @@
 }
 
 .PagePlace{
-  scroll-snap-align: start;
+  /*scroll-snap-align: start;*/
 }
 
 
 .PageLastExhi{
-  scroll-snap-align: start;
+  /*scroll-snap-align: start;*/
 }
 
 .PageFooter{
   scroll-snap-align: start;
+  height: 45vh;
   margin-top: 5%;
 }
 
