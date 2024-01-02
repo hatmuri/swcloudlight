@@ -23,7 +23,7 @@ const GuestbookWrite = () => {
 
     const phoneRegex = /^\d{11}$/;
     if (!phoneRegex.test(writeContent.phone)) {
-      alert('연락처는 숫자로만 작성해주세요!');
+      alert('연락처는 11개의 숫자로만 작성해주세요!');
       return;
     }
     Axios.post('http://localhost:8000/api/insert', {
