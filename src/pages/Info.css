@@ -31,8 +31,7 @@
     text-align: center;
     display: flex; /* 자식 요소를 가로로 배치하기 위해 flexbox 사용 */
     align-items: center; /* 수직 정렬을 위해 추가 */
-    margin-left: 43%;
-    
+    justify-content: center;
     font-family: "KoPubWorldBatang_Pro";
     font-size: 16px;
 } 
@@ -41,20 +40,20 @@
 }
 
 .Poster {
-
+    align-items: center; /* 수직 정렬을 위해 추가 */
+    justify-content: center;
 }
 
 .info-title-circle {
-    margin-left: 5px;
     margin-top: 8px; /* 예시로 간격을 줍니다. */
 } 
 
 .InfoDetail {
-    margin-left: 12%;
     font-family: "KoPubWorldBatang_Pro";
     font-size: 12px;
     text-align: center;
-    margin-right: 10%;
+    justify-content: center;
+    align-items: center; /* 수직 정렬을 위해 추가 */
 }
 
 .InfoBlank{
