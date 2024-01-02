@@ -105,7 +105,7 @@ const GoodsPage = () => {
         </div>
       </div>  
       <div className='current'>
-        {[0, 1, 2, 3, 4].map((index) => (
+        {[0, 1, 2 ].map((index) => (
           <img
             key={index}
             className='vector2'
