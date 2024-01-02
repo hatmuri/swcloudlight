@@ -62,7 +62,7 @@ const GuestbookRead = () => {
           <b className='text2'>방명록을 작성하면 이벤트 참여 완료되며,<br/> 개인 정보는 전시회 종료 후 삭제합니다.</b>
         </div>
         <br/>
-        <div className='write-button' onClick={()=>{navigate("/Guestbook-write")}}>작성하기</div>
+        <div className='readpage-write-button' onClick={()=>{navigate("/Guestbook-write")}}>작성하기</div>
         <div className='guest-comment'>방문객의 색채들</div><br/>
         <div className='guest-container'>
           <div className='pre-button' onClick={() => setCurrentPage(currentPage - 1)}>
