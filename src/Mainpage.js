@@ -36,7 +36,6 @@ const Mainpage = () => {
             <h2 className='Comma2'>.</h2>
           </div>
           
-          
           <div className='button'>
             <div onClick={()=>{navigate("/Guestbook-read")}}>방명록</div>
             <div onClick={()=>{navigate("/recommend")}}>작품추천 테스트</div>

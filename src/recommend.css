@@ -253,7 +253,7 @@
 
 .poetLayout{
     display: flex;
-    margin:30px;
+    margin: 30px;
     flex-direction: column;
     margin-top:200px;
 }
