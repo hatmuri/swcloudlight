@@ -6,13 +6,24 @@
 }
 
 .InfoMap {
-    font-family: KoPubWorldBatang_Pro;
+    font-family: "KoPubWorldBatang_Pro";
     position: 'relative';
     top: '20px'}
 
 .info-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.map-title{
+    display: flex;
+    justify-content: center;
+}
+
+.map-title-comma{
+    color: rgba(254, 175, 168, 1);
+    margin-left: 5px;
 }
 
 .map-header {
@@ -32,7 +43,7 @@
 
 .detailAddress {
     color: #808080;
-    font-size: 8px;
+    font-size: 11px;
 }
 
 .info-map-circle {
@@ -44,6 +55,7 @@
 }
 
 .address-txt {
-    margin-right: 5%;
+    /*margin-right: 5%;*/
+    text-align: center;
     font-size: 13px;
     }

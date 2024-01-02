@@ -29,7 +29,12 @@ const Place=() => {
         
         <div className='InfoMap'>
             <div className='map-header'>
-                <p>오시는 길</p>
+                <div className='map-title'>
+                    <p>오시는 길</p>
+                    <p className='map-title-comma'>,</p>
+                </div>
+                
+
                 <div className='map-api'>
                     <div ref={mapElement} style={{ width: "300px", height:"300px" }} />
                     <code id="snippet" class="snippet"></code>  

@@ -30,6 +30,8 @@
   line-height: 25px;
   letter-spacing: 0em;
   text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 .header-guest{
   /*width: 100%;*/
@@ -38,6 +40,20 @@
   
   padding: 10px; 
   z-index: 1; 
+}
+
+.header-guest .vecter{
+  width: 5px;
+  height: 5px;
+}
+.header-guest-title{
+  display: flex;
+  justify-content: center;
+}
+.guest-title-dot{
+  margin-left: 5px;
+  color: rgba(182, 232, 215, 1);
+  font-size: 30px;
 }
 
 .header-guest .text2{
