@@ -40,6 +40,17 @@ app.post("/api/insert", (req, res)=>{
         res.send('success');
     })
 })
+  
+// 정적 이미지를 gbimages 디렉토리에서 제공하는 미들웨어
+app.use('/gbimages', express.static('gbimages'));
+
+app.get('/api/images/:imageId', (req, res) => {
+    const imageId = req.params.imageId;
+    const imagePath = `gbimages/${imageId}.jpg`;
+
+    // 이미지 파일을 전송합니다
+    res.sendFile(imagePath, { root: __dirname });
+});
 
 app.listen(PORT, ()=>{
     console.log('running on port', PORT);
