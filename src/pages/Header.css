@@ -10,8 +10,8 @@
   font-family: "KoPubWorldBatang_Pro";
   font-size: 20px;
   font-weight: 500;
-  position: relative; /* relative 포지션 추가 */
-  z-index: 2;
+  position: fixed; /* relative 포지션 추가 */
+  z-index: 10000;
 }
 
 .menu p{
