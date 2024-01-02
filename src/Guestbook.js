@@ -1,6 +1,6 @@
 // Guestbook.js
 import React, { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Axios from 'axios';
 import vector from './Vector.png';
 import './Guestbook.css';
@@ -24,7 +24,7 @@ const Guestbook = () => {
   'rgba(213, 217, 205, 0.6)','rgba(233, 233, 229, 0.6)','rgba(196, 225, 211, 0.6)','rgba(182, 232, 215, 0.6)']
 
   return (
-    <div className='container'>
+    <div className='container2'>
       <div className='flex-container'>
         <div className='header-guest'>
           <h className='text1'>방명록</h>

@@ -63,7 +63,7 @@
 .App .container {
   display: flex;
   margin:20px;
-
+  overflow-y: scroll;
 }
 
 .App .inner {
@@ -88,7 +88,3 @@
   background-color: white;
 }
 
-.slide{
-  height: 30px;
-  width: 30px;
-}
