@@ -6,31 +6,53 @@
 }
 
 .recommendLayout{
+    /*
     margin-top: 50px;
     width: 390px;
     height: 800px;
     font-size: 14px;
     display: flex;
-    justify-content: center;
+    justify-content: center;*/
+
+    
+
+    margin-top: 10%;
+    width: 100%;
+
 }
 
 .startPageLayout{
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
     width: 100%;
     height:100%;
-    padding-top:100px;
+    padding-top:100px;*/
+    
+    /*background-color: beige;*/
+    
+
 }
 
 .startLogo{
+    /*
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;*/
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20%;
+    /*background-color: antiquewhite;*/
+    
 }
 
 .startLogo div:nth-child(1){
+    /*
     justify-content: center;
     display: flex;
     width: 100%;
@@ -44,7 +66,20 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;}
+    line-height: normal;*/
+
+    width: fit-content;
+    color: #FEAFA8;
+    text-align: center;
+    font-family: "KoPubWorldBatang_Pro";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 auto;
+
+
+}
+
 
 .startLogo div:nth-child(2){
     display: flex;
@@ -87,6 +122,8 @@
 }
 
 .questionLayout{
+
+    /*
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -94,7 +131,10 @@
     width: 100%;
     max-width: 900px;
     height: 70%;
-    overflow:hidden;   
+    overflow:hidden;   */
+    margin: 0 auto;
+    overflow-x: hidden;
+
 }
 
 .questTitle{
@@ -120,6 +160,7 @@
 }
 
 .questionList{ 
+
     font-family: "KoPubWorldBatang_Pro";
     flex-direction: column;
     height:100%;
@@ -128,6 +169,7 @@
     scrollbar-width: none;
     align-items: center;
     justify-content: center;
+
 }
 
 .questionList::-webkit-scrollbar{
@@ -198,11 +240,14 @@
 }
 
 .resultLayout{
+    /*
     display: flex;
     flex-direction: column;
     background-color: #FFF;
     width: 390px;
-    height: 800px;
+    height: 800px;*/
+
+
 }
 
 .resultTitle{
@@ -280,19 +325,23 @@
 }
 
 .loadContent{
+    /*
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    */
 }
 
 .loadingLayout{
+    /*
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
     width: 100%;
     height:100%;
     padding-top:100px;
+    */
 }
 
 .loadingLayout div:nth-child(1){
@@ -311,6 +360,7 @@
     line-height: normal;
 }
 .loadingLayout div:nth-child(2){
+
     display: flex;
     margin-top: 40px;
     padding:10px;
@@ -322,4 +372,5 @@
     font-size: 15px;
     color: #000000;
     justify-content: center;
+
 }
