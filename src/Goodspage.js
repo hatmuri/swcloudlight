@@ -1,6 +1,7 @@
 // GoodsPage.js
 import React, { useState, useEffect, useRef } from 'react';
 import item1 from './item1.png';
+import item2 from './item2.png';
 import image_loading from './image_loading.jpg'
 import vector from './Vector.png';
 import vector2 from './blackdot.png';
@@ -97,10 +98,10 @@ const GoodsPage = () => {
             <img src={item1} alt="상품 이미지1" />
           </div>
           <div className="inner">
-            <img src={image_loading} alt="상품 이미지2" />
+            <img src={item2} alt="상품 이미지2" />
           </div>
           <div className="inner">
-            <img src={item1} alt="상품 이미지3" />
+            <img src={image_loading} alt="상품 이미지3" />
           </div>
         </div>
       </div>  
