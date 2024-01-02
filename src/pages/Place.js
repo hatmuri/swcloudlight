@@ -44,6 +44,7 @@ const Place=() => {
                     <p className='detailAddress'>서울 종로구 삼일대로 32길 22-1 2층</p>
                 </div>
             </div>
+
         </div>
 
         
