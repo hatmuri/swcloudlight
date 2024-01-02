@@ -49,6 +49,7 @@
 
 .PosterContent{
     align-items: center;
+    
 }
 
 
@@ -58,6 +59,7 @@
     margin-left: 5%;
     
     margin-right: 5%;
+
     font-family: "KoPubWorldBatang_Pro";
     font-size: 16px;
     color: #606060;
@@ -66,6 +68,8 @@
 .LastExhiPosterImg {
     margin-right: 105px;
     margin-top: 100px;
+    /*margin-top: 100px;
+    margin-right: 20%;*/
 }
 
 .LastExhiPosterDetail {
