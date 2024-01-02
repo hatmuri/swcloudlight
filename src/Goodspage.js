@@ -1,11 +1,88 @@
 // GoodsPage.js
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import goods1 from './goods.png';
 import vector from './Vector.png';
+import vector2 from './blackdot.png';
 import './Goodspage.css';
-const GoodsPage = ({ currentIndex }) => {
 
+const GoodsPage = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const containerRef = useRef(null);
+
+  const handleScroll = () => {
+    const containers = document.querySelectorAll('.container');
   
+    containers.forEach(container => {
+      const scrollPosition = container.scrollLeft;
+      const itemWidth = container.offsetWidth;
+      
+
+      let index;
+      if(scrollPosition<180){
+        index=0;
+      } else if (scrollPosition >= 180 && scrollPosition < 380) {
+        index = 1;
+      } else if (scrollPosition >= 380 && scrollPosition < 650) {
+        index = 2;
+      } else if (scrollPosition >= 650 && scrollPosition < 845) {
+        index = 3;
+      } else {
+        index=4;
+      }
+
+      setCurrentIndex(index);
+
+      // const index = Math.round(scrollPosition / itemWidth);
+      // console.log('Scroll Position:', scrollPosition);
+      // console.log('Item Width:', itemWidth);
+      // console.log('Current Index:', index);
+    });
+  };
+
+  useEffect(() => {
+    const containers = document.querySelectorAll('.container');
+  
+    containers.forEach(container => {
+      container.addEventListener('scroll', handleScroll);
+    });
+  
+    return () => {
+      containers.forEach(container => {
+        container.removeEventListener('scroll', handleScroll);
+      });
+    };
+  }, [currentIndex]); 
+
+  const handleVectorClick = (index) => {
+    let scrollPosition;
+
+    // 클릭된 벡터에 따라 스크롤 위치 이동
+    switch (index) {
+      case 0:
+        scrollPosition = 0;
+        break;
+      case 1:
+        scrollPosition = 188;
+        break;
+      case 2:
+        scrollPosition = 436;
+        break;
+      case 3:
+        scrollPosition = 680;
+        break;
+      case 4:
+        scrollPosition = 874;
+        break;
+      default:
+        scrollPosition = 0;
+    }
+
+    containerRef.current.scrollTo({
+      left: scrollPosition,
+      behavior: 'smooth', 
+    });
+  };
+
   return (
     <div className='all'>
       <div className='header2'>
@@ -14,7 +91,7 @@ const GoodsPage = ({ currentIndex }) => {
         <b className='text2'>전시품을 다양한 굿즈로도 간직하실 수 있습니다.</b>
       </div>
       <div className='list'>
-        <div className="container">
+        <div className="container" ref={containerRef}>
           <div className="inner">
             <img src={goods1} alt="상품 이미지1" />
           </div>
@@ -27,14 +104,18 @@ const GoodsPage = ({ currentIndex }) => {
           <div className="inner">
             <img src={goods1} alt="상품 이미지4" />
           </div>
+          <div className="inner">
+            <img src={goods1} alt="상품 이미지5" />
+          </div>
         </div>
       </div>  
       <div className='current'>
         {[0, 1, 2, 3, 4].map((index) => (
           <img
             key={index}
-            src={vector}
-            className={`vector2 ${currentIndex === index ? 'active' : ''}`}
+            className='vector2'
+            src={currentIndex === index ? vector2 : vector}
+            onClick={() => handleVectorClick(index)}
           />
         ))}
       </div>   

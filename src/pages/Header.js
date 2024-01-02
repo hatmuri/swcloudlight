@@ -5,13 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import brand from './brand.png';
 import {CSSTransition} from 'react-transition-group';
-import Info from './Info';
-import Place from './Place';
-import Crew from './Crew';
-import recommend from '../recommend'
-import GoodsPage from '../Goodspage';
-import Guestbook from '../Guestbook';
-import Mainpage from '../Mainpage';
+
 
 
 const Header= () => {
@@ -71,7 +65,7 @@ const Header= () => {
                 </div>
                 </CSSTransition>
             
-            </nav>
+        </nav>
         
     </div>
     );

@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "KoPubWorldBatang_Pro";
+    src: url("/public/fonts/KoPubWorld\ Batang_Pro\ Medium.otf") ;
+    font-weight: normal;
+    font-style: normal;
+}
+
 .flip-card-container {
     display: flex;
     justify-content: center;
@@ -11,7 +18,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-family: KoPubWorldBatang_Pro;
+    font-family: "KoPubWorldBatang_Pro";
     height: 0px;
 
 }
@@ -32,14 +39,14 @@
 }
 
 .crew-info-header {
-    font-family: KoPubWorldBatang_Pro;
+    font-family: "KoPubWorldBatang_Pro";
 }
 
 
 .first{
     margin-top: 25%;
     text-align: center;
-    font-family: KoPubWorldBatang_Pro;
+    font-family: "KoPubWorldBatang_Pro";
 }
 .flip-card {
     perspective: 1000px;

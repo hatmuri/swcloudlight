@@ -36,11 +36,11 @@
     width: 100%;
     height: 25px;
     flex-shrink: 0;
-    font-family: "Kokoro";
+    font-family: "KoPubWorldBatang_Pro";
     margin: 30px;
     color: #FEAFA8;
     text-align: center;
-    font-family: KoPub Batang;
+    font-family: "KoPubWorldBatang_Pro";
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -53,7 +53,7 @@
     height: 25px;
     flex-shrink: 0;
     font-weight: 700;
-    font-family: KoPubWorldBatang_Pro;
+    font-family: "KoPubWorldBatang_Pro";
     font-size: 20px;
     justify-content: center;
 }
@@ -105,7 +105,7 @@
     width: 100%;
     align-items: center;
     padding:15px;
-    font-family: KoPubWorldDotum_Pro;
+    font-family: "KoPubWorldBatang_Pro";
 }
 
 .questTitle div:nth-child(1){
@@ -120,7 +120,7 @@
 }
 
 .questionList{ 
-    font-family: KoPubWorldBatang_Pro;
+    font-family: "KoPubWorldBatang_Pro";
     flex-direction: column;
     height:100%;
     white-space: pre-wrap;
@@ -194,7 +194,7 @@
     box-shadow: 2px 2px 0px #ededed;
     border: 1px solid #ededed;
     margin: 0px 2p 15px 20px;
-    font-family: "KoPubWorldDotum_Pro"; /*bold가 낫나 light가 낫나*/
+    font-family: "KoPubWorldBatang_Pro"; /*bold가 낫나 light가 낫나*/
 }
 
 .resultLayout{
@@ -210,7 +210,7 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    font-family: 'KoPubWorldDotum_Pro';
+    font-family: "KoPubWorldBatang_Pro";
     flex-direction: row;
     margin: 10px;
     margin-left:20px;
@@ -225,7 +225,7 @@
     padding:10px;
     margin-top:50px;
     margin-right: 20px;
-    font-family: KoPubWorldDotum_Pro;
+    font-family: "KoPubWorldBatang_Pro";
     color: lightgrey;
     justify-content: flex-end;
     justify-content: flex-end;
@@ -260,21 +260,21 @@
 
 .poetTitle{
     display: flex;
-    font-family: 'KoPubWorldBatang_Pro';
+    font-family: "KoPubWorldBatang_Pro";
     font-size: 20px;
 }
 
 .poetAuthor{
     margin-top: 2px;
     font-size: 14px;
-    font-family: 'KoPubWorldBatang_Pro';
+    font-family: "KoPubWorldBatang_Pro";
     display: flex; /* 추가: poetAuthor를 flex container로 만듦 */
 }
 
 .poetContents{
     margin-top: 30px;
     font-size: 15px;
-    font-family: KoPubWorldBatang_Pro;
+    font-family: "KoPubWorldBatang_Pro";
     display: flex;
     white-space: pre-wrap;
 }
@@ -301,7 +301,7 @@
     width: 100%;
     height: 25px;
     flex-shrink: 0;
-    font-family: "Kokoro";
+    font-family: "KoPubWorldBatang_Pro";
     color: #FEAFA8;
     text-align: center;
     margin-top:50px;
@@ -318,7 +318,7 @@
     height: 25px;
     flex-shrink: 0;
     font-weight: 700;
-    font-family: KoPubWorldBatang_Pro;
+    font-family: "KoPubWorldBatang_Pro";
     font-size: 15px;
     color: #000000;
     justify-content: center;

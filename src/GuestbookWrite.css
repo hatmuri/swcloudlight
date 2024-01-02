@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "KoPubWorldBatang_Pro";
+  src: url("/public/fonts/KoPubWorld\ Batang_Pro\ Medium.otf") ;
+  font-weight: normal;
+  font-style: normal;
+}
+
 .GuestbookWrite {
     font-family: KoPubWorldBatang_Pro;
     text-align: center;
