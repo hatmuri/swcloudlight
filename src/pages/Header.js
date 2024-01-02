@@ -2,6 +2,7 @@ import './Header.css';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 import React from 'react';
 import brand from './brand.png';
 import {CSSTransition} from 'react-transition-group';
@@ -32,7 +33,9 @@ const Header= () => {
     <div className='blind'>
         <nav>
             <div className='brand'>
-                <img src={brand} alt="brand" onClick={() => { navigate("/Mainpage");}}/>
+                <img src={brand} alt="brand" onClick={() => { navigate("/Mainpage");
+                
+                }}/>
             </div>
             <div className='burger-menu' onClick={updateMenu}>
                 <div className={burger_class}></div>
