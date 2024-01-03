@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+.startButton{
+    font-family: "KoPubWorldBatang_Pro";
+}
+
 .recommendLayout{
     /*
     margin-top: 50px;
@@ -15,7 +19,7 @@
     justify-content: center;*/
 
     
-
+    font-family: "KoPubWorldBatang_Pro";
     margin-top: 10%;
     width: 100%;
 
@@ -30,7 +34,7 @@
     padding-top:100px;*/
     
     /*background-color: beige;*/
-    
+    font-family: "KoPubWorldBatang_Pro";
 
 }
 
@@ -41,13 +45,13 @@
     flex-direction: column;
     align-items: center;
     text-align: center;*/
-
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
     margin-top: 20%;
     /*background-color: antiquewhite;*/
+    font-family: "KoPubWorldBatang_Pro";
     
 }
 
@@ -99,7 +103,7 @@
     height: 36px;
     margin-top: 30px;
     flex-shrink: 0;
-    font-family: "KoPubWorldDotum_Pro";
+    font-family: "KoPubWorldBatang_Pro";
     justify-content: center;
     color:grey;
     margin-bottom: 60px;
@@ -114,7 +118,7 @@
     flex-shrink: 0;
     text-align: center;
     font-size: 15px;
-    font-family: "KoPubWorldDotum_Pro";
+    font-family: "KoPubWorldBatang_Pro";
     color: #fff;
     background-color: #000000;
     align-items: center;
@@ -170,6 +174,7 @@
     align-items: center;
     justify-content: center;
 
+
 }
 
 .questionList::-webkit-scrollbar{
@@ -204,7 +209,7 @@
     display:flex;
     flex-direction: column;
     white-space: pre-wrap;
-    margin-top:50px;
+    margin-top:40px;
     margin-bottom:25xp;
 }
 
@@ -229,7 +234,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px;
+    margin-top: 30px;
     padding: 10px;
     height: 25px;
     text-align: center;
