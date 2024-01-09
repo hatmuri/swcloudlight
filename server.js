@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const mysql = require('mysql2');
 const cors = require('cors');
+const { path } = require('animejs');
 const PORT = process.env.port || 9000;
 
 const db = mysql.createPool({
@@ -16,8 +17,10 @@ app.use(cors());
 app.use(express.json());
 //app.use(bodyParser.urlencoded({ extended: true}));
 
+app.use(express.static(path.join(__dirname,'swcloudlight/build')));
+
 app.get("/", (req, res) => {
-    res.send("test");
+    res.sendFile(path.join(__dirname, 'swclodlight/build/index.html'));
     console.log("서버 테스트");
   });
   
