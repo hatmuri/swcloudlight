@@ -26,7 +26,7 @@ const GuestbookWrite = () => {
       alert('연락처는 11개의 숫자로만 작성해주세요!');
       return;
     }
-    Axios.post('http://localhost:8000/api/insert', {
+    Axios.post('http://ec2-54-180-25-140.ap-northeast-2.compute.amazonaws.com:9000/api/insert', {
       name: writeContent.name,
       phone: writeContent.phone,
       nickname: writeContent.nickname,

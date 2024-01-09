@@ -18,7 +18,7 @@ const GuestbookRead = () => {
   const itemsPerPage = 9;
   
   useEffect(()=>{
-    Axios.get('http://localhost:8000/api/get/all').then((response)=>{
+    Axios.get('http://ec2-54-180-25-140.ap-northeast-2.compute.amazonaws.com:9000/api/get/all').then((response)=>{
       console.log(response);
       setViewContent(response.data);  // 상태 업데이트
     })
@@ -30,7 +30,7 @@ const GuestbookRead = () => {
   useEffect(() => {
     const dynamicBackgroundImageList = [];
     for (let i = viewContent.length; i >= 1; i--) {
-      dynamicBackgroundImageList.push(`http://localhost:8000/api/images/${i}`);
+      dynamicBackgroundImageList.push(`http://ec2-54-180-25-140.ap-northeast-2.compute.amazonaws.com:9000/api/images/${i}`);
     }
     setBackgroundImageList(dynamicBackgroundImageList);
   }, [viewContent]);
