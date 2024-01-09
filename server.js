@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const mysql = require('mysql2');
 const cors = require('cors');
-const PORT = 80;
+const PORT = process.env.port || 9000;
 
 const db = mysql.createPool({
     host : "cloudlight-db.c5u46ic6w8qv.us-east-2.rds.amazonaws.com",
@@ -15,7 +15,6 @@ const db = mysql.createPool({
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true}));
-
 app.get("/api/get/all", (req, res)=>{
     const sqlQuery = "SELECT * FROM guestbook ORDER BY created_at DESC;";
     db.query(sqlQuery, (err, result)=>{
