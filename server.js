@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const mysql = require('mysql2');
 const cors = require('cors');
-const PORT = process.env.port || 8000;
+const PORT = 80;
 
 const db = mysql.createPool({
     host : "cloudlight-db.c5u46ic6w8qv.us-east-2.rds.amazonaws.com",
