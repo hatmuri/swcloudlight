@@ -1,4 +1,4 @@
-const bodyParser = require('body-parser');
+//const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
 const mysql = require('mysql2');
@@ -14,7 +14,7 @@ const db = mysql.createPool({
 
 app.use(cors());
 app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: true}));
+//app.use(bodyParser.urlencoded({ extended: true}));
 app.get("/api/get/all", (req, res)=>{
     const sqlQuery = "SELECT * FROM guestbook ORDER BY created_at DESC;";
     db.query(sqlQuery, (err, result)=>{
