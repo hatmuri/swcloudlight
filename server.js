@@ -20,7 +20,6 @@ app.use(express.static(path.join(__dirname, '/build')));
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, '/build', 'index.html'));
-    console.log("서버 테스트");
 });
 
 app.get("/api/get/all", (req, res)=>{
@@ -28,7 +27,6 @@ app.get("/api/get/all", (req, res)=>{
     db.query(sqlQuery, (err, result)=>{
         res.send(result);
     });
-    console.log("get/all");
 });
 
 app.get("/api/get", (req, res)=>{
@@ -36,7 +34,6 @@ app.get("/api/get", (req, res)=>{
     db.query(sqlQuery, (err, result)=>{
         res.send(result);
     });
-    console.log("get");
 });
 
 app.post("/api/insert", (req, res)=>{
@@ -48,7 +45,6 @@ app.post("/api/insert", (req, res)=>{
     db.query(sqlQuery, [name, phone, nickname, message], (err, result)=>{
         res.send('success');
     });
-    console.log("insert");
 });
 
 // 정적 이미지를 'gbimages' 디렉토리에서 제공하는 미들웨어
@@ -60,7 +56,6 @@ app.get('/api/images/:imageId', (req, res) => {
 
     // 이미지 파일을 전송합니다
     res.sendFile(imagePath, { root: __dirname });
-    console.log("이미지 전송");
 });
 
 app.listen(PORT, ()=>{
