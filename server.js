@@ -18,6 +18,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
     res.send("test");
+    console.log("서버 테스트");
   });
   
 
