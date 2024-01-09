@@ -16,10 +16,10 @@ app.use(cors());
 app.use(express.json());
 
 // 'swcloudlight/build' 디렉토리에서 정적 파일 제공
-app.use(express.static(path.join(__dirname, 'swcloudlight/build')));
+app.use(express.static(path.join(__dirname, '/build')));
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, 'swcloudlight/build', 'index.html'));
+    res.sendFile(path.join(__dirname, '/build', 'index.html'));
     console.log("서버 테스트");
 });
 
