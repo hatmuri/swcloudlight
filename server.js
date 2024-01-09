@@ -6,9 +6,9 @@ const cors = require('cors');
 const PORT = process.env.port || 8000;
 
 const db = mysql.createPool({
-    host : "database-guest.c1i6ua4kic6s.ap-northeast-2.rds.amazonaws.com",
-    user : "admin",
-    password : "123456789",
+    host : "cloudlight-db.c5u46ic6w8qv.us-east-2.rds.amazonaws.com",
+    user : "master",
+    password : "20190995",
     database : "guestbook_db"
 });
 
